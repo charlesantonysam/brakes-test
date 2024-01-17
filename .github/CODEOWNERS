@@ -1,0 +1,9 @@
+# CODEOWNERS file
+
+# Define teams and individuals for specific directories
+@Brakes-Portal/development
+@Brakes-Portal/uat
+@Brakes-Portal/production
+
+# Define individuals as approvers for the entire repository
+*    @FloraSelvasingh @manigandankindly

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:p1="urn:TARGET:WEBPORTAL:ServiceSheetFileDetails" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" name="ServiceSheetFileDetailsFromWEBPORTAL_Out" targetNamespace="urn:TARGET:WEBPORTAL:ServiceSheetFileDetails" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation />
+  <wsp:UsingPolicy wsdl:required="true" />
+  <wsp:Policy wsu:Id="OP_ServiceSheetFileDetailsFromWEBPORTAL_Out" />
+  <wsdl:types>
+    <xsd:schema xmlns="urn:TARGET:WEBPORTAL:ServiceSheetFileDetails" targetNamespace="urn:TARGET:WEBPORTAL:ServiceSheetFileDetails" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:element name="ServiceSheetFileDetailsFromWEBPORTAL_Response" type="p1:ServiceSheetFileDetailsFromWEBPORTAL_Response" />
+      <xsd:element name="ServiceSheetFileDetailsFromWEBPORTAL_Request" type="p1:ServiceSheetFileDetailsFromWEBPORTAL_Request" />
+      <xsd:complexType name="ServiceSheetFileDetailsFromWEBPORTAL_Request">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">ServiceSheetFileDetails From WEBPORTAL Request</xsd:documentation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">0116e90376bb11ed9d18000000193872</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="Request">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">d418841b6b2011edb20a586c25424bb9</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" maxOccurs="unbounded" name="Row">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">d418841a6b2011edc0a8586c25424bb9</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element minOccurs="0" name="LBLNI" type="xsd:string">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">e0c715cf6b2011edc86c586c25424bb9</xsd:appinfo>
+                        </xsd:annotation>
+                      </xsd:element>
+                      <xsd:element minOccurs="0" name="LWERT" type="xsd:string">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">e0c715d06b2011edced3586c25424bb9</xsd:appinfo>
+                        </xsd:annotation>
+                      </xsd:element>
+                      <xsd:element minOccurs="0" name="BLDAT" type="xsd:string">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">e0c715d16b2011edacd5586c25424bb9</xsd:appinfo>
+                        </xsd:annotation>
+                      </xsd:element>
+                      <xsd:element minOccurs="0" name="INVOICE_RECEIPT_DATE" type="xsd:string">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">e0c715d26b2011ed91b7586c25424bb9</xsd:appinfo>
+                        </xsd:annotation>
+                      </xsd:element>
+                      <xsd:element minOccurs="0" name="FILENAME" type="xsd:string">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">e0c715d36b2011ed945d586c25424bb9</xsd:appinfo>
+                        </xsd:annotation>
+                      </xsd:element>
+                      <xsd:element minOccurs="0" name="FILEDATA" type="xsd:base64Binary">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">e74de868755411edcdea586c25424bb9</xsd:appinfo>
+                        </xsd:annotation>
+                      </xsd:element>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ServiceSheetFileDetailsFromWEBPORTAL_Response">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">ServiceSheetFileDetails From WEBPORTAL Response</xsd:documentation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">5f63553475f111ed8afc000000193872</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="Response">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">3cb27e526b2111eda724586c25424bb9</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" maxOccurs="unbounded" name="Row">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">3cb27e516b2111eda4e9586c25424bb9</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element minOccurs="0" name="LBLNI" type="xsd:string">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">de5d9742755411ed9f2f586c25424bb9</xsd:appinfo>
+                        </xsd:annotation>
+                      </xsd:element>
+                      <xsd:element minOccurs="0" name="LWERT" type="xsd:string">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">de5d9743755411ed9d3f586c25424bb9</xsd:appinfo>
+                        </xsd:annotation>
+                      </xsd:element>
+                      <xsd:element minOccurs="0" name="BLDAT" type="xsd:string">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">de5d9744755411eda252586c25424bb9</xsd:appinfo>
+                        </xsd:annotation>
+                      </xsd:element>
+                      <xsd:element minOccurs="0" name="INVOICE_RECEIPT_DATE" type="xsd:string">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">de5d9745755411eda82e586c25424bb9</xsd:appinfo>
+                        </xsd:annotation>
+                      </xsd:element>
+                      <xsd:element minOccurs="0" name="FILENAME" type="xsd:string">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">de5d9746755411edbf4e586c25424bb9</xsd:appinfo>
+                        </xsd:annotation>
+                      </xsd:element>
+                      <xsd:element minOccurs="0" name="SAPIND" type="xsd:string">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">de5d9747755411ed8514586c25424bb9</xsd:appinfo>
+                        </xsd:annotation>
+                      </xsd:element>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ServiceSheetFileDetailsFromWEBPORTAL_Request">
+    <wsdl:documentation />
+    <wsdl:part name="ServiceSheetFileDetailsFromWEBPORTAL_Request" element="p1:ServiceSheetFileDetailsFromWEBPORTAL_Request" />
+  </wsdl:message>
+  <wsdl:message name="ServiceSheetFileDetailsFromWEBPORTAL_Response">
+    <wsdl:documentation />
+    <wsdl:part name="ServiceSheetFileDetailsFromWEBPORTAL_Response" element="p1:ServiceSheetFileDetailsFromWEBPORTAL_Response" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSheetFileDetailsFromWEBPORTAL_Out">
+    <wsdl:documentation />
+    <wsdl:operation name="ServiceSheetFileDetailsFromWEBPORTAL_Out">
+      <wsdl:documentation />
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_ServiceSheetFileDetailsFromWEBPORTAL_Out" />
+      </wsp:Policy>
+      <wsdl:input message="p1:ServiceSheetFileDetailsFromWEBPORTAL_Request" />
+      <wsdl:output message="p1:ServiceSheetFileDetailsFromWEBPORTAL_Response" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSheetFileDetailsFromWEBPORTAL_OutBinding" type="p1:ServiceSheetFileDetailsFromWEBPORTAL_Out">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <wsdl:operation name="ServiceSheetFileDetailsFromWEBPORTAL_Out">
+      <operation soapAction="http://sap.com/xi/WebService/soap1.1" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <wsdl:input>
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </wsdl:input>
+      <wsdl:output>
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceSheetFileDetailsFromWEBPORTAL_OutService">
+    <wsdl:port name="ServiceSheetFileDetailsFromWEBPORTAL_OutPort" binding="p1:ServiceSheetFileDetailsFromWEBPORTAL_OutBinding">
+      <address location="http://pidsyb.brakesindia.org:50000/XISOAPAdapter/MessageServlet?channel=:BS_BI_TARGET_WEBPORTAL_D:SOAPSender_ServiceSheetFileDetailsFromWEBPORTAL&amp;version=3.0&amp;Sender.Service=BS_BI_TARGET_WEBPORTAL_D&amp;Interface=urn%3ATARGET%3AWEBPORTAL%3AServiceSheetFileDetails%5EServiceSheetFileDetailsFromWEBPORTAL_Out" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

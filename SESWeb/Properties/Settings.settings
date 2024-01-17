@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SESWeb.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ESS_wsvcSAPPIExpenseReimbursement_CashVoucherFromWEBPORTAL_OutService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://bilpip.bi.com:50000/XISOAPAdapter/MessageServlet?channel=:BS_BI_TARGET_WEBPORTAL_D:SOAPSender_CashVoucherFromWEBPORTAL&amp;version=3.0&amp;Sender.Service=SOAPSender_CashVoucherFromWEBPORTAL+&amp;Interface=urn%3ATARGET%3AWEBPORTAL%3ACashVoucher%5ECashVoucherFromWEBPORTAL_Out</Value>
+    </Setting>
+    <Setting Name="ESS_PFService_EmployeeBalance" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://brakesindia.versionsystems.com/WebService/EmployeeBalance.asmx</Value>
+    </Setting>
+    <Setting Name="SESWeb_wsvcSAPPIExpenseReimbursement_CashVoucherFromWEBPORTAL_OutService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://bilpip.bi.com:50000/XISOAPAdapter/MessageServlet?channel=:BS_BI_TARGET_WEBPORTAL_D:SOAPSender_CashVoucherFromWEBPORTAL&amp;version=3.0&amp;Sender.Service=SOAPSender_CashVoucherFromWEBPORTAL+&amp;Interface=urn%3ATARGET%3AWEBPORTAL%3ACashVoucher%5ECashVoucherFromWEBPORTAL_Out</Value>
+    </Setting>
+    <Setting Name="SESWeb_PFService_EmployeeBalance" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://brakesindia.versionsystems.com/WebService/EmployeeBalance.asmx</Value>
+    </Setting>
+    <Setting Name="SESWeb_WsvcPASystem_PAStatusFromWEBPORTAL_OutService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://pidevl.bi.com:50000/XISOAPAdapter/MessageServlet?channel=:BS_BI_TARGET_WEBPORTAL_D:SOAPSender_PAStatusFromWEBPORTAL&amp;version=3.0&amp;Sender.Service=BS_BI_TARGET_WEBPORTAL_D&amp;Interface=urn%3ATARGET%3AWEBPORTAL%3APAStatus%5EPAStatusFromWEBPORTAL_Out</Value>
+    </Setting>
+    <Setting Name="DUNPCostingWeb_wsvcSAPPIExpenseReimbursement_CashVoucherFromWEBPORTAL_OutService" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://bilpip.bi.com:50000/XISOAPAdapter/MessageServlet?channel=:BS_BI_TARGET_WEBPORTAL_D:SOAPSender_CashVoucherFromWEBPORTAL&amp;version=3.0&amp;Sender.Service=SOAPSender_CashVoucherFromWEBPORTAL+&amp;Interface=urn%3ATARGET%3AWEBPORTAL%3ACashVoucher%5ECashVoucherFromWEBPORTAL_Out</Value>
+    </Setting>
+    <Setting Name="DUNPCostingWeb_PFService_EmployeeBalance" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://brakesindia.versionsystems.com/WebService/EmployeeBalance.asmx</Value>
+    </Setting>
+    <Setting Name="DUNPCostingWeb_WsvcPASystem_PAStatusFromWEBPORTAL_OutService" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://pidevl.bi.com:50000/XISOAPAdapter/MessageServlet?channel=:BS_BI_TARGET_WEBPORTAL_D:SOAPSender_PAStatusFromWEBPORTAL&amp;version=3.0&amp;Sender.Service=BS_BI_TARGET_WEBPORTAL_D&amp;Interface=urn%3ATARGET%3AWEBPORTAL%3APAStatus%5EPAStatusFromWEBPORTAL_Out</Value>
+    </Setting>
+    <Setting Name="SESWeb_wsvcServiceSheet_ServiceSheetFileDetailsFromWEBPORTAL_OutService" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://pidsyb.brakesindia.org:50000/XISOAPAdapter/MessageServlet?channel=:BS_BI_TARGET_WEBPORTAL_D:SOAPSender_ServiceSheetFileDetailsFromWEBPORTAL&amp;version=3.0&amp;Sender.Service=BS_BI_TARGET_WEBPORTAL_D&amp;Interface=urn%3ATARGET%3AWEBPORTAL%3AServiceSheetFileDetails%5EServiceSheetFileDetailsFromWEBPORTAL_Out</Value>
+    </Setting>
+    <Setting Name="SESWeb_wsSES_ServiceSheetFileDetailsFromWEBPORTAL_OutService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://pidsyb.brakesindia.org:50000/XISOAPAdapter/MessageServlet?channel=:BS_BI_TARGET_WEBPORTAL_D:SOAPSender_ServiceSheetFileDetailsFromWEBPORTAL&amp;version=3.0&amp;Sender.Service=BS_BI_TARGET_WEBPORTAL_D&amp;Interface=urn%3ATARGET%3AWEBPORTAL%3AServiceSheetFileDetails%5EServiceSheetFileDetailsFromWEBPORTAL_Out</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

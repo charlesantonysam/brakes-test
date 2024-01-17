@@ -1,0 +1,310 @@
+﻿
+    .rspResizeBar .rspCollapseBarCollapse, .rspResizeBar .rspCollapseBarExpand {
+   border-top:solid 1px silver !important;
+   border-bottom:solid 1px silver !important;
+    }
+    .rspResizeBar .rspCollapseBarCollapse:hover, .rspResizeBar .rspCollapseBarExpand:hover,.rspResizeBar .rspCollapseBarCollapse:active, .rspResizeBar .rspCollapseBarExpand:active,
+    .rspResizeBar .rspCollapseBarCollapse:focus, .rspResizeBar .rspCollapseBarExpand:focus
+    {
+        background-color:#33b5e5 !important;
+    }
+    .RadSplitter_Bootstrap input.rspCollapseBarExpand, .RadSplitter_Bootstrap input.rspCollapseBarCollapse {
+        background-color:#8bd0ee !important;
+    }
+    .rspResizeBar .rspCollapseBarSpacer {
+    display:none !important;
+    }
+ body, form,html {
+       margin:0px !important;
+       width:100% !important;
+       height:100% !important;
+       overflow:hidden;
+       }
+* {
+font-size:12px !important;
+}
+
+.FormElement
+{
+margin-top:5px !important;
+}
+
+.noscroll,.FormContent {
+        overflow:hidden !important;
+        }
+.margin-5 {
+margin:5px;
+}
+.margin-10 {
+margin:5px;
+}
+.padding-5 {
+padding:5px;
+}
+.padding-10 {
+padding:10px;
+}
+.breadcrumb {
+display:block;
+border-bottom:solid 1px silver;
+padding:10px;
+font-weight:bold;
+}
+.FormHeader {
+display:none !important;
+}
+.commandpanel {
+padding:3px 10px;
+}
+.RadTreeView_Bootstrap .rtIn,.RadTreeView .rtOut {
+    padding:2px 5px;
+    margin-bottom:0px;
+    margin-top:0px;
+}
+.RadTreeView_Bootstrap .rtHover .rtIn{border-color:#c9c9c9;color:#000;background-color:#d9d9d9;}
+.RadTreeView_Bootstrap .rtSelected .rtIn {
+    border-color: #91BBED;
+    color: #000;
+    background-color: #c3d8f1;
+}
+/*border-color:#0066cc;color:#0066cc;background-color:#c3d8f1}*/
+.Title .RadButton,.Title .RadButton input {
+    background:#fff8ca !important;
+    border:solid 1px #ffc8a8 !important;
+}
+    .Title .RadButton .rbText, .Title .RadButton input .rbText {
+    font-style:normal !important;
+    font-weight:bold !important;
+}
+.Title {
+height:26px;
+}
+    .Title .rbHovered,.Title .rbHovered,.Title .RadButton input:hover {
+    background:#c6f4b7 !important;
+    border:solid 1px #47ba22 !important;
+    border:#428bca
+}
+.pbom ul {
+padding:0px !important;
+
+}
+.pbom .rmGroup .rmImage,.pbom .rmGroup .rmLeftImage {
+  top: 2px ;
+  left: 0px ;
+}
+.pbom .rmItem {
+background-color:#fff;
+}
+.pbom .rmGroup .rmText {
+padding-left:25px;
+padding-top:1px;
+}
+.pbom .rmGroup .rmItem a.rmLink:hover , .pbom .rmGroup .rmItem a.rmFocused,
+.pbom .rmGroup .rmItem a.rmSelected
+{
+    background-color:#d9d9d9;
+}
+.Scrollable {
+overflow:scroll;
+}
+.commandpanel .RadAjaxPanel,.breadcrumb .RadAjaxPanel,.breadcrumb .commandpanel{
+display:inline !important;
+}
+.commandcontainer
+{
+    display:inline-block;
+    float:right;
+}
+.configPanel {
+overflow:auto;
+}
+    .configPanel .FormGrid {
+    width:750px !important;
+    }
+    .configPanel .commandpanel {
+    width:220px;
+    margin:auto;
+    padding:0px !important;
+    }
+.FormGrid .Title {
+padding:0px 5px;
+background-color:#D7E8F3;
+}
+.FormButtons {
+padding:0px !important;
+}
+.FormButtons .FormElement {
+padding-top:5px;
+}
+.PBOMHeader {
+background-color:#D7E8F3;
+padding:0px 10px;
+border-bottom:1px solid silver;
+}
+.HeaderInput {
+    padding:0px 10px;
+border-bottom:1px solid silver;
+}
+.FormIcon {
+margin-top:4px;
+max-height:21px;
+margin-bottom:0px;
+}
+.FormTitle {
+font-weight:bold;
+color:#1e395b;
+}
+.PBOMHeader .Element,.HeaderInput .Element{
+    display:inline-block;
+    margin-right:10px;
+    padding:4px 0px;
+}
+    .PBOMHeader .Element .value {
+    background:#fff;
+    font-weight:bold;
+    min-width:100px;
+    border:1px solid silver;
+    padding:2px 5px;
+    }
+
+.HighlightedText {
+background-color:#F2F5A9;
+}
+.padding-0 {
+padding:0px !important;
+}
+.RadWindow .rwIcon {
+height:16px;
+width:16px;
+top:40%;
+}
+.riSingle .riTextBox, .RadForm.rfdTextbox .riSingle input[type='text'].rfdDecorated,.RadInput .riTextBox {
+height:1.83em;
+}
+.CheckBoxList label{ 
+    padding-left:3px;
+    padding-right:10px;
+}
+.DeletedRow {
+background-color:#FFD8D8;
+}
+.AddedRow {
+    background-color:#CDFFCC;
+}
+.CustomAddButton {
+background-color:#E4F8DD!important;
+background-image:none !important; 
+border-color:#62B248 !important;
+}
+    .CustomAddButton .rbSelected {
+        background-color: #a2ea8b !important;
+    }
+
+
+.imgpreview {
+overflow:auto;
+min-height:400px;
+}
+    .imgpreview .Element {
+    min-height:100px;
+    min-width:100px;
+    background-color:#f9f9f9;    
+    border: 1px #d0d0d0 solid;
+    box-shadow: 0px 0px 10px #aaa;
+    -webkit-box-shadow: 0px 0px 10px #aaa;
+    -moz-box-shadow: 0px 0px 10px #aaa;
+    margin-bottom:10px;
+    cursor:pointer;
+    }
+    .imgpreview .Element:focus,.imgpreview .Element:hover {
+        border: 1px #BDCEDE solid;
+    box-shadow: 0px 0px 15px #688caf;
+    -webkit-box-shadow: 0px 0px 15px #688caf;
+    -moz-box-shadow: 0px 0px 15px #688caf;
+    }
+        .imgpreview .Element img {
+        width:100%;
+        }
+
+#imgView {
+    border: 1px #d0d0d0 solid !important;
+   box-shadow: 0px 0px 10px #aaa;
+    -webkit-box-shadow: 0px 0px 10px #aaa;
+    -moz-box-shadow: 0px 0px 10px #aaa;
+}
+
+
+.Delete {
+background-color:#fff !important;
+background-image:none !important;
+}
+.DeleteHovered {
+background-color:#fff !important;
+}
+.RadButton_Sunset .rbIcon, .RadButton_Sunset .rbText::before {
+color:#EE5315 !important;
+}
+.RadButton_Sunset.rbHovered .rbIcon, .RadButton_Sunset.rbHovered .rbText::before {
+color:red !important;
+}
+/*.RadAjax_Bootstrap .raTransp{opacity:.85;filter:alpha(opacity=85)}*/
+
+.RadAjax_Bootstrap .raDiv {
+/*background-image:url('../images/hourglass.gif');*/
+  background-image:none;
+z-index:9999999999;
+}
+.RadAjax .raColor {
+z-index:999999999;}
+
+.lPanel {
+    padding-top:7px;
+    padding-left:35px;
+    padding-bottom:7px; 
+    padding-right:20px;
+    border:solid 1px #afafb7;
+    color:#004f9a;
+    position:fixed;
+    left:600px;
+    top:300px;
+    background: #fff url(../images/hourglass.gif) no-repeat;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+    -webkit-box-shadow: 0 7px 6px -6px #a4abb2;
+    -moz-box-shadow: 0 7px 6px -6px #a4abb2;
+    box-shadow: 0 7px 6px -6px #a4abb2;
+}
+
+.Customwindow .rwContent {
+padding:0px !important;
+}
+.CustomTextBox {
+padding-top:4px !important;
+padding-bottom:4px !important;
+height:2.2em !important;
+}
+.RadMenu .rmGroup .rmLink {
+padding:1px 8px !important;}
+.rgHeader {
+/*background-color:#91BBED !important;*/
+font-weight:bold !important;
+}
+.DrawingAttached {
+     background: #fff url(/Resources/Images/drawing.png) no-repeat;
+     width:16px;
+     margin:auto;
+     display:inline-block;
+}
+.RadAjax_Bootstrap .raColor{background-color:#fcfcfc;color:#333}
+.RadAjax_Bootstrap .raTransp{opacity:.85;filter:alpha(opacity=85)}
+.MinWidth100 {
+min-width:100px !important;
+}
+.rcbFocused, .riFocused, .rddlFocused, .focused,.rgFilterBox:focus {
+            background-color: #F2F5c9 !important;
+        }
+        .RadGrid .rgFilterRow > td {
+        padding-top:1px;
+        padding-bottom:1px;
+        }

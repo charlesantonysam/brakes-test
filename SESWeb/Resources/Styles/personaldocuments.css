@@ -1,0 +1,312 @@
+﻿
+body {
+}
+.file, .fileUpload {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    border: 1px solid #dddada;
+    background-color: #f0f2f2;
+    max-width: 220px;
+    height: 42px;
+    width:260px !important;
+}
+
+.fileUpload {
+    flex-direction: column;
+}
+
+.fileDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex: 1;
+    align-self: stretch;
+}
+
+.fileProgress {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 6px;
+    align-self: stretch;
+}
+
+.file:hover, .fileUpload:hover {
+    cursor: pointer;
+    background-color: #e9eded;
+}
+
+.fileIcon {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-basis: 28px;
+    flex-shrink: 0;
+    background-color: transparent;
+    align-self: center;
+    height: 32px;
+}
+
+    .fileIcon img {
+        align-self: center;
+    }
+
+.fileProperties {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex: 1;
+    background-color: transparent;
+    overflow: hidden;
+    align-self: stretch;
+}
+
+.fileInfo {
+    font-size: 11px !important;
+    color: #808080;
+    border-width: 0px 0px 0px 0px;
+    border-style: solid;
+    border-color: silver;
+    flex: 1;
+    padding: 0 0 0 3px;
+}
+
+.fileName {
+    font-size: 14px !important;
+    border-width: 0px 0px 0px 0px;
+    border-style: solid;
+    border-color: silver;
+    width: 100%;
+    flex: 1;
+    white-space: nowrap;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.fileButtons {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20px;
+    flex-shrink: 0;
+    background-color: transparent;
+    align-self: stretch;
+    justify-content: space-between;
+}
+
+.file .fileButtons {
+    display: none;
+}
+
+.file:hover .fileButtons {
+    display: block;
+}
+
+.fileButton {
+    flex: 1 !important;
+    align-self: stretch !important;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    border: none;
+    width: 100%;
+    height: 50%;
+    cursor: pointer;
+}
+
+    .fileButton:hover {
+    }
+
+.fileButtonDelete {
+    background-image: url('\Resources\Images\del.gif');
+    background-repeat: no-repeat;
+    background-color: #f85f5f;
+}
+
+.fileButtonDownload {
+    background-color: #7ac7ff;
+}
+
+.fileButtonDeleteHover {
+    background-color: #ffa7a7 !important;
+}
+
+.fileButtonDownloadHover {
+    background-color: #4895ce !important;
+}
+
+.docKeyValue{
+    font-size:14px !important;
+    display:inline-block !important;
+    vertical-align:top !important;
+}
+
+.FormElement .Title,.FormElement .Element {
+    vertical-align: top !important;
+    clear:both !important;
+    float:none !important;
+}
+.FormPanel .FormElement .Element, .FormElement .Element {
+    min-width:unset !important;    
+}
+.FormElement .Title, .FormGrid .Title { 
+    min-width: unset !important;
+}
+.docValue {
+    font-size: 12px !important;
+    vertical-align: top !important;
+}
+.docStatus {
+    display: inline-block !important;
+    padding: 0px 20px 0px 20px !important;
+    font-weight: 600 !important;
+    vertical-align: middle !important;
+}
+    .docStatus:before{
+        display:inline-block !important;
+        height:16px;
+        width:16px;
+        text-align:center !important;
+        line-height:16px !important;
+        border:0px solid;
+        border-radius:50%;
+        content:'i';
+        vertical-align:middle !important;
+        margin-right:3px;
+        margin-top:-5px;
+        font-weight:bolder !important; 
+        color:white !important;
+    }
+.docStatus0   {
+    color: blue !important;
+   
+}
+    .docStatus0:before {
+        border-color: blue;
+        background-color: royalblue;
+    }
+.docStatus1 {
+    color: #8f8b3d !important;
+}
+    .docStatus1:before {
+        border-color: #8f8b3d;
+        background-color: #aca750;
+    }
+
+
+
+.docStatus2 {
+    color: darkgoldenrod !important;
+}
+
+     .docStatus2:before {
+            border-color: darkgoldenrod;
+            background-color: goldenrod;
+     }
+
+.docStatus3 {
+    color: green !important;    
+}
+
+    .docStatus3:before {
+        border-color: green;
+        background-color: limegreen;
+        content: '!' !important;
+    }
+.docStatus4,.docStatus5 {
+    color: red !important;
+}
+
+    .docStatus4:before, .docStatus5:before {
+        border-color: red;
+        background-color: orangered;
+    }
+
+.docsCount {
+    display: inline-block !important;
+    height: 16px;
+    width:16px;
+    min-width: 16px;
+    text-align: center !important;
+    line-height: 16px !important;
+    border: 0px solid;
+    border-radius: 50%;
+    content: ' ';
+    vertical-align: middle !important;
+    margin-right: 3px;
+    margin-top: -5px;
+    font-weight: 600 !important;
+    font-size:10px !important;
+    color: white !important;
+    border-color: blue;
+    background-color: mediumblue;
+}
+.relative{
+    position:relative;
+}
+.EmployeeBar {
+    padding: 5px;
+    display: block;
+    height: 50px;
+    background-color: rgba(240, 242, 242, 0.98);
+    vertical-align: top;
+    position: fixed;
+    width: 98%;
+    border-bottom: 1px solid #e1e1e1;
+    z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 1px 2px 0px;
+}
+    .EmployeeBar, .EmployeeBar *, .Avatar, .Avatar * {
+        box-sizing: border-box;
+    }
+
+
+
+        .EmployeeBar .Avatar, .Avatar {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #dddada;
+            border-radius: 50%;
+            overflow: hidden;
+            display: inline-block !important;
+            background: url('../Images/loading_16_T.gif') 2px 2px transparent no-repeat;
+        }
+.EmployeeBar .Avatar img,.Avatar img
+{
+    vertical-align : middle;
+    width:38px;
+}
+.EmployeeBar .docKeyValue {font-size:18px !important;}
+        .EmployeeBar .Details {
+            overflow: hidden;
+            display: inline-block !important;
+          
+            height:38px;
+            vertical-align:top;
+        }
+            .EmployeeBar .Details .EmpNo, .EmployeeBar .Details .EmpName {
+                display: inline-block;
+                padding : 8px;                
+            }
+.SameLine {
+    display: inline-block !important;
+    overflow: hidden;
+}
+
+.singleLine {
+    display: inline !important;
+    overflow: hidden !important;
+}
+
+*{
+    outline :none;
+}
