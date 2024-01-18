@@ -3,6 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32602.291
 MinimumVisualStudioVersion = 10.0.40219.1
+VSToolsPath = C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Microsoft\VisualStudio\v17.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SES", "SES\SES.csproj", "{4C755992-13A5-4C36-BE73-CB67D5372E2A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SESWeb", "SESWeb\SESWeb.csproj", "{DBBD5CD1-F310-477B-BD3C-455B250C1C10}"
