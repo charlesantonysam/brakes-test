@@ -15,8 +15,8 @@ jobs:
     runs-on: windows-latest
 
     env:
-      Solution_Name: your-solution-name
-      Test_Project_Path: your-test-project-path
+      Solution_Name: SES.sln
+      Test_Project_Path: SESWeb/SESWeb.csproj
 
     steps:
       - name: Checkout
