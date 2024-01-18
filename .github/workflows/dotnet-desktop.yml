@@ -12,7 +12,7 @@ jobs:
       matrix:
         configuration: [Debug, Release]
 
-    runs-on: windows-2019  # Use a runner with .NET Framework 4.6.1 support
+    runs-on: self-hosted  # Use a runner with .NET Framework 4.6.1 support
 
     env:
       Solution_Name: SES.sln
