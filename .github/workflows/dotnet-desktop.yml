@@ -30,6 +30,12 @@ jobs:
         with:
           vs-version: 16.0  # Adjust if needed for your project
 
+      # Restore NuGet packages
+      - name: Restore NuGet packages
+        run: nuget restore $env:Solution_Name
+        env:
+          NUGET_VERSION: 5.x.x  # Adjust to the latest NuGet version
+
       # Restore the application
       - name: Restore the application
         run: msbuild $env:Solution_Name /t:Restore /p:Configuration=$env:Configuration
