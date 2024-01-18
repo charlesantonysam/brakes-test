@@ -24,12 +24,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      # Install Visual Studio with .NET Framework 4.6.1 workload
-      - name: Setup Visual Studio
-        uses: microsoft/setup-msbuild@v1.0.2
-        with:
-          vs-version: 16.0  # Adjust if needed for your project
-
       # Restore NuGet packages
       - name: Restore NuGet packages
         run: nuget restore $env:Solution_Name
