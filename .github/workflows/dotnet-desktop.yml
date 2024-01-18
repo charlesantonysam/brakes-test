@@ -1,4 +1,4 @@
-name: .NET Core Desktop
+name: .NET Framework Desktop
 
 on:
   push:
@@ -12,7 +12,7 @@ jobs:
       matrix:
         configuration: [Debug, Release]
 
-    runs-on: windows-latest
+    runs-on: windows-2019  # Use a runner with .NET Framework 4.6.1 support
 
     env:
       Solution_Name: SES.sln
@@ -24,17 +24,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      # Install the .NET Core workload
-      - name: Install .NET Core
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: 6.0.x
-
-      # Add MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
-      - name: Setup MSBuild.exe
+      # Install Visual Studio with .NET Framework 4.6.1 workload
+      - name: Setup Visual Studio
         uses: microsoft/setup-msbuild@v1.0.2
+        with:
+          vs-version: 16.0  # Adjust if needed for your project
 
-      # Restore the application to populate the obj folder with RuntimeIdentifiers
+      # Restore the application
       - name: Restore the application
         run: msbuild $env:Solution_Name /t:Restore /p:Configuration=$env:Configuration
         env:
@@ -43,5 +39,11 @@ jobs:
       # Build the solution
       - name: Build the solution
         run: msbuild $env:Solution_Name /p:Configuration=$env:Configuration
+        env:
+          Configuration: ${{ matrix.configuration }}
+
+      # Execute unit tests (if any)
+      - name: Execute unit tests
+        run: mstest $env:Test_Project_Path /testcontainer:bin\${{ matrix.configuration }}\$env:Test_Project_Path  # Adjust paths if needed
         env:
           Configuration: ${{ matrix.configuration }}
