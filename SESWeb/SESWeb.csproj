@@ -1392,9 +1392,9 @@
   <ItemGroup>
     <WebReferences Include="Web References\" />
   </ItemGroup>
-  <ItemGroup>
+  <!-- <ItemGroup>
     <EmbeddedResource Include="Properties\licenses.licx" />
-  </ItemGroup>
+  </ItemGroup> -->
   <ItemGroup>
     <WebReferenceUrl Include="D:\ServiceSheetFileDetailsFromWEBPORTAL_Out.wsdl">
       <UrlBehavior>Dynamic</UrlBehavior>
