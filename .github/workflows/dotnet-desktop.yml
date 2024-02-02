@@ -16,5 +16,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Restore NuGet Packages
+        run: nuget restore SES.sln
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v1.0.3
+
       - name: Run MSBuild
-        run:  msbuild /p:Configuration=Release SES.sln
+        run: |
+          msbuild /p:Configuration=Release SES.sln /v:diag
