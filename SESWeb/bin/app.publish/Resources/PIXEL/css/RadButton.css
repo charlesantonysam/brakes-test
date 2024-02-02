@@ -1,0 +1,142 @@
+﻿/*From pixel*/
+.RadButton {
+    /*display: inline-block;*/
+    background-color: #fff;
+    /*padding: 4px 15px;*/
+    font-family: 'Lato' !important;
+    font-weight: 500 !important;
+    font-style: normal;
+    color: #545454 !important;
+    font-size: 15px !important;
+}
+ 
+/*BI Customization*/
+.RadButton {
+    border: none !important;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+}
+
+    .RadButton input[type=button], .RadButton input[type=submit] {
+        padding-left: 38px !important;
+        padding-right: 5px !important;
+        border-style: None !important;
+        box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        font-family: 'Lato' !important;
+        font-weight: 500 !important;
+        font-style: normal !important;
+        color: #545454 !important;
+        font-size: 15px !important;
+    }
+    
+
+
+
+.RadButton:hover, .RadButton:focus, .rbSkinnedButton.rbHovered {
+    background-color: #fff !important;
+    border-radius: 0px;
+}
+
+
+span.RadButton_Bootstrap.rbSkinnedButton:hover, span.RadButton_Bootstrap.rbLinkButton:hover, span.RadButton_Bootstrap.rbVerticalButton:hover, span.RadButton_Bootstrap.rbSkinnedButton:focus, span.RadButton_Bootstrap.rbLinkButton:focus, span.RadButton_Bootstrap.rbVerticalButton:focus {
+    border:none !important;
+    color: #545454 !important;  
+    background-color: #fff !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
+
+.replyButton, .replyButton:hover, .replyButton:focus, .replyButton.rbHovered {
+    padding: 0px !important;
+    background-color: #105caa !important;
+    border-radius: 100% !important;
+    border: 1px solid #105caa !important;
+    height: 27px !important;
+    width: 27px !important;
+}
+
+.breadcrumbbutton {
+    position: relative !important;
+    top: 0px !important;
+    left: 0px !important;
+}
+.breadcrumbbutton.active input[type=button], .breadcrumbbutton.active input[type=submit]{
+    color: #105CAA !important;
+}
+
+span.RadButton_Bootstrap.rbSkinnedButton.WindowButton:hover, span.RadButton_Bootstrap.rbLinkButton.WindowButton:hover, span.RadButton_Bootstrap.rbVerticalButton.WindowButton:hover,
+span.RadButton_Bootstrap.rbSkinnedButton.WindowButton:focus, span.RadButton_Bootstrap.rbLinkButton.WindowButton:focus, span.RadButton_Bootstrap.rbVerticalButton.WindowButton:focus,
+.WindowButton, .WindowButton:hover, .WindowButton:focus, .WindowButton.rbHovered, .RadButton .WindowButton:hover, .RadButton .WindowButton:focus, .rbSkinnedButton.WindowButton.rbHovered {
+    background-color: #0070c0 !important;
+    color: #fff !important;
+    border: solid 1px #0070c0 !important;
+    border-radius: 3px !important;
+    height: 40px !important;
+}
+    .WindowButton input[type=button], .WindowButton input[type=submit] {
+        color: #fff !important;
+        width:auto;
+    }
+
+.RadUpload_Bootstrap .ruButton {
+height:auto !important;
+padding:0px !important;
+}
+
+.AcceptDocument, .RejectDocument, .ReturnDocument, .ChangeDocument, .CancelDocument, .DrawingAttached {
+    background-image: url('../images/icons/approved.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+.RejectDocument {
+    background-image: url('../images/rej.png');
+}
+
+
+.ReturnDocument {
+    background-image: url('../images/forward.png');
+}
+
+.ChangeDocument {
+    background-image: url('../../UIUX/BI-ChangeDocument.png');
+}
+
+
+.CancelDocument {
+    background-image: url('../../UIUX/BI-CancelDocument.png');
+}
+
+.DrawingAttached {
+    height: 26px;
+    width: 36px;
+    display: inline-block;
+    background-image: url('../images/drw.png');
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    .user-login #lblUserName {
+    display:none;
+    }
+}
+
+
+.canc .pro-img {
+    background-color: #EAD8D8;
+}
+
+    .canc .notify-bx {
+        background-color: #9e1313;
+    }
+
+        .canc .notify-bx:before {
+            border-top: 6px solid #9e1313;
+        }

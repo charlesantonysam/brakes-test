@@ -1,0 +1,173 @@
+@page { margin: 0 !important;}
+body ,form{ margin: 0  !important; font-family:'Segoe UI',Calibri,Arial !important;}
+.sheet {
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  page-break-after: always;
+}
+
+/** Paper sizes **/
+body.A3           .sheet { width: 297mm; height: 419mm }
+body.A3.landscape .sheet { width: 420mm; height: 296mm }
+body.A4           .sheet { width: 210mm; height: 296mm }
+body.A4.landscape .sheet { width: 297mm; height: 209mm }
+body.A5           .sheet { width: 148mm; height: 209mm }
+body.A5.landscape .sheet { width: 210mm; height: 147mm }
+
+/** Padding area **/
+.sheet.padding-6mm { padding: 6mm }
+.sheet.padding-10mm { padding: 10mm }
+.sheet.padding-15mm { padding: 15mm }
+.sheet.padding-20mm { padding: 20mm }
+.sheet.padding-25mm { padding: 25mm }
+
+/** For screen preview **/
+@media screen {
+  body { height:auto !important;overflow:scroll !important;
+         background-attachment:fixed !important;
+         background:url('/Resources/Images/printviewbg.png') no-repeat rgb(126,163,208) fixed !important; overflow: visible !important; position: relative !important; text-align: center !important;
+  }
+  .sheet {
+    background: white;
+    box-shadow: 0 .6mm 3mm rgba(0,0,0,.5);
+    margin:5mm !important;   
+  }
+}
+
+/** Fix for Chrome issue #273306 **/
+@media print {
+           body.A3.landscape { width: 420mm }
+  body.A3, body.A4.landscape { width: 297mm }
+  body.A4, body.A5.landscape { width: 210mm }
+  body.A5                    { width: 148mm }    
+  
+}
+
+ form #pageArea {
+           margin-left:40px;     
+           padding-top:5%;    
+        }
+ 
+#PageTitle{
+     position:absolute;
+     top:94px;
+     left:30px;
+ }
+   .PageControlBar
+        {
+            float: right;
+            background-color: #7B7585;
+            opacity: 0.6;
+            border-radius: 15px;
+            border: none;
+            margin: 70px auto auto 2%;    
+            padding-left:10px !important;        
+            padding-right:10px !important;        
+            right: 25px;
+            position: fixed;
+            z-index:99999;
+            text-align:center;
+        }
+        
+        .PageControlBar .PositionControl
+        {
+            background-color: #7B7585;
+            opacity: 0.8;
+            margin: 10px 0px 10px 10px;
+            padding: 3px 5px 5px 5px;
+            vertical-align: middle;
+            width: 10px !important;
+            display: inline-block;
+            font-size: 28px;
+            text-align: center;
+            font-weight: bolder;
+            border: white 1px solid;
+            border-radius: 6px;
+        }
+        
+
+        .PageControlBar .Buttons
+        {
+            background-color: #7B7585;
+            opacity: 0.8;
+            height:3vh  !important;
+            margin: 10px auto 0px auto;
+            padding: 0vh 5px 5px 5px;
+            vertical-align: middle;
+            width: 3vh !important;
+            display: inline-block;
+            font-size: 3vh !important;
+            text-align: center;
+            font-weight: bolder;
+            border: white 1px solid;
+            border-radius: 6px;
+        }
+        
+        .PageControlBar .Buttons:hover
+        {
+            background-color: white;
+            opacity: 0.8;
+            color: orange;
+            cursor: pointer;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-box-shadow: -2px 1px 42px 4px rgba(247,247,247,1);
+            -moz-box-shadow: -2px 1px 42px 4px rgba(247,247,247,1);
+            box-shadow: -2px 1px 42px 4px rgba(247,247,247,1);
+        }
+        
+        .PageControlBar .Text
+        {
+            background-color: #7B7585;
+            opacity: 0.5;
+            height: 36px !important;
+            margin: 5px auto 0px auto ;
+            padding: 3px 5px 5px 5px;
+            vertical-align: middle;
+            display: inline-block;
+            font-size: 3vh !important;
+            text-align: center;
+            font-weight: bolder;
+            border: white 0px solid;
+            border-radius: 16px;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .HeaderPanel{
+            height:25px;
+            padding:5px 10px 10px 10px;
+            width:100%;
+            position:fixed;
+            top:0px;left:0px;
+            border:0px solid black;
+            z-index:1000;
+            background-color:rgba(36, 87, 148, 0.79);
+            background-repeat:repeat;    
+            color:white;   
+            font-size:18px;
+            box-shadow: 0 .6mm 3mm rgba(0, 0, 0, 0.47);               
+        }
+.HeaderPanelTitle {
+   max-width:50%;      
+   display:inline-block;
+}
+.HeaderPanelButtons{
+    float:right;
+    margin-right:2%;
+    display:inline-block;
+}
+.float{
+    position:absolute;
+}
+        

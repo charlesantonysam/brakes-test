@@ -1,0 +1,1417 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BI.master.cs" Inherits="SESWeb.BI" %>
+
+<!doctype html>
+<html lang="en">
+<head runat="server">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/x-icon" href="../Resources/PIXEL/images/favicon.png" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../Resources/PIXEL/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Resources/PIXEL/css/font.css">
+    <link rel="stylesheet" href="../Resources/PIXEL/css/font-awesome.min.css">
+    <%--<link rel="stylesheet" href="../Resources/PIXEL/css/bootstrap-datetimepicker.min.css">--%>
+    <link rel="stylesheet" href="../Resources/PIXEL/css/slick/slick.css">
+    <link rel="stylesheet" href="../Resources/PIXEL/css/slick/slick-theme.css">
+    <link rel="stylesheet" href="../Resources/PIXEL/css/owl.css">
+    <link rel="stylesheet" href="../Resources/PIXEL/css/view.css">
+    <link rel="stylesheet" href="../Resources/PIXEL/css/main-style.css">
+    <link rel="stylesheet" href="../Resources/PIXEL/css/select2.min.css">
+    <link rel="stylesheet" href="../Resources/PIXEL/css/media-style.css">
+    <link rel="stylesheet" href="../Resources/PIXEL/css/animate.css">
+    <link rel="stylesheet" href="../Resources/PIXEL/css/editor1.css">
+    <link rel="stylesheet" href="../Resources/PIXEL/css/jquery.mCustomScrollbar.css" />
+    <link rel="stylesheet" href="../Resources/PIXEL/css/introjs.css">
+    <style type="text/css">
+        [class^="Rad"], [class^="Rad"] * {
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+        }
+
+        .widget-avatar {
+            box-sizing: border-box;
+            width: 65px;
+            height: 65px;
+            border: 2px solid #dddada;
+            border-radius: 50%;
+            overflow: hidden;
+            display: inline-block !important;
+            background: url('../Resources/Images/loading_16_T.gif') 2px 2px transparent no-repeat;
+            background-position: center;
+        }
+
+            .widget-avatar img {
+                vertical-align: middle;
+                width: 63px;
+                border-radius: 0px;
+                border: none;
+            }
+
+        .grid-avatar-sm, .grid-avatar-md, .grid-avatar-lg, .breadcrumb-avatar {
+            box-sizing: border-box;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #dddada;
+            border-radius: 50%;
+            overflow: hidden;
+            display: inline-block !important;
+            background: #fff url('../Resources/Images/loading_16_T.gif') 2px 2px no-repeat;
+            background-size: 50%;
+            background-position: center;
+        }
+
+        .grid-avatar-sm, .grid-avatar-md, .breadcrumb-avatar {
+            background-size: 70%;
+        }
+
+            .grid-avatar-sm img, .grid-avatar-md img, .grid-avatar-lg img, .breadcrumb-avatar img {
+                vertical-align: middle;
+                width: 18px;
+                border-radius: 0px;
+                border: none;
+                display: inline-block;
+            }
+
+        .grid-avatar-md {
+            width: 32px;
+            height: 32px;
+        }
+
+            .grid-avatar-md img {
+                width: 30px;
+            }
+
+        .grid-avatar-lg {
+            width: 64px;
+            height: 64px;
+        }
+
+            .grid-avatar-lg img {
+                width: 62px;
+            }
+
+        .grid-avatar-name-sm, .grid-avatar-name-md, .grid-avatar-name-lg, .breadcrumb-avatar-name {
+            display: inline-block;
+            padding: 0px 10px;
+            position: relative;
+            top: -5px;
+            /*font-size:13px;*/
+        }
+
+        .grid-avatar-name-md {
+            top: -10px;
+            /*font-size:14px;*/
+        }
+
+        .grid-avatar-name-lg {
+            top: -20px;
+            /*font-size:15px;*/
+        }
+
+        .left-align {
+            text-align: left !important;
+        }
+
+        .center-align {
+            text-align: center !important;
+        }
+
+        .right-align {
+            text-align: right !important;
+        }
+
+        li.indicator-panel-green {
+            float: right;
+            padding: 4px 15px 4px 4px;
+            background-color: #16a75d;
+            color: #ffff;
+            font-size: 15px;
+            margin-right: 10px;
+        }
+
+            li.indicator-panel-green span:first-child {
+                background: #fff;
+                color: #333;
+                padding: 0 5px;
+            }
+
+        li.indicator-panel-blue {
+            float: right;
+            padding: 4px 15px 4px 4px;
+            background-color: #006fe6;
+            color: #FFF;
+            font-size: 15px;
+            margin-right: 10px;
+        }
+
+            li.indicator-panel-blue span:first-child {
+                background: #fff;
+                color: #333;
+                padding: 0 5px;
+            }
+
+        li.indicator-panel-violet {
+            float: right;
+            padding: 4px 15px 4px 4px;
+            background-color: #3F50F6;
+            color: #FFF;
+            font-size: 15px;
+            margin-right: 10px;
+        }
+
+            li.indicator-panel-violet span:first-child {
+                background: #fff;
+                color: #333;
+                padding: 0 5px;
+            }
+
+        .conveyance-table {
+            margin-top: 94px;
+        }
+
+        .RadNotification, .RadNotification .rnContentWrapper {
+            border: none !important;
+            padding: 0px !important;
+        }
+
+        .RadNotification_Bootstrap {
+            background-color: transparent !important;
+        }
+
+        .pnbs {
+            color: #fff !important;
+        }
+
+        .RadSearchBox_Bootstrap .rsbButton {
+            width: 30px !important;
+            /*top:5px !important;*/
+        }
+    </style>
+    <title>
+        <asp:ContentPlaceHolder ID="cphTitle" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <telerik:RadScriptManager runat="server" ID="rspMaster" EnableScriptGlobalization="true" EnablePartialRendering="true" LoadScriptsBeforeUI="true"></telerik:RadScriptManager>
+        <%--<asp:Panel runat="server" ID="pnlMessage" style="width:auto;margin:auto;position:absolute;bottom:20px;z-index:999999;opacity:1;display:inline;right:20px;"
+           CssClass="alert alert-danger alert-dismissible fade in">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <asp:Label runat="server" ID="lblMessage"></asp:Label>
+           </asp:Panel>--%>
+        <section class="top-bar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 left-mobl-menu">
+                        <div class="left-options section-left">
+                            <ul>
+                                <li class="menu-bar">
+                                    <nav>
+                                        <ul>
+                                            <li class="sub-menu-parent dot-click">
+                                                <img src="../Resources/PIXEL/images/icons/menu.png" data-step="1" data-intro-master="<b>Apps tray</b><br>Click to view and navigate to desired applications">
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </li>
+                                <li class="main-logo" data-step="2" data-intro-master="<b>Home</b><br>Click to go to portal landing page">
+                                    <a href="#" class="log-mob" runat="server" id="lnkMobLandingPageURL" onclick="ShowCustomLoading();">
+                                        <img src="../Resources/PIXEL/images/breakes-india-logo-new.png"></a>
+                                    <a href="#" class="log-dsktp" runat="server" id="lnkLandingPageURL" onclick="ShowCustomLoading();">
+                                        <img src="../Resources/PIXEL/images/logo-new1.jpg"></a>
+                                </li>
+                                <li class="serch-tag" data-step="3" data-intro-master="<b>Search</b><br>Helps to find applications<br><span style='font-size:12px;'>Eg: Type <b>Employee</b> in the search field.</span>">
+                                    <asp:ContentPlaceHolder runat="server" ID="cphSearchBox"></asp:ContentPlaceHolder>
+                                </li>
+                                <%-- <li style="position:absolute;top:80px;text-align:right;width:400;" runat="server" id="liImpersonate">
+                                    <asp:Panel runat="server" ID="pnlImpersonate">
+                                        Impersonate as : <telerik:RadComboBox runat="server" AutoPostBack="true"
+                                           Filter="Contains" DropDownAutoWidth="Enabled"
+                                            ID="ddlUsers" OnSelectedIndexChanged="ddlUser_SelectedIndexChanged">
+                                                                                         </telerik:RadComboBox>
+                                        </asp:Panel>
+                                </li>--%>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-4 right-mobl-menu">
+                        <div class="right-options section-right">
+                            <ul>
+                                <li class="mobile-search">
+                                    <a href="#" class="msrch">
+                                        <img src="../Resources/PIXEL/images/serch.png"></a>
+                                    <div class="mob-type-search serch-tag">
+                                        <asp:ContentPlaceHolder runat="server" ID="cphMobileSearchBox"></asp:ContentPlaceHolder>
+                                    </div>
+                                </li>
+                                <%--Commented by S.Mohanraj on 29-Apr-2021 to move this under settings based on DMD guidance--%>
+                                <%--<li class="">
+                                    <div class="font-size-increase" data-step="4" data-intro="<b>Zoom</b><br>Zoom in / out content">
+                                        <a href="javascript:void(0)" id="btn-increase" class="inc">A<sup>+</sup></a> / <a href="javascript:void(0)" id="btn-decrease" class="dec">A<sup>-</sup></a>
+                                    </div>
+                                </li>--%>
+                                <li class="helping help-menu-parent" onclick="javascript:introJs().start();" data-step="5" data-intro-master="<b>Help</b><br>Portal / application help">
+                                    <a href="#" onclick="ShowQPSHelp()">
+                                        <img src="../Resources/pixel/images/icons/help.png"><span></span></a>
+                                </li>
+                                <li class="notification notify-menu-parent" data-step="6" data-intro-master="<b>Notification</b><br>Activity related notifications">
+                                    <asp:ContentPlaceHolder runat="server" ID="cphNotification"></asp:ContentPlaceHolder>
+                                </li>
+                                <li class="user-login account-menu-parent" style="margin: 0px 10px;"
+                                    data-step="7" data-position="left" data-intro-master="<b>Profile</b><br>Click to navigate to ESS">
+                                    <a href="<%=ProfileURL%>" onclick="ShowCustomLoading();" class="topbar-profile">
+                                        <span class="topbar-profile-avatar">
+                                            <img id="imgUser" loading="lazy" runat="server" src="" style="width: 31px" />
+                                        </span>
+                                        <asp:Label runat="server" ID="lblUserName"></asp:Label>
+                                    </a>
+                                </li>
+                                <li class="desktop-set" data-position="left" data-step="7" data-intro="<b>Settings</b><br>Click to manage portal settings">
+                                    <div id="getform1" class="heading getform1 " style="">
+                                        <span>
+                                            <img src="../Resources/pixel/images/set.png" data-position='left'></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="menu-ico BIAppsList">
+                        <asp:Label ID="lblApplicationList" runat="server"></asp:Label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <%--<section class="breadcrumbs-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopad">
+                        <div class="ess-menu-layer">
+                            <ul>
+                                <li class="">
+                                    <a href="javascript:void(0)" class="hamburger-click">
+                                        <img src="../Resources/PIXEL/images/icons/hamburger.png">
+                                        <span>
+                                            <h4>Employee self service</h4>
+                                        </span>
+                                    </a>
+                                </li>
+                                <asp:ContentPlaceHolder ID="cphBreadCrumb" runat="server"></asp:ContentPlaceHolder>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-ico scnd-ess" id="menu-icos">
+                <asp:Label ID="lblMenuList" runat="server"></asp:Label>
+            </div>
+        </section>--%>
+        <%--<div>--%>
+        <%--<asp:ContentPlaceHolder ID="cphMenu" runat="server">
+            <asp:ContentPlaceHolder ID="cphBreadCrumb" runat="server"></asp:ContentPlaceHolder>
+        </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="cphContent" runat="server">
+            </asp:ContentPlaceHolder>--%>
+        <%--</div>--%>
+        <asp:ContentPlaceHolder runat="server" ID="cphMainContent">
+        </asp:ContentPlaceHolder>
+        <script src="../Resources/PIXEL/js/jquery.min.js"></script>
+        <script src="../Resources/PIXEL/js/popper.min.js"></script>
+        <script src="../Resources/PIXEL/js/bootstrap.min.js"></script>
+        <script src="../Resources/PIXEL/js/jquery.easing.min.js"></script>
+        <script src="../Resources/PIXEL/js/main.js"></script>
+        <script src="../Resources/PIXEL/js/date.js"></script>
+        <script src="../Resources/PIXEL/js/drag.js"></script>
+        <script src="../Resources/PIXEL/js/dragable.js"></script>
+        <script src="../Resources/PIXEL/js/slick/slick.min.js"></script>
+        <script src="../Resources/PIXEL/js/owl.js"></script>
+        <script src="../Resources/PIXEL/js/select2.min.js"></script>
+        <script src="../Resources/PIXEL/js/jquery.mCustomScrollbar.js"></script>
+        <script src="../Resources/PIXEL/js/highcharts1.js"></script>
+        <script src="../Resources/PIXEL/js/classie.js"></script>
+        <script src="../Resources/PIXEL/js/cbpViewModeSwitch.js"></script>
+        <script src="../Resources/PIXEL/js/editor1.js"></script>
+        <script src="../Resources/PIXEL/js/intro.js"></script>
+
+        <script src="../Resources/Scripts/Cookies.js"></script>
+        <script>
+            $('.sub-menu li').click(function (e) {
+                e.preventDefault();
+                $('.sub-menu li').removeClass('selected');
+                $(this).addClass('selected');
+            });
+
+            $(".sub-menu li").click(function () {
+                $(".sub-menu").addClass("selectul");
+            });
+
+            $('.child-sub-menu li').click(function (e) {
+                //      e.preventDefault();
+                $('.child-sub-menu li').removeClass('selected1');
+                $(this).addClass('selected1');
+            });
+
+            $(".child-sub-menu li").click(function () {
+                $(".child-sub-menu").addClass("selectul");
+            });
+        </script>
+
+        <script>
+            $(function () {
+                $('#edit').editable({ inlineMode: false, autosave: true, height: 100, imageUploadURL: '/Upload', })
+
+            });
+        </script>
+        <script>
+            $("#searchkey1").focus(function () {
+                $(".sb").show();
+            });
+
+            $("#searchkey1").focusout(function () {
+                $(".sb").hide();
+            });
+
+            $("#searchkey2").focus(function () {
+                $(".sb").show();
+            });
+
+            $("#searchkey2").focusout(function () {
+                $(".sb").hide();
+            });
+
+        </script>
+
+        <script type="text/javascript">
+            $(function () {
+                $(".chkTodayBirthdays").click(function () {
+                    if ($(this).is(":checked")) {
+                        $("#liTodayBirthdays").hide();
+                        try {
+                            UpdateWidgetVisibility('TodayBirthdays', 'false');
+                        } catch (e) {
+
+                        }
+                    } else {
+
+                        $("#liTodayBirthdays").show();
+                        try {
+                            UpdateWidgetVisibility('TodayBirthdays', 'true');
+                        } catch (e) {
+
+                        }
+                    }
+                });
+                $(".chkPeopleRelieving").click(function () {
+                    if ($(this).is(":checked")) {
+                        $("#liPeopleRelieving").hide();
+                        try {
+                            UpdateWidgetVisibility('PeopleRelieving', 'false');
+                        } catch (e) {
+
+                        }
+                    } else {
+                        $("#liPeopleRelieving").show();
+                        try {
+                            UpdateWidgetVisibility('PeopleRelieving', 'true');
+                        } catch (e) {
+
+                        }
+                    }
+                });
+            });
+        </script>
+
+        <script>
+            (function ($) {
+                $.fn.fontResize = function (options) {
+                    var increaseCount = 0;
+                    var self = this;
+
+                    var changeFont = function (element, amount) {
+                        var baseFontSize = parseInt(element.css('font-size'), 10);
+                        var baseLineHeight = parseInt(element.css('line-height'), 10);
+                        element.css('font-size', (baseFontSize + amount) + 'px');
+                        element.css('line-height', (baseLineHeight + amount) + 'px');
+                    };
+
+                    options.increaseBtn.on('click', function (e) {
+                        e.preventDefault();
+                        if (increaseCount === 3) { return; }
+                        self.each(function (index, element) {
+                            changeFont($(element), 2);
+                        });
+                        increaseCount++;
+                    });
+
+                    options.decreaseBtn.on('click', function (e) {
+                        e.preventDefault();
+                        if (increaseCount === -3) { return; }
+                        self.each(function (index, element) {
+                            changeFont($(element), -2);
+                        });
+                        increaseCount--;
+                    });
+                }
+            })(jQuery);
+
+        //$(function () {
+        //    $('body,h1,h2,h3,h4,h5,h6,p,a,span').fontResize({
+        //        increaseBtn: $('#btn-increase'),
+        //        decreaseBtn: $('#btn-decrease')
+        //    });
+        //});
+
+        </script>
+        <script type="text/javascript">
+            var BIContentZoom = 100;
+            $(document).ready(function () {
+                if (cookies.test()) {
+                    if (cookies.get("BIContentZoom") != null) {
+                        BIContentZoom = cookies.get("BIContentZoom");
+                        document.body.style.zoom = BIContentZoom + '%';
+                    }
+                }
+
+            });
+            $("#btn-decrease").on('click', function () {
+                if (BIContentZoom == 85) { return; }
+                else {
+                    BIContentZoom = BIContentZoom - 5;
+                    document.body.style.zoom = BIContentZoom + '%';
+                    UpdateCookie(BIContentZoom);
+                }
+            });
+            $("#btn-increase").on('click', function () {
+                if (BIContentZoom == 115) { return; }
+                else {
+                    BIContentZoom = BIContentZoom + 5;
+                    document.body.style.zoom = BIContentZoom + '%';
+                    UpdateCookie(BIContentZoom);
+                }
+            });
+            function UpdateCookie(newValue) {
+                cookies.set('BIContentZoom', newValue, { expires: 1000 });
+            }
+        </script>
+        <script>
+            $(document).ready(function () {
+                $('.toggle-wrap').hover(function () {
+                    $(".ico-box", this).slideDown();
+                }, function () {
+                    $(".ico-box", this).slideUp();
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                $('.TodayBirthdaysClose').click(function () {
+                    $('#liTodayBirthdays').hide();
+                    $(".chkTodayBirthdays").prop("checked", true);
+                    try {
+                        UpdateWidgetVisibility('TodayBirthdays', 'false');
+                    } catch (e) {
+
+                    }
+
+                });
+                $('.PeopleRelievingClose').click(function () {
+                    $('#liPeopleRelieving').hide();
+                    $(".chkPeopleRelieving").prop("checked", true);
+                    try {
+                        UpdateWidgetVisibility('PeopleRelieving', 'false');
+                    } catch (e) {
+
+                    }
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                $(".dot-click").click(function (e) {
+                    e.preventDefault(); // stops link from making page jump to the top
+                    e.stopPropagation();
+                    $('.applicationlevel').hide();
+                    $(".BIAppsList").fadeToggle();
+                });
+
+                $(".msrch").click(function () {
+                    $(".mob-type-search").fadeToggle();
+                });
+
+                $('.ic').click(function () {
+                    $('.child-menu-ico').hide();
+                    $('#div' + $(this).attr('target')).show(500);
+                });
+
+                //$(".hamburger-click").click(function (e) {
+                //    e.preventDefault(); // stops link from making page jump to the top
+                //        e.stopPropagation();
+                //    $('.MenuLevel').hide();
+                //    $(".BIMenuList").fadeToggle();
+                //});
+
+                /*$('.ic2').click(function() {
+                   $('.second-child-menu-ico').hide();
+                   $('#div' + $(this).attr('target')).show(500);
+                });*/
+
+                $('.ic').click(function () {
+                    $('.ic').removeClass("bg-act");
+                    $(this).addClass("bg-act");
+                });
+
+                /*$('.ic2').click(function() {
+                   $('.ic2').removeClass("bg-act");
+                   $(this).addClass("bg-act");
+                });*/
+                ;
+
+
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                $('.js-example-basic-single').select2();
+            });
+        </script>
+        <script>
+            $('.getform1').on('click', function (e) {
+                //if ($(".fillDetail").hasClass("show-menu")) {
+                //    $('.fillDetail').removeClass('show-menu');
+                //    $('.getform1').removeClass('mins');
+                //} else {
+                //    $('.fillDetail').addClass('show-menu');
+                //    $('.getform1').addClass('mins');
+                //}
+                $('.fillDetail').height($(window).height() - ($('.fillDetail').offset().top + 20));
+                e.preventDefault(); // stops link from making page jump to the top
+                e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
+                if ($(".fillDetail").hasClass("show-menu")) {
+                    $('.fillDetail').removeClass('show-menu');
+                    $('.getform1').removeClass('mins');
+                } else {
+                    $('.fillDetail').addClass('show-menu');
+                    $('.getform1').addClass('mins');
+                }
+            });
+            $('.fillDetail').click(function (e) {
+                e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
+            });
+            $('body').click(function () {
+                $('.fillDetail').removeClass('show-menu');
+                $('.getform1').removeClass('mins');
+                //$('.applicationlevel').hide();
+                //$('.MenuLevel').hide();
+                //$(".BIAppsList").fadeOut();
+                //$(".BIMenuList").fadeOut();
+
+            });
+        </script>
+        <style type="text/css">
+            .portlet-placeholder {
+                border: 3px dashed grey;
+                margin: 0 1em 1em 0;
+                height: 388px;
+            }
+
+            .user-img {
+                padding: 0px;
+            }
+
+
+            .topbar-profile-avatar {
+                position: relative;
+                top: 10px;
+                box-sizing: border-box;
+                width: 30px;
+                height: 29px;
+                /*border: 2px solid #dddada;*/
+                border-radius: 50%;
+                overflow: hidden;
+                display: inline-block !important;
+                background: #eee url('../Resources/Images/loading_16_T.gif') 2px 2px no-repeat;
+                background-size: 50%;
+                background-position: center;
+            }
+
+                .topbar-profile-avatar img {
+                    vertical-align: middle;
+                    width: 31px;
+                    border-radius: 0px;
+                    border: none;
+                }
+
+            .Widget-avatar {
+                box-sizing: border-box;
+                width: 65px;
+                height: 65px;
+                border: 2px solid #dddada;
+                border-radius: 50%;
+                overflow: hidden;
+                display: inline-block !important;
+                background: #eee url('../Resources/Images/loading_16_T.gif') 2px 2px no-repeat;
+                background-position: center;
+            }
+
+                .Widget-avatar img {
+                    vertical-align: middle;
+                    width: 63px;
+                    border-radius: 0px;
+                    border: none;
+                }
+
+            .switch-chanls .sliderc {
+                background-color: #dbdddf;
+            }
+
+            .switch-chanls input:checked + .sliderc {
+                background-color: #1269c3; /*#44c95b;*/
+            }
+        </style>
+        <script>
+
+            $(function () {
+                $("#sortable").sortable({
+                    placeholder: "portlet-placeholder ui-state-default",
+                    stop: function (event, ui) {
+                        var order = $(this).sortable("serialize");
+                        Widgets = $("#sortable li")
+                        var WidgetsWithOrder = ''
+
+                        for (i = 0; i < Widgets.length; i++) {
+                            if ($(Widgets[0])[0].id != null || $(Widgets[0])[0].id != '') {
+                                WidgetsWithOrder = WidgetsWithOrder + $(Widgets[i])[0].id.replace('li', '') + ','
+                            }
+                        }
+                        UpdateWidgetPosition(WidgetsWithOrder);
+                        //var hTag = $("#" + ui.item.attr('id') + " h4:first").text().trim();
+                        //alert(hTag + " is dragged." + ui.item.index());
+                    }
+                });
+            });
+
+            /*$( function() {
+              $( "#sortable" ).sortable();
+              $( "#sortable" ).disableSelection();
+            } );*/
+
+            $(function () {
+                $("#sortable1").sortable();
+                $("#sortable1").disableSelection();
+            });
+
+            $('.scrlcnt').mCustomScrollbar({
+                theme: "dark"
+            });
+
+        </script>
+
+
+
+        <script>
+
+
+            $('.homebanner').slick({
+                dots: false,
+                arrows: true,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                responsive: [
+                    {
+                        breakpoint: 1850,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: false
+                        }
+                    },
+                    {
+                        breakpoint: 1450,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: false
+                        }
+                    },
+                    {
+                        breakpoint: 1040,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: false
+                        }
+                    },
+                    {
+                        breakpoint: 999,
+                        settings: {
+                            slidesToShow: 1,
+                            arrows: true,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 888,
+                        settings: {
+                            slidesToShow: 1,
+                            arrows: true,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 490,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+
+                ]
+            });
+        </script>
+
+
+
+
+        <script type="text/javascript">
+            $(function () {
+                $(".datepicker").datepicker({
+                    format: "dd MM yyyy",
+                    autoclose: true,
+                    todayHighlight: true
+                }).datepicker('update', new Date());
+            });
+        </script>
+
+        <script>
+            $(function () {
+                data_revenue = {
+                    'chart_data': [12073.72, 14462.29, 15970.13, 16994.59, 21456.49],
+                    'xAxis': ['2015-16', '2016-17', '2017-18', '2018-19', '2019-20'],
+                    'title': 'Total Income (Millions)'
+                };
+
+
+
+
+                $('.chart_revenure').barChart(data_revenue);
+            });
+
+        </script>
+        <script>
+            $.fn.extend({
+                barChart: function (_data) {
+                    $(this).highcharts({
+                        chart: {
+                            type: 'column',
+
+                        },
+                        title: {
+                            text: _data.title,
+                            style: {
+                                'color': '#00a654'
+                            }
+                        },
+                        subtitle: {
+                            text: ''
+                        },
+                        xAxis: {
+                            categories: _data.xAxis,
+                            crosshair: true
+                        },
+                        legend: {
+                            enabled: false
+                        },
+                        yAxis: {
+                            min: 0,
+
+                        },
+                        credits: {
+                            enabled: false
+                        },
+                        tooltip: {
+                            formatter: function () {
+                                return '<b>' + _data.title + '</b> for ' + this.x +
+                                    ' is <div class="text-center">' + this.y + '</div>';
+                            },
+                            useHTML: true
+                        },
+                        plotOptions: {
+                            column: {
+                                dataLabels: {
+                                    enabled: true,
+                                    crop: false,
+                                    overflow: 'none'
+                                }
+                            }
+                        },
+                        series: [{
+                            name: ' ',
+                            data: _data.chart_data,
+                            color: '#ffcb41'
+
+                        }]
+                    });
+                }
+            });
+        </script>
+
+        <!--icon Tab Slider Start-->
+        <script>
+            $(' .owl_1').owlCarousel({
+                loop: false,
+                margin: 20,
+                responsiveClass: true,
+                autoplay: false,
+                slideSpeed: 400,
+                autoWidth: true,
+                dots: false,
+                infinite: false,
+                paginationSpeed: 1000,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true,
+                        loop: false
+                    },
+                    600: {
+                        items: 2,
+                        nav: true,
+                        loop: false
+                    },
+                    1000: {
+                        items: 6,
+                        nav: true,
+                        loop: false
+                    }
+                }
+            })
+
+            $(document).ready(function () {
+                var li = $(".owl-item li ");
+                $(".owl-item li").click(function () {
+                    li.removeClass('active');
+                });
+            });
+
+            //function Setmaxwidthtoitems(menu) {
+            //    try {
+            //        $('#' + menu + ' .child-sub-menu li a').width(Math.max.apply(Math, $('#' + menu + ' .child-sub-menu li').map(function () { return $(this).width(); }).get()))
+            //    } catch (e) {
+
+            //    }
+            //}
+
+            $('.applicationgrouplevel a').on('click', function (e) {
+                $('.applicationlevel').hide();
+                $('#' + $(e.target).attr('submenuid')).show(500);
+                setTimeout(function () {
+                    $('#' + $(e.target).attr('submenuid') + ' .child-sub-menu li a').css('width', 'auto');
+                    $('#' + $(e.target).attr('submenuid') + ' .child-sub-menu li a').width(Math.max.apply(Math, $('#' + $(e.target).attr('submenuid') + ' .child-sub-menu li').map(function () { return $(this).width(); }).get()))
+                }, 250);
+            });
+
+            $('.ParentMenuLevel a').on('click', function (e) {
+                $('.MenuLevel').hide();
+                $('#' + $(e.target).attr('submenuid')).show(500);
+                setTimeout(function () {
+                    $('#' + $(e.target).attr('submenuid') + ' .child-sub-menu li a').css('width', 'auto');
+                    $('#' + $(e.target).attr('submenuid') + ' .child-sub-menu li a').width(Math.max.apply(Math, $('#' + $(e.target).attr('submenuid') + ' .child-sub-menu li').map(function () { return $(this).width(); }).get()))
+                }, 250);
+            });
+
+            $(".esc-policy  a").on('click', function () {
+                $.cookie('ContentZoom', zoom);
+            });
+
+        </script>
+
+        <!--icon Tab Slider End-->
+        <%--BI Customization--%>
+        <style type="text/css">
+            .introjs-helperNumberLayer {
+                font-weight: normal;
+                min-width: 20px;
+                min-height: 20px;
+                width: auto;
+                height: auto;
+                display: none;
+            }
+
+            .child-sub-menu {
+                padding-top: 7px;
+                padding-left: 30px;
+                padding-right: 30px;
+                background-color: #f6f6f6;
+            }
+
+                .child-sub-menu li {
+                    margin: 0px 5px 5px 0px;
+                }
+
+            .rsbPopup .rsbListItem {
+                margin-bottom: 10px !important;
+                border-bottom: 1px solid #ddd !important;
+                padding-bottom: 10px !important;
+                margin-right: 5px !important;
+            }
+
+            .owl-item {
+                margin-right: 5px !important;
+            }
+
+            .menu-ico .sub-menu li a {
+                min-width: 160px;
+                padding: 10px 15px;
+            }
+
+            .applicationlevel {
+                transition: display 1s,;
+            }
+
+            .child-sub-menu li a {
+                display: inline-block;
+                padding: 10px 15px;
+                text-align: left;
+                transition: width 1s,;
+            }
+
+            /*Missed style form  landing page*/
+            /*.second-child-sub-menu,.child-sub-menu {
+                padding-left: 20px;
+            }*/
+            .help-menu-parent:hover .help-menu, .help-menu-parent:focus .help-menu, .notify-menu-parent:hover .notify-menu, .notify-menu-parent:focus .notify-menu,
+            .account-menu-parent:hover .account-menu, .account-menu-parent:focus .account-menu {
+                z-index: 99;
+            }
+
+            button.owl-prev {
+                position: absolute;
+                left: -25px;
+                top: 20%;
+                transform: translateY(-50%);
+                width: 20px;
+                height: 20px;
+                border-radius: 100% !important;
+                color: #000 !important;
+                font-size: 45px !important;
+                outline: none;
+            }
+
+            button.owl-next {
+                position: absolute;
+                right: -25px;
+                top: 20%;
+                transform: translateY(-50%);
+                width: 20px;
+                height: 20px;
+                border-radius: 100% !important;
+                color: #000 !important;
+                font-size: 45px !important;
+                outline: none;
+            }
+
+            body .owl-stage {
+                width: auto !important;
+                white-space: nowrap;
+            }
+
+                body .owl-stage .owl-item {
+                    position: static;
+                    float: none;
+                    display: inline-block;
+                    vertical-align: top;
+                }
+
+
+            .pendingBadge {
+                background-color: #ecaa0a;
+                color: white !important;
+                border-radius: 10%;
+                font-size: 11px !important;
+                padding: 1px 5px !important;
+                top: -15px;
+                position: relative;
+                left: -5px;
+            }
+        </style>
+        <style type="text/css">
+            .new-message-box {
+                margin: 15px 10px;
+                padding-left: 20px;
+                margin-bottom: 25px !important;
+                font-family: 'lato';
+                font-size: 14px;
+                min-width: 500px;
+            }
+
+                .new-message-box p {
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+
+            .info-tab {
+                width: 30px;
+                height: 30px;
+                display: inline-block;
+                position: relative;
+                top: -3px;
+            }
+
+            .info-tab {
+                float: left;
+                margin-left: -26px;
+            }
+
+                .info-tab i::before {
+                    width: 24px;
+                    height: 24px;
+                    box-shadow: inset 12px 0 13px rgba(0,0,0,0.5);
+                }
+
+                .info-tab i::after {
+                    width: 0;
+                    height: 0;
+                    border: 12px solid transparent;
+                    border-bottom-color: #fff;
+                    border-left-color: #fff;
+                    bottom: -18px;
+                }
+
+                .info-tab i::before, .info-tab i::after {
+                    content: "";
+                    display: inline-block;
+                    position: absolute;
+                    left: 0;
+                    bottom: -17px;
+                    transform: rotateX(60deg);
+                }
+
+            .note-box, .warning-box, .tip-box-success, .tip-box-danger, .tip-box-warning, .tip-box-info, .tip-box-alert {
+                padding: 14px 20px 3px 20px;
+            }
+
+
+            /***Success****/
+
+            .new-message-box-success {
+                background: #8BC34A;
+                padding: 3px;
+                margin: 10px 0;
+            }
+
+            .tip-icon-success {
+                background: #8BC34A;
+            }
+
+            .tip-box-success {
+                color: #33691E;
+                background: #DCEDC8;
+            }
+
+            .tip-icon-success::before {
+                font-size: 15px;
+                content: "\f00c";
+                top: 5px;
+                left: 8px;
+                font-family: FontAwesome;
+                position: absolute;
+                color: white;
+            }
+
+            .tip-icon-success i::before {
+                background: #8BC34A;
+            }
+
+
+            /*******Danger*******/
+            .new-message-box-danger {
+                background: #f44336;
+                padding: 3px;
+                margin: 10px 0;
+            }
+
+            .tip-icon-danger {
+                background: #f44336;
+            }
+
+            .tip-box-danger {
+                color: #b71c1c;
+                background: #FFCCBC;
+            }
+
+            .tip-icon-danger::before {
+                font-size: 15px;
+                content: "\f00d";
+                top: 3px;
+                left: 9px;
+                font-family: FontAwesome;
+                position: absolute;
+                color: white;
+            }
+
+            .tip-icon-danger i::before {
+                background: #f44336;
+            }
+
+            /*******warning*******/
+            .new-message-box-warning {
+                background: #FFEB3B;
+                padding: 3px;
+                margin: 10px 0;
+            }
+
+            .tip-icon-warning {
+                background: #FFEB3B;
+            }
+
+            .tip-box-warning {
+                color: #212121;
+                background: #FFF9C4;
+            }
+
+            .tip-icon-warning::before {
+                font-size: 15px;
+                content: "\f071";
+                top: 3px;
+                left: 7px;
+                font-family: FontAwesome;
+                position: absolute;
+                color: #212121;
+            }
+
+            .tip-icon-warning i::before {
+                background: #FFEB3B;
+            }
+
+            /*******info*******/
+            .new-message-box-info {
+                background: #03A9F4;
+                padding: 3px;
+                margin: 10px 0;
+            }
+
+            .tip-box-info {
+                color: #01579B;
+                background: #B3E5FC;
+            }
+
+            .tip-icon-info {
+                background: #03A9F4;
+            }
+
+                .tip-icon-info::before {
+                    font-size: 15px;
+                    content: "\f129";
+                    top: 3px;
+                    left: 11px;
+                    font-family: FontAwesome;
+                    position: absolute;
+                    color: white
+                }
+
+                .tip-icon-info i::before {
+                    background: #03A9F4;
+                }
+
+
+            /*******alert*******/
+            .new-message-box-alert {
+                background: #FF6F00;
+                padding: 3px;
+                margin: 10px 0;
+            }
+
+            .tip-box-alert {
+                color: #212121;
+                background: #FFF8E1;
+            }
+
+            .tip-icon-alert {
+                background: #FF6F00;
+            }
+
+                .tip-icon-alert::before {
+                    font-size: 15px;
+                    content: "\f06a";
+                    top: 3px;
+                    left: 9px;
+                    font-family: FontAwesome;
+                    position: absolute;
+                    color: white
+                }
+
+                .tip-icon-alert i::before {
+                    background: #FF6F00;
+                }
+
+            .RadSearchBox_Bootstrap .rsbButton {
+                display: none !important;
+            }
+
+            .RadSearchBox_Bootstrap .rsbLoadingIcon {
+                background: transparent url('../Resources/Images/loading_16_T.gif') no-repeat !important;
+                background-size: 100% !important;
+            }
+
+
+            .cbp-vm-options {
+                margin-left: 0px;
+                margin-right: 0px;
+                text-align: left;
+            }
+
+                .cbp-vm-options a {
+                    width: auto;
+                    font-family: 'lato';
+                    font-size: 14px;
+                }
+
+                    .cbp-vm-options a:before {
+                        font-size: 20px;
+                        top: 2px;
+                        position: relative;
+                    }
+
+            .screenlayout {
+                display: block;
+            }
+
+            @media (max-width: 900px) {
+                .screenlayout {
+                    display: none;
+                }
+            }
+
+            .todo-lsts ul {
+                padding-top: 10px;
+                padding-bottom: 0px;
+            }
+
+            .date-list {
+                top: -3px;
+                padding: 5px 0px;
+                width: 50px;
+                height: 50px;
+            }
+
+                .date-list span {
+                    font-size: 17px;
+                }
+
+            .date-list-details {
+                padding-left: 65px;
+            }
+
+            .desktop-set span:before {
+                display: none;
+            }
+
+            .desktop-set img {
+                -webkit-animation: none;
+                -moz-animation: none;
+                animation: none;
+            }
+            /*.homebanner {
+                display: none;
+            }*/
+            .newBadge {
+                animation: none;
+            }
+            /*.dragings {
+                margin-top: 30px;
+            }*/
+            .slick-slider .slick-list {
+                height: 180px !important;
+            }
+
+            .dsktp-banner, .mbl-banner {
+                background: #104895;
+                position: relative;
+                top: -44px;
+            }
+
+            .dragings {
+                margin-top: 18px;
+            }
+        </style>
+
+        <%--Ends here--%>
+        <telerik:RadNotification RenderMode="Lightweight" ID="rnMessage" runat="server" Position="BottomRight"
+            Animation="Fade" EnableRoundedCorners="false" EnableShadow="false" AutoCloseDelay="5000" VisibleTitlebar="false" Style="z-index: 100000">
+            <ContentTemplate>
+                <asp:Label class="col-xs-12 col-sm-12 col-sm-offset-3" runat="server" ID="lblMessageBody"></asp:Label>
+            </ContentTemplate>
+        </telerik:RadNotification>
+        <style type="text/css">
+            .imp {
+                border: none;
+                background-color: rgba(255, 0, 0, 0.65);
+                padding: 4px;
+                position: absolute;
+                z-index: 9999999;
+                top: 0px;
+                left: 1%;
+                width: 40%;
+                margin-left: 30% !important;
+                margin-right: 30% !important;
+                -webkit-box-shadow: 0 6px 6px -6px black;
+                -moz-box-shadow: 0 8px 6px -6px black;
+                box-shadow: 0 2px 6px -6px 8px black;
+            }
+
+                .imp::before {
+                    content: "";
+                    position: absolute;
+                    top: -0px;
+                    left: -20px;
+                    width: 0;
+                    height: 0;
+                    border-left: 20px solid transparent;
+                    border-right: 0px solid transparent;
+                    border-top: 35px solid rgba(255, 0, 0, 0.65);
+                }
+
+                .imp:after {
+                    content: "";
+                    position: absolute;
+                    top: -0px;
+                    right: -20px;
+                    width: 0;
+                    height: 0;
+                    border-right: 20px solid transparent;
+                    border-left: 0px solid transparent;
+                    border-top: 35px solid rgba(255, 0, 0, 0.65);
+                }
+
+            .impText {
+                color: yellow !important;
+                font-size: 18px !important;
+                display: inline;
+            }
+
+            .impCancel {
+                background-color: #dddddd;
+                color: darkblue;
+                font-size: 16px !important;
+                display: inline;
+            }
+        </style>
+        <div id="divImp" runat="server" class="imp">
+            <div runat="server" id="ImpText" class="impText"></div>
+            <div style="float: right; margin: 0px 40px; display: inline;">
+                <asp:Button CssClass="impCancel" runat="server" Text="Cancel Impersonation" ID="butCancelImporsonation" OnClick="butCancelImporsonation_Click" />
+            </div>
+        </div>
+    </form>
+</body>
+</html>
