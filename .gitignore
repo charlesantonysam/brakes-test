@@ -462,18 +462,6 @@ node_modules/
 *.log
 *.iml
 
-# .NET
-bin/
-obj/
-*.dll
-*.exe
-*.pdb
-*.user
-*.suo
-*.cache
-*.log
-*.vscode/
-
 # C#
 *.csproj.user
 *.user
