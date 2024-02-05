@@ -16,12 +16,24 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Restore NuGet Packages
-        run: nuget restore SES.sln
-
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v1.0.3
 
-      - name: Run MSBuild
-        run: |
-          msbuild /p:Configuration=Release SES.sln /v:diag
+      - name: Restore NuGet Packages
+        run: nuget restore SES.sln
+
+      - name: Build
+        run: msbuild /p:Configuration=Release SES.sln /v:diag
+
+      - name: Deploy to Azure App Service
+        uses: Azure/webapps-deploy@v2
+        with:
+          app-name: '<Your-Azure-App-Service-Name>'
+          publish-profile: '<Your-Azure-App-Service-Publish-Profile>'
+          package: '$(System.DefaultWorkingDirectory)/**/bin/Release/*.*'
+        env:
+          MSBUILD_PATH: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe'  # Path to MSBuild on the runner
+          CLIENT_ID: ${{ secrets.SP_CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.SP_CLIENT_SECRET }}
+          TENANT_ID: ${{ secrets.SP_TENANT_ID }}
+          SUBSCRIPTION_ID: ${{ secrets.SP_SUBSCRIPTION_ID }}
