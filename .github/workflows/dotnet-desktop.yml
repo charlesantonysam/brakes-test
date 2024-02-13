@@ -26,7 +26,7 @@ jobs:
         run: msbuild /p:Configuration=Release SES.sln /v:diag
 
       - name: Print Working Directory
-        run: echo "Working Directory: $(System.DefaultWorkingDirectory)"
+        run: echo "Working Directory:$(System.DefaultWorkingDirectory)"
 
       - name: Verify Build Output
         run: ls $(System.DefaultWorkingDirectory)/**/bin/Release/
