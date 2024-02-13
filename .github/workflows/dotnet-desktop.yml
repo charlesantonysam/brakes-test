@@ -26,7 +26,7 @@ jobs:
         run: msbuild /p:Configuration=Release SES.sln /v:diag
 
       - name: Print Working Directory
-        run: echo "Working Directory: $GITHUB_WORKSPACE"
+        run: echo "Working Directory:$GITHUB_WORKSPACE"
 
       - name: Verify Build Output
         run: ls $GITHUB_WORKSPACE/**/bin/Release/
