@@ -30,11 +30,11 @@ jobs:
         run: msbuild /p:Configuration=Release SES.sln /v:diag
 
       - name: Print Working Directory
-        run: echo "Working Directory:$GITHUB_WORKSPACE"
+        run: echo "Working Directory:%~dp0"  # Use %~dp0 for current directory in cmd
 
       - name: Verify Build Output
-        shell: bash
-        run: ls "$GITHUB_WORKSPACE/**/bin/Release/"
+        shell: cmd
+        run: dir "$GITHUB_WORKSPACE\SES\bin\Release\"  # Adjust path if necessary
 
       - name: Deploy to Azure App Service
         uses: Azure/webapps-deploy@v2
@@ -49,8 +49,3 @@ jobs:
             TENANT_ID: ${{ secrets.SP_TENANT_ID }}
             SUBSCRIPTION_ID: ${{ secrets.SP_SUBSCRIPTION_ID }}
             # Add any other environment variables needed for your application
-
-# Optional steps:
-    # - Run tests
-    # - Generate reports
-    # - Perform post-deployment tasks
