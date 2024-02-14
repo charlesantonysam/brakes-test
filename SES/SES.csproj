@@ -21,7 +21,7 @@
     <WorkflowPartId>{5e4211c8-573d-4dbc-97b7-36ed8483cf52}</WorkflowPartId>
     <CspkgPartId>{92a57c50-be3e-4b60-9880-01b54d09f294}</CspkgPartId>
     <SqlPackagePartId>{85aeaa62-ee9c-497d-b120-c14e939bc76b}</SqlPackagePartId>
-    <ActivePublishProfile>azses - Web Deploy</ActivePublishProfile>
+    <ActivePublishProfile>SES</ActivePublishProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

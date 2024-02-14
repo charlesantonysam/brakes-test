@@ -32,13 +32,13 @@ namespace SESWeb
                 // Validating Login Details
                 bool IsAuthenticated = true;
 
-                //if (Session["UserID"] == null || Session["UserName"] == null || Session["LoginName"] == null) // Validating Session Values
-                //{
-                //    Session["UserID"] = "12286";
-                //    Session["UserName"] = "Bharani Kumar";
-                //    Session["LoginName"] = "Bharani Kumar";
-                //    //IsAuthenticated = false;
-                //}
+                if (Session["UserID"] == null || Session["UserName"] == null || Session["LoginName"] == null) // Validating Session Values
+                {
+                    Session["UserID"] = "12286";
+                    Session["UserName"] = "Bharani Kumar";
+                    Session["LoginName"] = "Bharani Kumar";
+                    IsAuthenticated = true;
+                }
 
                 //bool IsAuthenticated = true;
                 if (!HttpContext.Current.User.Identity.IsAuthenticated)
