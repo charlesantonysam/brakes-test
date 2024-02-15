@@ -45,13 +45,13 @@ jobs:
         with:
           publish-profile: |
             <publishData>
-              <publishProfile profileName="BrakesDev - Web Deploy" publishMethod="MSDeploy" publishUrl="brakesdev.scm.azurewebsites.net:443" msdeploySite="BrakesDev/SES" userName="$BrakesDev" userPWD="j6bkBcMPAxpZcLpp6rvBo4lhJd0RjdkMv4EaGsamppJmdAe4BHCwrKstHoPd" destinationAppUrl="https://brakesdev.azurewebsites.net/SES" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="http://windows.azure.com" webSystem="WebSites">
+              <publishProfile profileName="BrakesDev - Web Deploy" publishMethod="MSDeploy" publishUrl="brakesdev.scm.azurewebsites.net:443" msdeploySite="BrakesDev/SES" userName="$BrakesDev" userPWD="j6bkBcMPAxpZcLpp6rvBo4lhJd0RjdkMv4EaGsamppJmdAe4BHCwrKstHoPd" destinationAppUrl="https://brakesdev.azurewebsites.net" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="http://windows.azure.com" webSystem="WebSites">
                 <databases />
               </publishProfile>
-              <publishProfile profileName="BrakesDev - FTP" publishMethod="FTP" publishUrl="ftps://waws-prod-ma1-017.ftp.azurewebsites.windows.net/site/wwwroot/SES" ftpPassiveMode="True" userName="BrakesDev\$BrakesDev" userPWD="j6bkBcMPAxpZcLpp6rvBo4lhJd0RjdkMv4EaGsamppJmdAe4BHCwrKstHoPd" destinationAppUrl="https://brakesdev.azurewebsites.net/SES" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="http://windows.azure.com" webSystem="WebSites">
+              <publishProfile profileName="BrakesDev - FTP" publishMethod="FTP" publishUrl="ftps://waws-prod-ma1-017.ftp.azurewebsites.windows.net/site/wwwroot/SES" ftpPassiveMode="True" userName="BrakesDev\$BrakesDev" userPWD="j6bkBcMPAxpZcLpp6rvBo4lhJd0RjdkMv4EaGsamppJmdAe4BHCwrKstHoPd" destinationAppUrl="https://brakesdev.azurewebsites.net" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="http://windows.azure.com" webSystem="WebSites">
                 <databases />
               </publishProfile>
-              <publishProfile profileName="BrakesDev - Zip Deploy" publishMethod="ZipDeploy" publishUrl="brakesdev.scm.azurewebsites.net:443/SES" userName="$BrakesDev" userPWD="j6bkBcMPAxpZcLpp6rvBo4lhJd0RjdkMv4EaGsamppJmdAe4BHCwrKstHoPd" destinationAppUrl="https://brakesdev.azurewebsites.net/SES" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="http://windows.azure.com" webSystem="WebSites">
+              <publishProfile profileName="BrakesDev - Zip Deploy" publishMethod="ZipDeploy" publishUrl="brakesdev.scm.azurewebsites.net:443/SES" userName="$BrakesDev" userPWD="j6bkBcMPAxpZcLpp6rvBo4lhJd0RjdkMv4EaGsamppJmdAe4BHCwrKstHoPd" destinationAppUrl="https://brakesdev.azurewebsites.net" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="http://windows.azure.com" webSystem="WebSites">
                 <databases />
               </publishProfile>
             </publishData>
