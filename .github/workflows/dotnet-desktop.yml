@@ -38,7 +38,7 @@ jobs:
         with:
           name: build-artifacts
           path: D:\Deployment\Output
-        if-no-files-found: warn
+          if-no-files-found: warn
 
       - name: Verify Build Output
         shell: cmd
