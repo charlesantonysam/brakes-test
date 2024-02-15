@@ -33,15 +33,20 @@ jobs:
       - name: Publish
         run: msbuild /t:Publish /p:Configuration=Release /p:PublishDir=$Publish_Output_Path SES.sln
 
+      - name: Run Tests
+        run: |
+          dotnet test SESWeb/SESWeb.csproj
+
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
         with:
           name: build-artifacts
-          path: $Publish_Output_Path
+          path: D:\Deployment\Output
+        if-no-files-found: warn
 
       - name: Verify Build Output
         shell: cmd
-        run: dir "SESWeb\bin\app.publish"  # Assuming the build output is in 'SES\bin\Release' directory
+        run: dir "SES\bin\Release\"  # Assuming the build output is in 'SES\bin\Release' directory
 
       - name: Deploy to Azure App Service
         uses: Azure/webapps-deploy@v2
@@ -58,7 +63,7 @@ jobs:
                 <databases />
               </publishProfile>
             </publishData>
-          package: $Publish_Output_Path
+          package: D:\Deployment\Output
         env:
           MSBUILD_PATH: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe'
           CLIENT_ID: ${{ secrets.SP_CLIENT_ID }}
