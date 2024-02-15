@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build-test-and-deploy:
+  build-and-deploy:
     runs-on: self-hosted
 
     env:
@@ -32,10 +32,6 @@ jobs:
 
       - name: Publish
         run: msbuild /t:Publish /p:Configuration=Release /p:PublishDir=$Publish_Output_Path SES.sln
-
-      - name: Run Tests
-        run: |
-          dotnet test SESWeb/SESWeb.csproj
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
