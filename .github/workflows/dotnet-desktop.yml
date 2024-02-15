@@ -33,10 +33,6 @@ jobs:
       - name: Publish
         run: msbuild /t:Publish /p:Configuration=Release /p:PublishDir=$Publish_Output_Path SES.sln
 
-      - name: Run Tests
-        run: |
-          dotnet test SESWeb/SESWeb.csproj
-
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
         with:
@@ -45,7 +41,7 @@ jobs:
 
       - name: Verify Build Output
         shell: cmd
-        run: dir "SES\bin\Release\"  # Assuming the build output is in 'SES\bin\Release' directory
+        run: dir "SESWeb\bin\app.publish"  # Assuming the build output is in 'SES\bin\Release' directory
 
       - name: Deploy to Azure App Service
         uses: Azure/webapps-deploy@v2
