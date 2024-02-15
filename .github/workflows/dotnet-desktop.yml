@@ -10,7 +10,6 @@ jobs:
     runs-on: self-hosted
 
     env:
-      Publish_Output_Path: D:\Deployment\Output
       CLIENT_ID: ${{ secrets.SP_CLIENT_ID }}
       CLIENT_SECRET: ${{ secrets.SP_CLIENT_SECRET }}
       TENANT_ID: ${{ secrets.SP_TENANT_ID }}
@@ -30,14 +29,11 @@ jobs:
       - name: Build
         run: msbuild /p:Configuration=Release SES.sln /v:diag
 
-      - name: Publish
-        run: msbuild /t:Publish /p:Configuration=Release /p:PublishDir=$Publish_Output_Path SES.sln
-
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
         with:
           name: build-artifacts
-          path: D:\Deployment\Output
+          path: SESWeb\bin\app.publish\
           if-no-files-found: warn
 
       - name: Verify Build Output
@@ -59,7 +55,7 @@ jobs:
                 <databases />
               </publishProfile>
             </publishData>
-          package: D:\Deployment\Output
+          package: SESWeb\bin\app.publish\
         env:
           MSBUILD_PATH: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe'
           CLIENT_ID: ${{ secrets.SP_CLIENT_ID }}
