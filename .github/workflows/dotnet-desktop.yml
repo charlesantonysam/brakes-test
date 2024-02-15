@@ -42,7 +42,7 @@ jobs:
 
       - name: Verify Build Output
         shell: cmd
-        run: dir "SES\bin\Release\"  # Assuming the build output is in 'SES\bin\Release' directory
+        run: dir "SESWeb\bin\app.publish\"  
 
       - name: Deploy to Azure App Service
         uses: Azure/webapps-deploy@v2
