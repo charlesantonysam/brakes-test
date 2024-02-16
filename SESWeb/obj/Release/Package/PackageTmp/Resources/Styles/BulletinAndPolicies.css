@@ -1,0 +1,586 @@
+﻿.rddlSlide{
+    z-index:99999999 !important;
+}
+.FormHeader{
+     background-color:#d7e8f3 !important;
+}
+.BPpath{
+    min-height:33px;    
+    background-color:rgb(252, 252, 252);
+    padding-top:5px;
+    padding-left:10px;
+    font-family:'Segoe UI',Calibri,Arial;
+    font-size:12px;
+    -webkit-box-shadow: inset 0px 0px 1px 0px rgba(199,199,199,1);
+-moz-box-shadow: inset 0px 0px 1px 0px rgba(199,199,199,1);
+box-shadow: inset 0px 0px 1px 0px rgba(199,199,199,1);
+}
+.BPmanage{
+    margin-bottom:2px;
+    min-height:20px;    
+    background-color:#edf6fc;
+    padding:5px;
+    padding-left:10px;
+    -webkit-box-shadow: 0px 1px 6px 0px rgba(58,59,87,1);
+-moz-box-shadow: 0px 1px 6px 0px rgba(58,59,87,1);
+box-shadow: 0px 1px 6px 0px rgba(58,59,87,1);
+font-family:'Segoe UI',Calibri,Arial;
+    font-size:12px;
+}
+.BPexplorer{
+     padding-left:10px;
+}
+.BPButton,.BPButton:visited{
+    text-decoration:none !important;
+    font-weight:bold !important;    
+   border:2px solid #0f5380  !important;
+   padding:3px !important;      
+   padding-left:8px !important;padding-right:8px !important;
+   width:auto !important;
+   display:inline-block !important;
+      opacity:1 !important;
+    cursor:pointer !important;
+      -webkit-box-shadow: inset 0px 0px 9px 1px rgba(199,199,199,1) !important;
+-moz-box-shadow: inset 0px 0px 9px 1px rgba(199,199,199,1) !important;
+box-shadow: inset 0px 0px 9px 1px rgba(199,199,199,1) !important;
+   border-radius:5px !important;
+   color:#0f5380 !important;
+   background:#d7e8f3 !important;
+
+}
+
+.BPButtonSmall{
+    -webkit-box-shadow: inset 0px 0px 9px 1px rgba(199,199,199,1) !important;
+-moz-box-shadow: inset 0px 0px 9px 1px rgba(199,199,199,1) !important;
+box-shadow: inset 0px 0px 9px 1px rgba(199,199,199,1) !important;  
+   color:#0f5380 !important;
+   background:#d7e8f3 !important;
+    border:1px solid #0f5380  !important;
+    height:15px;    
+    padding:2px !important;
+    text-align:center;
+    cursor:pointer;
+    min-width:50px !important; display:inline-block;
+    border-radius:0px !important;
+    border-bottom-right-radius :3px !important;
+    border-top-right-radius:3px !important;
+}
+.BPButtonSmall:hover{
+    background:#bec7ce !important;
+}
+ .BPButton input,.BPButton:visited input{
+       background:none !important;
+}
+ .BPButton .rbSplitRight{
+     background:url('../Images/downArrow.png') no-repeat 50%;
+     border-left:1px solid #0f5380;
+     border-bottom-right-radius:5px;border-top-right-radius:5px;
+ }
+    .BPButton .rbSplitRight:hover {
+        background-color:#edf6fc;        
+    }
+.BPButton:hover{    
+ 
+}
+.BPpanel-popup{
+
+}
+.BPpanel-overlay{
+        position:absolute;
+    top:0;left:0;
+    width:100%;
+    height:100%;    
+    z-index:99999;
+    background:url('../Images/BPps/bg.png') repeat transparent;
+}
+.BPpanel-popup .panel-body{
+    background-color:white;
+    position:absolute;
+    top:20%;left:20%;
+    min-width:40%;
+    min-height:100px;
+    width:auto;
+    height:auto;
+    margin:auto;
+     z-index:999999;
+}
+
+.BPpanel-popup .panel-msg-body{
+    background-color:white;
+    position:absolute;
+    top:20%;left:20%;
+    min-width:40%;
+    min-height:100px;
+    width:auto;
+    height:auto;
+    margin:auto;
+      z-index:99999999;
+}
+.text-left{
+  display:inline-block;
+  height:20px;
+  border-style:solid;  
+  border-radius:0px !important;
+  border-color:#b8cbde !important;
+  border-width:1px;
+}
+.ObjectNotes{
+       display:block;
+       width:98%;
+    }
+    .FilesList{
+       display:block;
+       width:98%;
+    }
+    .FileView{
+        text-align:center !important;
+        display:block;
+       width:98%;
+        margin:10px;
+    }
+    .imgPreview{
+        margin:auto;
+        border:none;
+        height:80px;
+        width:80px;                
+        background-size:cover !important;        
+    }
+    .ImagePreview{
+        margin:auto;
+        margin-top:10px;
+        margin-bottom:10px;
+        border:1px solid #d7e8f3;
+        width:100%;
+        max-height:400px;        
+        overflow:auto;
+        background:url('../Images/BPps/tbg.png') repeat transparent;
+    }
+.Notes{
+    padding:10px;
+    vertical-align:top !important;
+    display: inline-block;
+  
+}
+
+@media screen and (min-width:720px){
+    .BPexplorer{
+        display:inline-block;        
+        vertical-align:top;   
+    }
+    .ObjectNotes{
+       display:inline-block;
+       vertical-align:top;
+       width:auto !important;
+       min-width:30%;
+       max-width:30%;
+       overflow:auto;
+    }
+    .FilesList{
+        display:inline-block;
+       width:68% !important;
+    }
+    .FileView{
+        text-align:center !important;
+         display:inline-block;
+       width:100% !important;
+      
+    } 
+}
+  .listitem{
+        list-style: none !important;border:none;
+    }
+    .listitemInline{
+        list-style: none !important;border:none;
+        display: inline ;
+    }
+    .fileItem{
+        border:none !important;margin-top:2px;
+        height:25px;display: inline-block !important;margin-right:5px !important ;
+    }
+    .fileItem:hover{
+        color:blue;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .fileItem .icon{
+        height:25px !important;width:auto !important;padding:2px !important;
+    }
+    .icon{
+        height:13px !important;width:11px !important;padding:2px !important;
+    }
+    .fileName{
+        padding-bottom: 3px !important;margin-left: 3px !important;
+    }
+    .fileItem .icon img {position:relative !important;top:3px;height:16px;width:16px;margin-right:3px;}
+    .grayinfo{color:gray;font-style: italic;font-size: 10px;width:100px;}
+    .fileItem .remove{
+        position: relative;
+        float:right;
+        height: 3px;width:3px;padding:3px;cursor: pointer;
+    }
+    .doc, .rtf {
+
+        background: transparent url('../Images/BPps/icon_doc.gif') no-repeat center right;
+    }
+
+    .txt,.xml {
+
+        background: transparent url('../Images/BPps/icon_txt.gif') no-repeat center right;
+    }
+
+    .xls {
+
+        background: transparent url('../Images/BPps/icon_xls.gif') no-repeat center right;
+    }
+    .pps {
+
+        background: transparent url('../Images/BPps/icon_pps.gif') no-repeat center right;
+    }
+
+    .pdf {
+
+        background: transparent url('../Images/BPps/icon_pdf.gif') no-repeat center right;
+    }
+
+    .xpi {
+
+        background: transparent url('../Images/BPps/icon_plugin.gif') no-repeat center right;
+    }
+
+    .fla, .swf {
+
+        background: transparent url('../Images/BPps/icon_flash.gif') no-repeat center right;
+    }
+
+    .zip, .rar, .gzip, .bzip, .ace {
+
+        background: transparent url('../Images/BPps/icon_archive.gif') no-repeat center right;
+    }
+    .folder-wrap{   
+        display:inline-block;             
+      margin-top:5px;
+    }
+    .no-items-msg{
+        margin:10px;
+        color:#edecec;
+        font-size:30px;
+        font-family:Segoe UI;
+        border:3px dashed whitesmoke;
+        padding:20px;        
+        width:auto;
+        display:inline-block;
+    }
+    .cfolder{
+        position:relative;
+        display:inline-block;
+        color:#0f5380;
+        border:none;
+        font-family:Segoe UI;
+        font-size:16px; 
+        padding:10px;     
+        padding-left:35px;
+        cursor:pointer;        
+        text-decoration:none !important;
+        background: transparent url('../Images/BPps/cfolder.png') no-repeat 5px center;
+    }
+     .cfile{
+        vertical-align:top;
+        display:inline-block;
+        color:#0f5380;
+        border:none;
+        font-family:Segoe UI;
+        font-size:16px; 
+        padding:20px;     
+        padding-left:35px;
+        cursor:pointer;        
+        text-decoration:none !important;        
+    }
+    .pfolder,.pfolder:visited{
+        position:relative;
+        display:inline-block;
+        color:#0f5380;
+        border:none;
+         font-size:16px; 
+        font-family:Segoe UI; 
+        padding:10px;     
+        padding-left:35px;
+        cursor:pointer;        
+        text-decoration:none !important;
+        background: transparent url('../Images/BPps/pfolder.png') no-repeat 5px center;
+    }
+     .pfolder:hover{
+         background-color:#d7e8f3;
+     }
+    .files{
+        width:99%;
+        height:auto;
+        position:relative;
+        border:1px solid white;
+        background:white;
+    }
+    .file{
+        font-family:Segoe UI;
+        margin-top:5px;
+        margin-left:10px;
+        width:98%;
+        height:46px;
+        border:none;
+        position:relative;
+        display:inline-block;
+        background-color:white;
+        border:1px solid whitesmoke;
+        text-decoration:none !important;
+    }
+    .file:hover{
+        border:1px solid #B8D6FB !important;
+        border-radius:4px;
+        background:url('../Images/BPps/filebg.png') repeat-x transparent;
+    }
+    .file table{
+        height:100%;
+        width:100%;
+        position:relative;
+        border-collapse:collapse;
+    }
+    .file table tr td.fileIcon{
+        padding:3px;
+        width:30px;
+    }
+    .file table tr td.fileName{
+        font-size:12px !important;
+        padding:5px;
+        width:160px;
+        word-break: break-all;
+        cursor:pointer;
+    }
+    .file table tr td.fileName.fileNameText:hover{
+        color:blue;
+        text-decoration:underline;
+    }
+    .file table tr td.fileDelete{
+        background-color:whitesmoke;
+        border-bottom-right-radius:4px;
+        border-top-right-radius:4px;
+        padding-left:7px;
+        padding-top:3px;
+        width:25px;
+    }
+    .file table tr td.fileDelete:hover{
+        background-color:#FFD5DE;
+    }
+    .file table tr td.fileDelete img{
+        width:18px;
+        height:24px;
+        cursor:pointer;
+    }
+    .file table tr td.fileDelete img:hover{
+        width:20px;
+        height:26px;
+        cursor:pointer;
+        padding-left:0px;
+        padding-top:0px;
+    }
+    .fileInfoText{
+        color:gray;
+        font-size:10px;
+    }
+    .fileInfoText:hover{text-decoration:none !important;}
+    .fileNameText{
+        color:#1a4d8b;
+        font-size:14px;
+    }   
+    .folder32{ background: transparent url('../Images/BPps/folder.png') no-repeat center right;}
+    .aac32{ background: transparent url('../Images/BPps/aac.png') no-repeat center right;}
+    .ai32{ background: transparent url('../Images/BPps/ai.png') no-repeat center right;}
+    .aiff32{ background: transparent url('../Images/BPps/aiff.png') no-repeat center right;}
+    .avi32{ background: transparent url('../Images/BPps/avi.png') no-repeat center right;}
+    .bmp32{ background: transparent url('../Images/BPps/bmp.png') no-repeat center right;}
+    .c32{ background: transparent url('../Images/BPps/c.png') no-repeat center right;}
+    .cpp32{ background: transparent url('../Images/BPps/cpp.png') no-repeat center right;}
+    .css32{ background: transparent url('../Images/BPps/css.png') no-repeat center right;}
+    .dat32{ background: transparent url('../Images/BPps/dat.png') no-repeat center right;}
+    .dmg32{ background: transparent url('../Images/BPps/dmg.png') no-repeat center right;}
+    .doc32{ background: transparent url('../Images/BPps/doc.png') no-repeat center right;}
+    .dotx32{ background: transparent url('../Images/BPps/dotx.png') no-repeat center right;}
+    .dwg32{ background: transparent url('../Images/BPps/dwg.png') no-repeat center right;}
+    .dxf32{ background: transparent url('../Images/BPps/dxf.png') no-repeat center right;}
+    .eps32{ background: transparent url('../Images/BPps/eps.png') no-repeat center right;}
+    .exe32{ background: transparent url('../Images/BPps/exe.png') no-repeat center right;}
+    .flv32{ background: transparent url('../Images/BPps/flv.png') no-repeat center right;}
+    .gif32{ background: transparent url('../Images/BPps/gif.png') no-repeat center right;}
+    .h32{ background: transparent url('../Images/BPps/h.png') no-repeat center right;}
+    .hpp32{ background: transparent url('../Images/BPps/hpp.png') no-repeat center right;}
+    .html32,.htm32{ background: transparent url('../Images/BPps/html.png') no-repeat center right;}
+    .ics32{ background: transparent url('../Images/BPps/ics.png') no-repeat center right;}
+    .iso32{ background: transparent url('../Images/BPps/iso.png') no-repeat center right;}
+    .java32{ background: transparent url('../Images/BPps/java.png') no-repeat center right;}
+    .jpg32{ background: transparent url('../Images/BPps/jpg.png') no-repeat center right;}
+    .js32{ background: transparent url('../Images/BPps/js.png') no-repeat center right;}
+    .key32{ background: transparent url('../Images/BPps/key.png') no-repeat center right;}
+    .less32{ background: transparent url('../Images/BPps/less.png') no-repeat center right;}
+    .mid32{ background: transparent url('../Images/BPps/mid.png') no-repeat center right;}
+    .mp332{ background: transparent url('../Images/BPps/mp3.png') no-repeat center right;}
+    .mp432{ background: transparent url('../Images/BPps/mp4.png') no-repeat center right;}
+    .mpg32{ background: transparent url('../Images/BPps/mpg.png') no-repeat center right;}
+    .odf32{ background: transparent url('../Images/BPps/odf.png') no-repeat center right;}
+    .ods32{ background: transparent url('../Images/BPps/ods.png') no-repeat center right;}
+    .odt32{ background: transparent url('../Images/BPps/odt.png') no-repeat center right;}
+    .otp32{ background: transparent url('../Images/BPps/otp.png') no-repeat center right;}
+    .ots32{ background: transparent url('../Images/BPps/ots.png') no-repeat center right;}
+    .ott32{ background: transparent url('../Images/BPps/ott.png') no-repeat center right;}
+    .pdf32{ background: transparent url('../Images/BPps/pdf.png') no-repeat center right;}
+    .php32{ background: transparent url('../Images/BPps/php.png') no-repeat center right;}
+    .png32{ background: transparent url('../Images/BPps/png.png') no-repeat center right;}
+    .ppt32,.pps32{ background: transparent url('../Images/BPps/ppt.png') no-repeat center right;}
+    .psd32{ background: transparent url('../Images/BPps/psd.png') no-repeat center right;}
+    .py32{ background: transparent url('../Images/BPps/py.png') no-repeat center right;}
+    .qt32{ background: transparent url('../Images/BPps/qt.png') no-repeat center right;}
+    .rar32{ background: transparent url('../Images/BPps/rar.png') no-repeat center right;}
+    .rb32{ background: transparent url('../Images/BPps/rb.png') no-repeat center right;}
+    .rtf32{ background: transparent url('../Images/BPps/rtf.png') no-repeat center right;}
+    .sass32{ background: transparent url('../Images/BPps/sass.png') no-repeat center right;}
+    .scss32{ background: transparent url('../Images/BPps/scss.png') no-repeat center right;}
+    .sql32{ background: transparent url('../Images/BPps/sql.png') no-repeat center right;}
+    .tga32{ background: transparent url('../Images/BPps/tga.png') no-repeat center right;}
+    .tgz32{ background: transparent url('../Images/BPps/tgz.png') no-repeat center right;}
+    .tiff32{ background: transparent url('../Images/BPps/tiff.png') no-repeat center right;}
+    .txt32{ background: transparent url('../Images/BPps/txt.png') no-repeat center right;}
+    .wav32{ background: transparent url('../Images/BPps/wav.png') no-repeat center right;}
+    .xls32{ background: transparent url('../Images/BPps/xls.png') no-repeat center right;}
+    .xlsx32{ background: transparent url('../Images/BPps/xlsx.png') no-repeat center right;}
+    .xml32{ background: transparent url('../Images/BPps/xml.png') no-repeat center right;}
+    .yml32{ background: transparent url('../Images/BPps/yml.png') no-repeat center right;}
+    .zip32,.rar32{ background: transparent url('../Images/BPps/zip.png') no-repeat center right;}
+    ._blank32{ background: transparent url('../Images/BPps/_blank.png') no-repeat center right;}
+    ._page32{ background: transparent url('../Images/BPps/_page.png') no-repeat center right;}
+
+
+ .folder512{ background: transparent url('../Images/BPps/512px/folder.png') no-repeat center right;}
+    .aac512{ background: transparent url('../Images/BPps/512px/aac.png') no-repeat center right;}
+    .ai512{ background: transparent url('../Images/BPps/512px/ai.png') no-repeat center right;}
+    .aiff512{ background: transparent url('../Images/BPps/512px/aiff.png') no-repeat center right;}
+    .avi512{ background: transparent url('../Images/BPps/512px/avi.png') no-repeat center right;}
+    .bmp512{ background: transparent url('../Images/BPps/512px/bmp.png') no-repeat center right;}
+    .c512{ background: transparent url('../Images/BPps/512px/c.png') no-repeat center right;}
+    .cpp512{ background: transparent url('../Images/BPps/512px/cpp.png') no-repeat center right;}
+    .css512{ background: transparent url('../Images/BPps/512px/css.png') no-repeat center right;}
+    .dat512{ background: transparent url('../Images/BPps/512px/dat.png') no-repeat center right;}
+    .dmg512{ background: transparent url('../Images/BPps/512px/dmg.png') no-repeat center right;}
+    .doc512{ background: transparent url('../Images/BPps/512px/doc.png') no-repeat center right;}
+    .dotx512{ background: transparent url('../Images/BPps/512px/dotx.png') no-repeat center right;}
+    .dwg512{ background: transparent url('../Images/BPps/512px/dwg.png') no-repeat center right;}
+    .dxf512{ background: transparent url('../Images/BPps/512px/dxf.png') no-repeat center right;}
+    .eps512{ background: transparent url('../Images/BPps/512px/eps.png') no-repeat center right;}
+    .exe512{ background: transparent url('../Images/BPps/512px/exe.png') no-repeat center right;}
+    .flv512{ background: transparent url('../Images/BPps/512px/flv.png') no-repeat center right;}
+    .gif512{ background: transparent url('../Images/BPps/512px/gif.png') no-repeat center right;}
+    .h512{ background: transparent url('../Images/BPps/512px/h.png') no-repeat center right;}
+    .hpp512{ background: transparent url('../Images/BPps/512px/hpp.png') no-repeat center right;}
+    .html32,.htm512{ background: transparent url('../Images/BPps/512px/html.png') no-repeat center right;}
+    .ics512{ background: transparent url('../Images/BPps/512px/ics.png') no-repeat center right;}
+    .iso512{ background: transparent url('../Images/BPps/512px/iso.png') no-repeat center right;}
+    .java512{ background: transparent url('../Images/BPps/512px/java.png') no-repeat center right;}
+    .jpg512{ background: transparent url('../Images/BPps/512px/jpg.png') no-repeat center right;}
+    .js512{ background: transparent url('../Images/BPps/512px/js.png') no-repeat center right;}
+    .key512{ background: transparent url('../Images/BPps/512px/key.png') no-repeat center right;}
+    .less512{ background: transparent url('../Images/BPps/512px/less.png') no-repeat center right;}
+    .mid512{ background: transparent url('../Images/BPps/512px/mid.png') no-repeat center right;}
+    .mp3512{ background: transparent url('../Images/BPps/512px/mp3.png') no-repeat center right;}
+    .mp4512{ background: transparent url('../Images/BPps/512px/mp4.png') no-repeat center right;}
+    .mpg512{ background: transparent url('../Images/BPps/512px/mpg.png') no-repeat center right;}
+    .odf512{ background: transparent url('../Images/BPps/512px/odf.png') no-repeat center right;}
+    .ods512{ background: transparent url('../Images/BPps/512px/ods.png') no-repeat center right;}
+    .odt512{ background: transparent url('../Images/BPps/512px/odt.png') no-repeat center right;}
+    .otp512{ background: transparent url('../Images/BPps/512px/otp.png') no-repeat center right;}
+    .ots512{ background: transparent url('../Images/BPps/512px/ots.png') no-repeat center right;}
+    .ott512{ background: transparent url('../Images/BPps/512px/ott.png') no-repeat center right;}
+    .pdf512{ background: transparent url('../Images/BPps/512px/pdf.png') no-repeat center right;}
+    .php512{ background: transparent url('../Images/BPps/512px/php.png') no-repeat center right;}
+    .png512{ background: transparent url('../Images/BPps/512px/png.png') no-repeat center right;}
+    .ppt32,.pps512{ background: transparent url('../Images/BPps/512px/ppt.png') no-repeat center right;}
+    .psd512{ background: transparent url('../Images/BPps/512px/psd.png') no-repeat center right;}
+    .py512{ background: transparent url('../Images/BPps/512px/py.png') no-repeat center right;}
+    .qt512{ background: transparent url('../Images/BPps/512px/qt.png') no-repeat center right;}
+    .rar512{ background: transparent url('../Images/BPps/512px/rar.png') no-repeat center right;}
+    .rb512{ background: transparent url('../Images/BPps/512px/rb.png') no-repeat center right;}
+    .rtf512{ background: transparent url('../Images/BPps/512px/rtf.png') no-repeat center right;}
+    .sass512{ background: transparent url('../Images/BPps/512px/sass.png') no-repeat center right;}
+    .scss512{ background: transparent url('../Images/BPps/512px/scss.png') no-repeat center right;}
+    .sql512{ background: transparent url('../Images/BPps/512px/sql.png') no-repeat center right;}
+    .tga512{ background: transparent url('../Images/BPps/512px/tga.png') no-repeat center right;}
+    .tgz512{ background: transparent url('../Images/BPps/512px/tgz.png') no-repeat center right;}
+    .tiff512{ background: transparent url('../Images/BPps/512px/tiff.png') no-repeat center right;}
+    .txt512{ background: transparent url('../Images/BPps/512px/txt.png') no-repeat center right;}
+    .wav512{ background: transparent url('../Images/BPps/512px/wav.png') no-repeat center right;}
+    .xls512{ background: transparent url('../Images/BPps/512px/xls.png') no-repeat center right;}
+    .xlsx512{ background: transparent url('../Images/BPps/512px/xlsx.png') no-repeat center right;}
+    .xml512{ background: transparent url('../Images/BPps/512px/xml.png') no-repeat center right;}
+    .yml512{ background: transparent url('../Images/BPps/512px/yml.png') no-repeat center right;}
+    .zip32,.rar512{ background: transparent url('../Images/BPps/512px/zip.png') no-repeat center right;}
+    ._blank512{ background: transparent url('../Images/BPps/512px/_blank.png') no-repeat center right;}
+    ._page512{ background: transparent url('../Images/BPps/512px/_page.png') no-repeat center right;}
+
+    .folder78{ background: transparent url('../Images/BPps/78px/folder.png') no-repeat center right;}
+    .aac78{ background: transparent url('../Images/BPps/78px/aac.png') no-repeat center right;}
+    .ai78{ background: transparent url('../Images/BPps/78px/ai.png') no-repeat center right;}
+    .aiff78{ background: transparent url('../Images/BPps/78px/aiff.png') no-repeat center right;}
+    .avi78{ background: transparent url('../Images/BPps/78px/avi.png') no-repeat center right;}
+    .bmp78{ background: transparent url('../Images/BPps/78px/bmp.png') no-repeat center right;}
+    .c78{ background: transparent url('../Images/BPps/78px/c.png') no-repeat center right;}
+    .cpp78{ background: transparent url('../Images/BPps/78px/cpp.png') no-repeat center right;}
+    .css78{ background: transparent url('../Images/BPps/78px/css.png') no-repeat center right;}
+    .dat78{ background: transparent url('../Images/BPps/78px/dat.png') no-repeat center right;}
+    .dmg78{ background: transparent url('../Images/BPps/78px/dmg.png') no-repeat center right;}
+    .doc78{ background: transparent url('../Images/BPps/78px/doc.png') no-repeat center right;}
+    .dotx78{ background: transparent url('../Images/BPps/78px/dotx.png') no-repeat center right;}
+    .dwg78{ background: transparent url('../Images/BPps/78px/dwg.png') no-repeat center right;}
+    .dxf78{ background: transparent url('../Images/BPps/78px/dxf.png') no-repeat center right;}
+    .eps78{ background: transparent url('../Images/BPps/78px/eps.png') no-repeat center right;}
+    .exe78{ background: transparent url('../Images/BPps/78px/exe.png') no-repeat center right;}
+    .flv78{ background: transparent url('../Images/BPps/78px/flv.png') no-repeat center right;}
+    .gif78{ background: transparent url('../Images/BPps/78px/gif.png') no-repeat center right;}
+    .h78{ background: transparent url('../Images/BPps/78px/h.png') no-repeat center right;}
+    .hpp78{ background: transparent url('../Images/BPps/78px/hpp.png') no-repeat center right;}
+    .html32,.htm78{ background: transparent url('../Images/BPps/78px/html.png') no-repeat center right;}
+    .ics78{ background: transparent url('../Images/BPps/78px/ics.png') no-repeat center right;}
+    .iso78{ background: transparent url('../Images/BPps/78px/iso.png') no-repeat center right;}
+    .java78{ background: transparent url('../Images/BPps/78px/java.png') no-repeat center right;}
+    .jpg78{ background: transparent url('../Images/BPps/78px/jpg.png') no-repeat center right;}
+    .js78{ background: transparent url('../Images/BPps/78px/js.png') no-repeat center right;}
+    .key78{ background: transparent url('../Images/BPps/78px/key.png') no-repeat center right;}
+    .less78{ background: transparent url('../Images/BPps/78px/less.png') no-repeat center right;}
+    .mid78{ background: transparent url('../Images/BPps/78px/mid.png') no-repeat center right;}
+    .mp378{ background: transparent url('../Images/BPps/78px/mp3.png') no-repeat center right;}
+    .mp478{ background: transparent url('../Images/BPps/78px/mp4.png') no-repeat center right;}
+    .mpg78{ background: transparent url('../Images/BPps/78px/mpg.png') no-repeat center right;}
+    .odf78{ background: transparent url('../Images/BPps/78px/odf.png') no-repeat center right;}
+    .ods78{ background: transparent url('../Images/BPps/78px/ods.png') no-repeat center right;}
+    .odt78{ background: transparent url('../Images/BPps/78px/odt.png') no-repeat center right;}
+    .otp78{ background: transparent url('../Images/BPps/78px/otp.png') no-repeat center right;}
+    .ots78{ background: transparent url('../Images/BPps/78px/ots.png') no-repeat center right;}
+    .ott78{ background: transparent url('../Images/BPps/78px/ott.png') no-repeat center right;}
+    .pdf78{ background: transparent url('../Images/BPps/78px/pdf.png') no-repeat center right;}
+    .php78{ background: transparent url('../Images/BPps/78px/php.png') no-repeat center right;}
+    .png78{ background: transparent url('../Images/BPps/78px/png.png') no-repeat center right;}
+    .ppt32,.pps78{ background: transparent url('../Images/BPps/78px/ppt.png') no-repeat center right;}
+    .psd78{ background: transparent url('../Images/BPps/78px/psd.png') no-repeat center right;}
+    .py78{ background: transparent url('../Images/BPps/78px/py.png') no-repeat center right;}
+    .qt78{ background: transparent url('../Images/BPps/78px/qt.png') no-repeat center right;}
+    .rar78{ background: transparent url('../Images/BPps/78px/rar.png') no-repeat center right;}
+    .rb78{ background: transparent url('../Images/BPps/78px/rb.png') no-repeat center right;}
+    .rtf78{ background: transparent url('../Images/BPps/78px/rtf.png') no-repeat center right;}
+    .sass78{ background: transparent url('../Images/BPps/78px/sass.png') no-repeat center right;}
+    .scss78{ background: transparent url('../Images/BPps/78px/scss.png') no-repeat center right;}
+    .sql78{ background: transparent url('../Images/BPps/78px/sql.png') no-repeat center right;}
+    .tga78{ background: transparent url('../Images/BPps/78px/tga.png') no-repeat center right;}
+    .tgz78{ background: transparent url('../Images/BPps/78px/tgz.png') no-repeat center right;}
+    .tiff78{ background: transparent url('../Images/BPps/78px/tiff.png') no-repeat center right;}
+    .txt78{ background: transparent url('../Images/BPps/78px/txt.png') no-repeat center right;}
+    .wav78{ background: transparent url('../Images/BPps/78px/wav.png') no-repeat center right;}
+    .xls78{ background: transparent url('../Images/BPps/78px/xls.png') no-repeat center right;}
+    .xlsx78{ background: transparent url('../Images/BPps/78px/xlsx.png') no-repeat center right;}
+    .xml78{ background: transparent url('../Images/BPps/78px/xml.png') no-repeat center right;}
+    .yml78{ background: transparent url('../Images/BPps/78px/yml.png') no-repeat center right;}
+    .zip32,.rar78{ background: transparent url('../Images/BPps/78px/zip.png') no-repeat center right;}
+    ._blank78{ background: transparent url('../Images/BPps/78px/_blank.png') no-repeat center right;}
+    ._page78{ background: transparent url('../Images/BPps/78px/_page.png') no-repeat center right;}

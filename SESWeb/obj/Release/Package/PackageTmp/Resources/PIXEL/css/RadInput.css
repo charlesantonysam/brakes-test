@@ -1,0 +1,76 @@
+﻿html body .RadInput_Bootstrap .riTextBox, html body .RadInputMgr_Bootstrap, .RadDropDownList_Bootstrap .rddlInner, .CustomInputBox, .RadComboBoxDropDown_Bootstrap {
+    background-color: #fff !important;
+    border: 1px solid #afafaf !important;
+    border-radius: 0px !important;
+    color: #545454 !important;
+    font-family: 'lato' !important;
+    font-size: 13px !important;
+    /*width: 90% !important;*/
+}
+.form-group.bgn {
+    background-color: #E3E9EF;
+}
+.pop-up-form label {
+float:none;
+}
+.RadDropDownList_Bootstrap .rddlInner {
+border-radius:0px !important;
+}
+.RadPicker_Bootstrap .rcCalPopup, .RadPicker_Bootstrap .rcTimePopup {
+    border: 1px solid #afafaf !important;
+    border-left: none !important;
+    background-image:url('../images/date.png');
+    background-position:0px 0px !important;
+}
+
+.RadSearchBox_Bootstrap .rsbInner, .RadSearchBox_Bootstrap .rsbButton, .RadSearchBox_Bootstrap .rsbButton:active {
+    background-color: #e5e6f1 !important;
+}
+.RadSearchBox .rsbEmptyMessage {
+    font-family:'lato';
+    font-size:13px;
+    font-weight:300;
+    font-style:normal !important;
+}
+.RadSearchBox_Bootstrap .rsbButton {
+border:none !important;
+}
+    .RadSearchBox_Bootstrap .rsbButton:active {
+    border:none !important;
+
+    }
+.RadSearchBox_Bootstrap .rsbButtonSearch .rsbIcon {
+background-image:url('../images/serch.png');
+background-position:0px 0px !important;
+}
+
+.RadSearchBox_Bootstrap .rsbInner {
+border-color:#fff !important;
+box-shadow:none !important;
+border-radius:0px !important;
+padding:3px 0px;
+}
+.RadSearchBox_Bootstrap .rsbInput {
+margin-top:6px;
+min-width:200px;
+}
+.RadSearchBox_Bootstrap .rsbButton {
+    float:right;
+}
+
+.RadUpload_Bootstrap {
+    font-family: 'lato' !important;
+}
+.RadUpload_Bootstrap .ruRemove {
+    color: red;
+    padding-left: 5px;
+    font-size: 10px;
+}
+
+.SearchBox {
+    font-family: 'Lato';
+    font-weight: 500;
+    font-style: normal;
+    color: #7d7d7d;
+    font-size: 14px;
+}

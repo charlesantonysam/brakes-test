@@ -1,0 +1,12 @@
+F:\Mohanraj\Workings\2021\DU NP\DUNPCosting\ESS_Approvals\bin\Debug\DUNPCosting.dll.config
+F:\Mohanraj\Workings\2021\DU NP\DUNPCosting\ESS_Approvals\bin\Debug\DUNPCosting.pdb
+F:\Mohanraj\Workings\2021\DU NP\DUNPCosting\ESS_Approvals\obj\Debug\DUNPCosting.csprojAssemblyReference.cache
+F:\Mohanraj\Workings\2021\DU NP\DUNPCosting\ESS_Approvals\obj\Debug\DUNPCosting.csproj.CoreCompileInputs.cache
+F:\Mohanraj\Workings\2021\DU NP\DUNPCosting\ESS_Approvals\obj\Debug\DUNPCosting.dll
+F:\Mohanraj\Workings\2021\DU NP\DUNPCosting\ESS_Approvals\obj\Debug\DUNPCosting.pdb
+F:\Mohanraj\Workings\2021\DU NP\DUNPCosting\DUNPCosting\bin\Debug\DUNPCosting.dll.config
+F:\Mohanraj\Workings\2021\DU NP\DUNPCosting\DUNPCosting\bin\Debug\DUNPCosting.pdb
+F:\Mohanraj\Workings\2021\DU NP\DUNPCosting\DUNPCosting\obj\Debug\DUNPCosting.csprojAssemblyReference.cache
+F:\Mohanraj\Workings\2021\DU NP\DUNPCosting\DUNPCosting\obj\Debug\DUNPCosting.csproj.CoreCompileInputs.cache
+F:\Mohanraj\Workings\2021\DU NP\DUNPCosting\DUNPCosting\obj\Debug\DUNPCosting.dll
+F:\Mohanraj\Workings\2021\DU NP\DUNPCosting\DUNPCosting\obj\Debug\DUNPCosting.pdb

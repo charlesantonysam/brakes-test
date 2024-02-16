@@ -1,0 +1,24 @@
+﻿ .BPexplorer{
+        display:inline-block;        
+        vertical-align:top;   
+    }
+    .ObjectNotes{
+       display:inline-block;
+       vertical-align:top;
+       width:auto !important;
+       min-width:30%;
+       max-width:30%;
+       overflow:auto;
+    }
+    .FilesList{
+        display:inline-block;
+       width:68% !important;
+    }
+    .FileView{
+        text-align:center !important;
+         display:inline-block;
+       width:100% !important;
+    }
+.imgPreview {
+    background-position:0 !important;
+} 

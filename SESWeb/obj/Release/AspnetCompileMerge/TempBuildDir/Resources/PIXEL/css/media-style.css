@@ -1,0 +1,587 @@
+
+
+
+
+@media  (max-width:1920px) {
+	.menu-ico{height: 347px;}
+}
+
+@media  (max-width:1900px) {
+	.menu-ico{height: 343px;}
+}
+
+@media  (max-width:1800px) {
+	.menu-ico{height: 323px;}
+}
+
+
+@media (max-width:1700px) {
+
+.dragable-move li{margin:0px 8px;}
+.dragable-move .todo-lsts li{margin:0px;}
+.menu-ico{height: 304px;}
+
+}
+
+@media  (max-width:1650px) {
+	.menu-ico{height: 296px;}
+}
+
+@media  (max-width:1600px) {
+	.menu-ico{height: 287px;}
+}
+@media  (max-width:1550px) {
+	.menu-ico{height: 277px;}
+}
+
+@media (max-width:1500px) {
+    .cbp-vm-switcher ul li{width:48.4%;}
+    .cbp-vm-view-grid ul li{width:32%;}
+    .cbp-vm-switcher .activites-drag .time-min{left:-24%;}
+    .cbp-vm-view-grid .activites-drag .time-min{left: -35%;}
+    .menu-ico{height: 268px;}
+}
+
+@media (max-width:1485px){
+    .payroll-details-page-top.payroll-seperate .row .pay-frm .col-sm-1 label{display:none !important;}
+}
+@media (max-width:1480px) {
+
+ .serch-tag input[type="search"]{margin: 3px 0 0 15px;padding: 5px 50px 5px 10px;width: 425px;background:#e5e6f1 url("../images/serch.png") no-repeat scroll 400px center;}
+ 
+ .sb{    margin-left: 15px;width: 425px;}
+ 
+ .serch-tag input[type="search"]:focus{background:#e5e6f1 url("../images/serch.png") no-repeat scroll 400px center;} 
+
+ .pbom-config .form-group{margin-right:25px;}
+ 
+ .ess-ico-tile-cont {padding-left: 5px;}
+ .ess-ico-tile-cont h4{font-size: 25px;}
+ 
+}
+
+@media (max-width:1460px) {
+	.dragable-move li {margin: 0px 7px;}
+	.cbp-vm-switcher ul li {margin: 0px 9px;}
+	.cbp-vm-view-grid ul li{margin: 0px 7px;}
+	.pay-frm .row .col-sm-4{flex: auto;max-width: 50%;}
+	.pay-frm .row .col-sm-3{flex: auto;max-width: 33%;}
+}
+
+@media  (max-width:1452px) {
+    .ess-ico-tile-img, .ess-ico-tile-cont{display:block;text-align: center;}
+	.ess-ico-tile-img{margin-bottom:15px;}
+	.esb2 {height: 443px;}
+}
+
+@media  (max-width:1450px) {
+	.menu-ico{height: 259px;}
+	.time-events li div:nth-child(2) {margin-left: 50px;}
+}
+
+@media (max-width:1420px) {
+    .ess-profile-tab .nav-tabs{padding-left:150px;}
+}
+
+@media (max-width:1400px) {
+    .cbp-vm-view-grid .activites-drag .time-min{left: -37%;}
+    .menu-ico{height: 249px;padding: 40px 0 50px 5px;}
+}
+
+@media (max-width:1385px) {
+	.cbp-vm-switcher ul li {margin: 0px 8px;}
+	.cbp-vm-view-grid ul li{margin: 0px 7px;}
+}
+
+@media (max-width:1370px) {
+
+.avail-pos li{margin-left:12px;padding-left:15px;}
+.avail-pos ul{ margin: 24px 0 0;}
+.dashbord:before{width:9%;}
+.menu-ico{height: 242px;}
+ .ess-profile-tab .nav-tabs{padding-left:80px;}
+ 
+ 
+}
+
+@media (max-width:1338px){
+    .conveyance-pdf-block .general-first-row.bt-none.dlb .approve-form-field{padding-left:0px;display:block;}
+}
+
+@media (max-width:1300px) {
+.menu-ico{height: 231px;}
+.time-events li div:nth-child(2) {margin-left: 30px;}
+.ess-profile-tab .nav-tabs{padding-left:20px;}
+}
+
+@media (max-width:1310px) {
+	.dragable-move li {margin: 0px 6px;}
+	.cbp-vm-view-grid ul li {margin: 0px 6px;}
+	 .cbp-vm-view-grid .activites-drag .time-min{left: -42%;}
+	 .menu-ico{height: 260px;}
+}
+
+@media (max-width:1280px) {
+
+
+.table-bordered.proj-tab td{white-space:nowrap;}
+.table-bordered.proj-tab th{white-space:nowrap;}
+.table-bordered.proj-tab tr{white-space:nowrap;}
+  
+}
+
+@media (max-width:1250px) {
+    .cbp-vm-switcher ul li {margin: 0px 7px;}
+    .cbp-vm-view-grid ul li {margin: 0px 6px;}
+     .cbp-vm-switcher .activites-drag .time-min {left: -27%;}
+     .cbp-vm-view-grid .activites-drag .time-min{left: -45%;}
+     .ess-profile-tab .nav-tabs{display: inline-flex;overflow-x: scroll;overflow-y: hidden;width: 100%;flex-wrap: nowrap;padding-left:0px;}
+    .ess-profile-tab .nav-tabs li a{white-space: nowrap;}
+    .ess-profile-tab .nav-tabs li {margin: 0 20px;}
+}
+
+@media (max-width:1220px) {
+    .personal-detail-cont ul li{width:31%;}
+}
+
+@media (min-width:1100px) and (max-width:1320px) {
+
+.project-status li.ckd {
+    background: rgba(0, 0, 0, 0) url("../images/chk.jpg") no-repeat scroll 0 3px;
+    line-height: normal;
+    padding-left: 17px;
+	font-size:12px;margin-bottom:10px;margin-top:5px;
+}
+
+.project-status li.nckd {
+    background: rgba(0, 0, 0, 0) url("../images/nchk.jpg") no-repeat scroll 0 3px;
+    line-height: normal;
+    padding-left: 17px;
+	font-size:12px;
+}
+
+}
+@media (max-width:1205px){
+    .conveyance-first.main-btns li.eligible-amt{float: none;}
+    .conveyance-first.main-btns li{margin-bottom:10px;}
+}
+ @media (max-width:1200px){
+	.ess-ico-tile-img, .ess-ico-tile-cont{display:block;text-align: center;}
+	.ess-ico-tile-img{margin-bottom:15px;}
+	.esb2 {height: 440px;}
+	.time-events li div:last-child {position: absolute;right: 25px;top: 30px;}
+	.time-events li div:nth-child(2){display: block;margin-left: 0;}
+}
+
+ @media (max-width:1160px) {
+	.dragable-move li {margin: 0px 5px;}
+	.cbp-vm-switcher ul li {margin: 0px 6px;}
+	.cbp-vm-view-grid ul li {margin: 0px 5px;}
+	.cbp-vm-switcher .activites-drag .time-min {left: -29%;}
+     .cbp-vm-view-grid .activites-drag .time-min{left: -50%;}
+     .serch-tag input[type="search"]{margin: 3px 0 0 0px;}
+     .sb{margin-left: 0px;}
+}
+
+@media (max-width:1136px){
+    .serch-tag input[type="search"]{width: 390px;    
+    background: #e5e6f1 url(../images/serch.png) no-repeat scroll 360px center;}
+     .serch-tag input[type="search"]:focus{background:#e5e6f1 url("../images/serch.png") no-repeat scroll 370px center;} 
+     .sb{width: 390px;}
+}
+
+@media (max-width:1100px) {
+    .personal-detail-cont ul li{width:49%;}
+    .profile-user-img{left:20px;}
+    .profile-user-img img{height:150px;}
+.cbp-vm-switcher .activites-drag .time-min {left: -31%;}
+     .cbp-vm-view-grid .activites-drag .time-min{left: -54%;}
+.dashbord:before{width:13%;} 
+
+.menu-layer li:first-child{width:12%;}
+
+.main-proj.row {
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+.tabs-projects .col-lg-6.col-md-12.col-sm-12.col-xs-12{width:100%;max-width:100%;flex:0 0 100%;}
+.tabs-projects .col-lg-6.col-md-12.col-sm-12.col-xs-12.pd-l{width:100%;max-width:100%;flex:0 0 100%;}
+
+.table-bordered.proj-tab td{white-space:nowrap;}
+.table-bordered.proj-tab th{white-space:nowrap;}
+.table-bordered.proj-tab tr{white-space:nowrap;}
+
+.menu-layer li{width:14%;margin-right:18px;}
+
+
+
+.pbom-config label{float:none;display:block;margin-bottom:5px;}
+
+.section.team-members .col-lg-9.col-md-12.col-sm-12.nopad-left{padding-left:15px;}
+
+.section.requests .col-lg-2.col-md-4.col-sm-4.col-xs-12{margin-bottom:10px;max-width:33.33%;flex:0 0 33%;}
+
+.user-det li{margin-bottom:10px;}
+
+}
+
+@media (max-width:1076px){
+    .serch-tag input[type="search"]{width: 380px;    
+    background: #e5e6f1 url(../images/serch.png) no-repeat scroll 350px center;}
+     .serch-tag input[type="search"]:focus{background:#e5e6f1 url("../images/serch.png") no-repeat scroll 360px center;} 
+     .sb{width: 380px;}
+}
+
+@media (max-width:1070px){
+    .payroll-seperate .pay-frm .col-sm-3 label{display:block;width:100%;margin-bottom: 10px;}
+    .payroll-seperate .pay-frm .col-sm-4 label{display:block;width:100%;margin-bottom: 10px;}
+    .payroll-seperate .pay-frm .col-sm-3{flex: auto; max-width: 30%;}
+    .payroll-seperate .pay-frm .col-sm-3 select{width: 100% !important;}
+    .payroll-seperate .pay-frm .col-sm-4{flex: auto; max-width: 40%;}
+    .payroll-details-page-top .row .pay-frm .col-sm-4.dbl-select select{width:40%;}
+    .payroll-seperate .pay-frm .col-sm-1 label {display: inline-block;width: 100%;position: relative;margin-bottom: 10px;}
+    .payroll-details-page-top.payroll-seperate .row .pay-frm .col-sm-1 label{display:block !important;}
+    
+}
+
+    @media (max-width:1060px) {
+        .menu-ico .sub-menu li{margin:0 8px;}
+        .cbp-vm-switcher .activites-drag .time-min {left: -34%;}
+     .cbp-vm-view-grid .activites-drag .time-min{left: -60%;}
+     .right-options li{margin: 5px 7px;}
+     .serch-tag input[type="search"]{width: 370px;    
+    background: #e5e6f1 url(../images/serch.png) no-repeat scroll 340px center;}
+     .serch-tag input[type="search"]:focus{background:#e5e6f1 url("../images/serch.png") no-repeat scroll 350px center;} 
+     .sb{width: 370px;}
+     
+    }
+    
+    @media (max-width:1040px) {
+        .menu-ico .sub-menu{
+            display: inline-flex;overflow-x: scroll;overflow-y: hidden;width: 100%;flex-wrap: inherit;}
+        .menu-ico .sub-menu li{width:160px;text-align:center;}
+        .menu-ico .sub-menu li a{display:block;padding: 10px;border-top-right-radius: 5px;}
+        .menu-ico .sub-menu li a:nth-child(2){padding: 4px 25px;top:2px;    margin-bottom: 5px;}
+        .menu-ico .sub-menu li a:first-child{
+            border-bottom-left-radius: 0px;}
+            .menu-ico{height: 310px;}
+            
+        .serch-tag input[type="search"]{width: 340px;    
+    background: #e5e6f1 url(../images/serch.png) no-repeat scroll 310px center;}
+     .serch-tag input[type="search"]:focus{background:#e5e6f1 url("../images/serch.png") no-repeat scroll 320px center;} 
+     .sb{width: 340px;}    
+    }
+    
+    @media (max-width:1039px){
+        .esb2 {height: 470px;}
+    }
+    
+ @media (max-width:1010px) {
+	.dragable-move li {margin: 0px 4px;}
+	.cbp-vm-switcher ul li {margin: 0px 5px;}
+	.cbp-vm-view-grid ul li{margin: 0px 4px;}
+	.pay-frm .row .col-sm-4{flex: auto;max-width: 100%;margin-bottom:10px;}
+	/*.pay-frm .row .col-sm-3{flex: auto;max-width: 100%;margin-bottom:10px;}*/
+	.payroll-details-page-top .row .pay-frm .col-sm-3 select{display: inline-block;width: 100%;position: relative;margin-top: 20px;margin-bottom: 20px;}
+	.payroll-details-page-top .row .pay-frm .col-sm-4.dbl-select select{display: inline-block;width: 100%;position: relative;margin-top: 20px;margin-bottom: 0px;margin-right: 0px;
+    margin-left: 0;}
+    .payroll-details-page-top .row .pay-frm .col-sm-3 label{display: inline-block;width: 100%;position: relative;margin-bottom: 20px;}
+	
+	.payroll-details-page-top .row .pay-frm .col-sm-2{flex: auto;max-width: 100%;margin-bottom:0px;}
+	
+	.payroll-details-page-top.payroll-seperate .row .pay-frm .col-sm-4.dbl-select select{margin-top: 10px;width:49%;}
+	.payroll-details-page-top.payroll-seperate .row .pay-frm .col-sm-3 select{margin-top:0px;margin-bottom:0px;width:100% !important;}
+	.payroll-seperate .pay-frm .col-sm-1 label{margin-bottom: 20px;}
+	.payroll-seperate .pay-frm .col-sm-3 {flex: auto;max-width: 30%;}
+	.payroll-seperate .pay-frm .row .col-sm-4{flex: auto;max-width: 58%;margin-bottom:10px;}
+	
+}
+
+@media (max-width:1000px){
+    .es6{width:100%;max-width: 100%;flex: auto;margin-bottom:25px;}
+    .ess-ico-tile-img, .ess-ico-tile-cont{display:inline-block;text-align: left;}
+    .esb2 {height: auto;}
+    .essrow {margin: 0 0px;}
+    .conveyance-approval-block .col-sm-6{width:100%;flex: auto;max-width: 100%;}
+    .conveyance-pdf-block{margin-top:20px;}
+    .conveyance-pdf-block .general-first-row.bt-none.dlb .approve-form-field{padding-left:20px;display:inline-block;}
+}
+
+@media (max-width:999px) { 
+
+    .cbp-vm-switcher .activites-drag .time-min {left: -34%;}
+     .cbp-vm-view-grid .activites-drag .time-min{left: -65%;}
+
+
+.serch-tag input[type="search"]{width:235px;background:#e5e6f1 url("../images/serch.png") no-repeat scroll 200px center;}
+
+.serch-tag input[type="search"]:focus{background:#e5e6f1 url("../images/serch.png") no-repeat scroll 200px center;}
+
+ .sb{    margin-left: 0px;width: 235px;}
+
+
+
+}
+
+@media (max-width:950px) { 
+
+    .cbp-vm-switcher .activites-drag .time-min {left: -39%;}
+     .cbp-vm-view-grid .activites-drag .time-min{left: -70%;}
+}     
+
+@media (max-width:940px){
+    .ess-profile-tab .ess-ico-tile-img,.ess-profile-tab  .ess-ico-tile-cont {
+    display: block;text-align: center;}
+} 
+ @media (max-width:900px) {
+	.dragable-move li {margin: 10px 4px;width:100%;}
+	.cbp-vm-options{display:none;}
+	.dragings{margin-top:20px;}
+	.cbp-vm-switcher ul li {width:100%;}
+    .cbp-vm-switcher ul li ul li{width:auto;}
+	.cbp-vm-view-grid ul li {width:100%;margin: 0px 1px;}
+    .cbp-vm-view-grid ul li ul li{width:auto;}
+    div#cbp-vm {width: 100%;}
+    .cbp-vm-view-grid .activites-drag .time-min{left: -24%;}
+    .user-login span{display:none;}
+    
+    .es6{width:100%;max-width: 100%;flex: auto;margin-bottom:25px;}
+    .ess-ico-tile-img, .ess-ico-tile-cont{display:inline-block;text-align: left;}
+    .esb2 {height: auto;}
+    
+    .time-events li div:last-child {position: absolute;right: 25px;top:auto;}
+	.time-events li div:nth-child(2){display: inline-block;margin-left: 200px;}
+    
+}
+
+@media (max-width:870px){
+    .payroll-seperate .pay-frm .row .col-sm-4 {flex: auto;max-width: 55%;margin-bottom: 10px;}
+}
+
+@media (max-width:840px){
+    /*.right-mobl-menu .mobile-search{display:inline-block;}
+    .left-options .serch-tag{display:none;}
+    .sb {margin-left: -70px;width: 220px;padding: 5px 10px;top: 80px;}*/
+    .serch-tag input[type="search"]{width:230px;background:#e5e6f1 url("../images/serch.png") no-repeat scroll 200px center;margin: 3px 0 0 0px;}
+
+.serch-tag input[type="search"]:focus{background:#e5e6f1 url("../images/serch.png") no-repeat scroll 200px center;}
+.sb {margin-left: 0px;width: 230px;}
+
+}
+
+@media (max-width:800px) { 
+
+.left-options li{margin-right:0px;}
+.main-btns li{margin-bottom:10px;}
+
+.dashbord::before{width:15%;}
+.menu-layer li:first-child{width:14%;}
+
+.menu-layer li{width:17%;margin-right:18px;}
+.serch-tag input[type="search"]{width:230px;background:#e5e6f1 url("../images/serch.png") no-repeat scroll 200px center;    margin: 3px 0 0 10px;}
+
+.serch-tag input[type="search"]:focus{background:#e5e6f1 url("../images/serch.png") no-repeat scroll 200px center;}
+
+ .sb{    margin-left: 10px;width: 230px;}
+ 
+ .es6{width:100%;max-width: 100%;flex: auto;margin-bottom:25px;}
+ .personal-detail-cont ul li {}
+ .personal-detail-cont ul{padding-left:100px;}
+ .personal-detail-cont ul{padding-left:10px;padding-top:80px;}
+    .personal-detail-cont .col-sm-2{width:100%;max-width: 100%;flex: auto;}
+    .personal-detail-cont .col-sm-10{width:100%;max-width: 100%;flex: auto;}
+    .personal-detail-cont ul li span{display:block;}
+    .personal-detail-cont{margin-top:100px;}
+    .ess-profile-tab .proplr{padding-left:0px;padding-right:0px;}
+    
+    .menu-layer ul{padding: 0px;margin: 0px;display: inline-flex;overflow-x: scroll;overflow-y: hidden;width: 100%;flex-wrap: nowrap;padding-left: 0px;}
+    .menu-layer ul li a{white-space: nowrap;}
+    .menu-layer ul li{width:100%;margin-right:20px;}
+    .dashbord::before{width:0% !important;}
+    .menu-layer ul li.menus h4{color:#545454;}
+    .menu-layer ul li.menus .hamburger-click img{filter: contrast(1000%) /* black to white */ invert(100%) /* white to off-white */ 
+    sepia(100%) /* off-white to yellow */ saturate(10000%) /* do whatever you want with yellow */ hue-rotate(90deg);}
+    .menu-layer ul li img{padding-right:20px;}
+    
+    
+    .ess-menu-layer ul {padding: 0;margin: 0;display: inline-flex;overflow-x: scroll;overflow-y: hidden;width: 100%;flex-wrap: nowrap;}
+  .ess-menu-layer ul li a{white-space: nowrap;}
+  .ess-profile-tab {padding-top: 30px;position: relative;}
+    
+    
+}
+
+@media (max-width:784px) { 
+    .serch-tag input[type="search"]{width:220px;background:#e5e6f1 url("../images/serch.png") no-repeat scroll 200px center;    margin: 3px 0 0 10px;}
+
+.serch-tag input[type="search"]:focus{background:#e5e6f1 url("../images/serch.png") no-repeat scroll 200px center;}
+
+ .sb{    margin-left: 15px;width: 215px;}
+ .user-login span{display:none;}
+ 
+}
+
+@media (max-width:767px) {
+    .main-logo a span{display:none;}
+   .right-mobl-menu .mobile-search{display:inline-block;}
+    .left-options .serch-tag{display:none;}
+  .activites-drag .time-min {left: -28%;}   
+  .left-mobl-menu{position:relative;z-index:1;max-width: 24.333333%;    
+  flex: 0 0 24.333333%;}
+  .right-mobl-menu{z-index:9;max-width: 74.666667%;flex: 0 0 74.666667%;}
+  .user-login a span{display:none;}
+  .mbl-banner{display:block !important;}
+  .dsktp-banner{display:none !important;}
+  .right-options .notify-menu{left: -280px;}
+  .right-options .account-menu{left:-140px;}
+  .right-mobl-menu .mobl-set{display:inline-block;}
+  .right-mobl-menu .desktop-set{display:none;}
+  .right-mobl-menu .mobl-set img{height:25px;}
+  .getinTouch .heading{display:none;}
+  .getinTouch .new{display:none;}
+  .getinTouch{top:50px;z-index: 1;}
+  .getinTouch .fillDetail{top:10px;}
+  .getinTouch .show-menu.fillDetail {transform: translateX(25px);}
+  .log-mob{display:block;}
+  .log-dsktp{display:none;}
+  .sb {margin-left: -70px;width: 220px;padding: 5px 10px;top: 80px;}
+  .mobile-search .mint-lis{text-align:left;}
+  
+  .es4{width:50%;max-width: 50%;flex: auto;margin-bottom:0px;}
+  .esb2 {height: auto;}
+  
+  .time-events li div:nth-child(2){display: inline-block;margin-left: 150px;}
+  
+  div.dataTables_wrapper div.dataTables_length, div.dataTables_wrapper div.dataTables_filter,
+  div.dataTables_wrapper div.dataTables_info, div.dataTables_wrapper div.dataTables_paginate{
+      text-align:left !important;
+  }
+  div.table-responsive>div.dataTables_wrapper>div.row>div[class^="col-"]:last-child{
+      padding-left:0px;
+  }
+  
+  
+  .payroll-seperate .pay-frm .row .col-sm-4 {flex: auto;max-width: 50%;margin-bottom: 10px;}
+  
+}
+
+@media (max-width:680px){
+    .dashbord::before {width: 17%;}
+    .time-events li div:nth-child(2){display: inline-block;margin-left: 120px;}
+}
+
+@media (max-width:668px){
+    .conveyance-pdf-block .general-first-row.bt-none.dlb .approve-form-field{padding-left:0px;display:block;}
+}
+
+@media (max-width:665px) {
+    .right-options li{margin: 5px 9px;}
+    .child-sub-menu li{margin: 0 4px;}
+}
+
+@media (max-width:600px) {
+   /*.mob-type-search.serch-tag input[type=search] {
+    background: #e5e6f1 url(../images/serch.png) no-repeat 370px center;
+    width: 100%;}
+    .mob-type-search.serch-tag {right: 15px;width: 100%;}*/
+    .menu-ico{height:auto;}
+    .top-bar{height:55px;}
+    .right-options ul {padding: 5px 0px 0px;}
+    .getinTouch .fillDetail {top: 0px;}
+    .account-menu-parent:hover .account-menu, .account-menu-parent:focus .account-menu{top: 120%;}
+    .notify-menu-parent:hover .notify-menu, .notify-menu-parent:focus .notify-menu{top: 115%;}
+    .help-menu-parent:hover .help-menu, .help-menu-parent:focus .help-menu{top: 115%;}
+    .dashbord{margin-top:55px;}
+    .dash-brd{margin-left: 30px;}
+    .menu-ico{top:55px;}
+    .dashbord::before {width: 22%;}
+    .time-events li div:nth-child(2){display: inline-block;margin-left: 100px;}
+    .personal-detail-cont ul{padding-left:10px;padding-top:80px;}
+    .personal-detail-cont .col-sm-2{width:100%;max-width: 100%;flex: auto;}
+    .personal-detail-cont{margin-top:100px;}
+    .ess-profile-tab .nav-tabs{display: inline-flex;overflow-x: scroll;overflow-y: hidden;width: 100%;flex-wrap: nowrap;padding-left:0px;}
+    .ess-profile-tab .nav-tabs li a{white-space: nowrap;}
+    .ess-profile-tab .nav-tabs li {margin: 0 10px;}
+    .breadcrumbs-section{margin-top: 55px;}
+    .pay-frm .row .col-sm-3{flex: auto;max-width: 100%;}
+    .payroll-viewbtn button{margin-top:10px;}
+    .payroll-viewbtn label{display:none !important;}
+    .conveyance-approval-block {position: relative;padding-top: 125px;}
+    .payroll-seperate .pay-frm .row .col-sm-4 {flex: auto;max-width: 100%;margin-bottom: 10px;}
+    .payroll-details-page-top.payroll-seperate .row .pay-frm .col-sm-3 select{margin-bottom:10px;}
+    .payroll-details-page-top.payroll-seperate .row .pay-frm .col-sm-1 label{display:none !important;}
+    
+}
+
+@media (max-width:580px) {
+    .right-options li{margin: 5px 8px;}
+    /*.right-mobl-menu{position:absolute;right:0px;padding-right: 0;}*/
+    .child-sub-menu li{display: inline-block;margin-bottom: 30px;}
+}
+
+
+@media (max-width:550px) { 
+  .cbp-vm-view-grid .activites-drag .time-min {left: -30%;}  
+  .time-events li div:nth-child(2){display: inline-block;margin-left: 70px;}
+  
+}
+
+@media (max-width:540px){
+    .es4{width:100%;max-width: 100%;flex: auto;margin-bottom:0px;}
+}
+
+@media (max-width:500px) { 
+  .cbp-vm-view-grid .activites-drag .time-min {left: -35%;}   
+  .right-mobl-menu {z-index: 9;max-width: 69.666667%;flex: 0 0 69.666667%;    padding-right: 5px;
+    padding-left: 0;}
+  .left-mobl-menu {position: relative;z-index: 1;max-width: 30.333333%;flex: 0 0 30.333333%;    padding-right: 0px;
+    padding-left: 5px;}
+  .dash-brd{margin-left: 50px;}
+   .dashbord::before {width: 25%;}
+   .time-events li div:nth-child(2){display: inline-block;margin-left: 50px;}
+   .leave-approval-first.main-btns li.dfr {float: none;background-color: transparent;box-shadow: none;display: block;width: 100%;text-align: left;}
+   .leave-approval-first.main-btns li:last-child{margin-bottom:0px;}
+   .personal-detail-cont ul li {width:100%;}
+   .personal-detail-cont ul li span {display: inline-block;}
+   .conveyance-table-block select {width: 100%;}
+   .page-top-title {margin-bottom: 20px;}
+   
+}
+
+@media (max-width:460px) { 
+  .cbp-vm-view-grid .activites-drag .time-min {left: -40%;}   
+  .right-options li{margin: 5px 5px;}
+  .right-options li:before{left:-10px;}
+  .time-events li div:nth-child(2){display: inline-block;margin-left: 25px;font-size:14px;}
+  .time-events li div.time-events-shift{font-size:14px;}
+  .conveyance-pdf-block .general-first-row.bt-none.dlb .approve-form-field{padding-left:0px;}
+}
+
+@media (max-width:430px) { 
+  .cbp-vm-view-grid .activites-drag .time-min {left: -45%;}   
+}
+ 
+ 
+ @media (max-width:400px) { 
+  .cbp-vm-view-grid .activites-drag .time-min {left: -50%;}   
+  .right-options .notify-menu {left: -260px;}
+  .dashbord::before {width: 30%;}
+  
+}
+
+ @media (max-width:395px) {
+    .time-events li div:last-child {position: absolute;right: 25px;top: 30px;}
+	.time-events li div:nth-child(2){display: block;margin-left: 0;font-size:15px;}
+	.time-events li div.time-events-shift{font-size:15px;}
+}
+ 
+ @media (max-width:372px){
+    .right-mobl-menu {max-width: 74.666667%;flex: 0 0 74.666667%;}
+  .left-mobl-menu {max-width: 25.333333%;flex: 0 0 25.333333%;}
+}
+
+
+
+
+

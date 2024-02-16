@@ -1,0 +1,848 @@
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.dll.licenses
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.csproj.CoreCompileInputs.cache
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\MyDetailsWeb.dll.config
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\MyDetailsWeb.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\MyDetailsWeb.XmlSerializers.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\MyDetailsWeb.pdb
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\csc.exe
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\csc.exe.config
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\csc.rsp
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\csi.exe
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\csi.exe.config
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\csi.rsp
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.Managed.Core.targets
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\System.AppContext.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\System.Collections.Immutable.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\System.Console.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.Compression.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.FileSystem.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.Pipes.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\System.Reflection.Metadata.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.AccessControl.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Claims.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Principal.Windows.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\System.ValueTuple.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\System.Xml.XmlDocument.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\System.Xml.XPath.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\vbc.exe
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\vbc.exe.config
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\vbc.rsp
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\VBCSCompiler.exe
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\roslyn\VBCSCompiler.exe.config
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\DocumentFormat.OpenXml.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.IdentityModel.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.IdentityModel.Extensions.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.Office.Client.Policy.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.Office.Client.TranslationServices.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.Office.SharePoint.Tools.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.Online.SharePoint.Client.Tenant.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.ProjectServer.Client.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.DocumentManagement.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Publishing.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Runtime.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Runtime.Windows.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Search.Applications.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Search.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Taxonomy.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.UserProfiles.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.WorkflowServices.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Newtonsoft.Json.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\System.Net.Http.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\System.Security.Cryptography.Algorithms.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\System.Security.Cryptography.Encoding.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\System.Security.Cryptography.Primitives.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\System.Security.Cryptography.X509Certificates.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\WindowsBase.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.Data.Edm.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\DocumentFormat.OpenXml.xml
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.Data.Edm.xml
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.csproj.CopyComplete
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.pdb
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.XmlSerializers.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.csprojAssemblyReference.cache
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\MyDetailsWeb.dll.config
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\MyDetailsWeb.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\MyDetailsWeb.XmlSerializers.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\MyDetailsWeb.pdb
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\csc.exe
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\csc.exe.config
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\csc.rsp
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\csi.exe
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\csi.exe.config
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\csi.rsp
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\System.AppContext.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\System.Collections.Immutable.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\System.Console.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.Compression.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.FileSystem.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.Pipes.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\System.Reflection.Metadata.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.AccessControl.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Claims.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\System.ValueTuple.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\System.Xml.XPath.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\vbc.exe
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\vbc.exe.config
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\vbc.rsp
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\VBCSCompiler.exe
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\roslyn\VBCSCompiler.exe.config
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\DJD.Security.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\DocumentFormat.OpenXml.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.IdentityModel.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.IdentityModel.Extensions.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.Office.Client.Policy.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.Office.Client.TranslationServices.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.Office.SharePoint.Tools.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.Online.SharePoint.Client.Tenant.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.ProjectServer.Client.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.DocumentManagement.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Publishing.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Runtime.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Runtime.Windows.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Search.Applications.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Search.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Taxonomy.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.UserProfiles.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.WorkflowServices.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Newtonsoft.Json.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Oracle.ManagedDataAccess.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\System.Net.Http.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\System.Security.Cryptography.Algorithms.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\System.Security.Cryptography.Encoding.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\System.Security.Cryptography.Primitives.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\System.Security.Cryptography.X509Certificates.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Telerik.Web.UI.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Telerik.Web.UI.Skins.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Telerik.Windows.Documents.Core.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Telerik.Windows.Documents.Fixed.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Telerik.Windows.Documents.Flow.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Telerik.Windows.Documents.Flow.FormatProviders.Pdf.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Telerik.Windows.Documents.Spreadsheet.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Telerik.Windows.Maths.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Telerik.Windows.Zip.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\WindowsBase.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.Data.Edm.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\DocumentFormat.OpenXml.xml
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Newtonsoft.Json.xml
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.Data.Edm.xml
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.dll.licenses
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.csproj.CoreCompileInputs.cache
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.csproj.CopyComplete
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.pdb
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.XmlSerializers.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.Azure.KeyVault.Core.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.Data.OData.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.Data.Services.Client.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Configuration.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.DataMovement.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\System.Spatial.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.Azure.KeyVault.Core.xml
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.Data.OData.xml
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.Data.Services.Client.xml
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.pdb
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.xml
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.DataMovement.pdb
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.DataMovement.xml
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\System.Spatial.xml
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\de\Microsoft.Data.Edm.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\es\Microsoft.Data.Edm.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\fr\Microsoft.Data.Edm.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\it\Microsoft.Data.Edm.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\ja\Microsoft.Data.Edm.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\ko\Microsoft.Data.Edm.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\ru\Microsoft.Data.Edm.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\de\Microsoft.Data.OData.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\es\Microsoft.Data.OData.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\fr\Microsoft.Data.OData.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\it\Microsoft.Data.OData.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\ja\Microsoft.Data.OData.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\ko\Microsoft.Data.OData.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\ru\Microsoft.Data.OData.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\de\Microsoft.Data.Services.Client.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\es\Microsoft.Data.Services.Client.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\fr\Microsoft.Data.Services.Client.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\it\Microsoft.Data.Services.Client.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\ja\Microsoft.Data.Services.Client.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\ko\Microsoft.Data.Services.Client.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\ru\Microsoft.Data.Services.Client.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\de\System.Spatial.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\es\System.Spatial.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\fr\System.Spatial.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\it\System.Spatial.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\ja\System.Spatial.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\ko\System.Spatial.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\ru\System.Spatial.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\zh-Hans\System.Spatial.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\bin\zh-Hant\System.Spatial.resources.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.csprojAssemblyReference.cache
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.Azure.KeyVault.Core.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.Data.OData.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.Data.Services.Client.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Configuration.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.DataMovement.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\System.Spatial.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.Azure.KeyVault.Core.xml
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.Data.OData.xml
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.Data.Services.Client.xml
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.pdb
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.xml
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.DataMovement.pdb
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.DataMovement.xml
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\Newtonsoft.Json.xml
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\System.Spatial.xml
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\de\Microsoft.Data.Edm.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\es\Microsoft.Data.Edm.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\fr\Microsoft.Data.Edm.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\it\Microsoft.Data.Edm.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\ja\Microsoft.Data.Edm.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\ko\Microsoft.Data.Edm.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\ru\Microsoft.Data.Edm.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\de\Microsoft.Data.OData.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\es\Microsoft.Data.OData.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\fr\Microsoft.Data.OData.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\it\Microsoft.Data.OData.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\ja\Microsoft.Data.OData.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\ko\Microsoft.Data.OData.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\ru\Microsoft.Data.OData.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\de\Microsoft.Data.Services.Client.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\es\Microsoft.Data.Services.Client.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\fr\Microsoft.Data.Services.Client.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\it\Microsoft.Data.Services.Client.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\ja\Microsoft.Data.Services.Client.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\ko\Microsoft.Data.Services.Client.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\ru\Microsoft.Data.Services.Client.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\de\System.Spatial.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\es\System.Spatial.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\fr\System.Spatial.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\it\System.Spatial.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\ja\System.Spatial.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\ko\System.Spatial.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\ru\System.Spatial.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\zh-Hans\System.Spatial.resources.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetailsWeb\bin\zh-Hant\System.Spatial.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\MyDetailsWeb.dll.config
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\MyDetailsWeb.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\MyDetailsWeb.XmlSerializers.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\MyDetailsWeb.pdb
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\csc.exe
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\csc.exe.config
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\csc.rsp
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\csi.exe
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\csi.exe.config
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\csi.rsp
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.Managed.Core.targets
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\System.AppContext.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\System.Collections.Immutable.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\System.Console.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.Compression.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.FileSystem.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.Pipes.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\System.Reflection.Metadata.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.AccessControl.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Claims.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Principal.Windows.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\System.ValueTuple.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\System.Xml.XmlDocument.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\System.Xml.XPath.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\vbc.exe
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\vbc.exe.config
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\vbc.rsp
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\VBCSCompiler.exe
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\roslyn\VBCSCompiler.exe.config
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\DocumentFormat.OpenXml.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.Azure.KeyVault.Core.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.Data.Edm.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.Data.OData.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.Data.Services.Client.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.IdentityModel.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.IdentityModel.Extensions.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.Office.Client.Policy.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.Office.Client.TranslationServices.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.Office.SharePoint.Tools.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.Online.SharePoint.Client.Tenant.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.ProjectServer.Client.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.DocumentManagement.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Publishing.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Runtime.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Runtime.Windows.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Search.Applications.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Search.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Taxonomy.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.UserProfiles.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.WorkflowServices.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Configuration.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.DataMovement.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Newtonsoft.Json.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\System.Net.Http.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\System.Security.Cryptography.Algorithms.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\System.Security.Cryptography.Encoding.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\System.Security.Cryptography.Primitives.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\System.Security.Cryptography.X509Certificates.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\System.Spatial.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\WindowsBase.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\DocumentFormat.OpenXml.xml
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.Azure.KeyVault.Core.xml
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.Data.Edm.xml
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.Data.OData.xml
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.Data.Services.Client.xml
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.pdb
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.xml
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.DataMovement.pdb
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.DataMovement.xml
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Newtonsoft.Json.xml
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\System.Spatial.xml
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\de\Microsoft.Data.Edm.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\es\Microsoft.Data.Edm.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\fr\Microsoft.Data.Edm.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\it\Microsoft.Data.Edm.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\ja\Microsoft.Data.Edm.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\ko\Microsoft.Data.Edm.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\ru\Microsoft.Data.Edm.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\de\Microsoft.Data.OData.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\es\Microsoft.Data.OData.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\fr\Microsoft.Data.OData.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\it\Microsoft.Data.OData.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\ja\Microsoft.Data.OData.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\ko\Microsoft.Data.OData.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\ru\Microsoft.Data.OData.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\de\Microsoft.Data.Services.Client.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\es\Microsoft.Data.Services.Client.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\fr\Microsoft.Data.Services.Client.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\it\Microsoft.Data.Services.Client.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\ja\Microsoft.Data.Services.Client.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\ko\Microsoft.Data.Services.Client.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\ru\Microsoft.Data.Services.Client.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\de\System.Spatial.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\es\System.Spatial.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\fr\System.Spatial.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\it\System.Spatial.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\ja\System.Spatial.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\ko\System.Spatial.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\ru\System.Spatial.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\zh-Hans\System.Spatial.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\bin\zh-Hant\System.Spatial.resources.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.csprojAssemblyReference.cache
+E:\.net devlopement\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.dll.licenses
+E:\.net devlopement\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.csproj.CoreCompileInputs.cache
+E:\.net devlopement\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.csproj.CopyComplete
+E:\.net devlopement\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.dll
+E:\.net devlopement\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.pdb
+E:\.net devlopement\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.XmlSerializers.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\MyDetailsWeb.dll.config
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\MyDetailsWeb.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\MyDetailsWeb.XmlSerializers.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\MyDetailsWeb.pdb
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\csc.exe
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\csc.exe.config
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\csc.rsp
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\csi.exe
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\csi.exe.config
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\csi.rsp
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.Managed.Core.targets
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.AppContext.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Collections.Immutable.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Console.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.Compression.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.FileSystem.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.Pipes.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Reflection.Metadata.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.AccessControl.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Claims.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Principal.Windows.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.ValueTuple.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Xml.XmlDocument.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Xml.XPath.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\vbc.exe
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\vbc.exe.config
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\vbc.rsp
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\VBCSCompiler.exe
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\VBCSCompiler.exe.config
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\DocumentFormat.OpenXml.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.Azure.KeyVault.Core.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.Data.Edm.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.Data.OData.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.Data.Services.Client.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.IdentityModel.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.IdentityModel.Extensions.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.Office.Client.Policy.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.Office.Client.TranslationServices.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.Office.SharePoint.Tools.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.Online.SharePoint.Client.Tenant.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.ProjectServer.Client.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.DocumentManagement.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Publishing.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Runtime.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Runtime.Windows.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Search.Applications.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Search.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Taxonomy.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.UserProfiles.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.WorkflowServices.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.DataMovement.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Newtonsoft.Json.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\System.Net.Http.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\System.Security.Cryptography.Algorithms.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\System.Security.Cryptography.Encoding.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\System.Security.Cryptography.Primitives.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\System.Security.Cryptography.X509Certificates.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\System.Spatial.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\WindowsBase.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\DocumentFormat.OpenXml.xml
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.Azure.KeyVault.Core.xml
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.Data.Edm.xml
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.Data.OData.xml
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.Data.Services.Client.xml
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.pdb
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.xml
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.DataMovement.pdb
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.DataMovement.xml
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Newtonsoft.Json.xml
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\System.Spatial.xml
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\de\Microsoft.Data.Edm.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\es\Microsoft.Data.Edm.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\it\Microsoft.Data.Edm.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\de\Microsoft.Data.OData.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\es\Microsoft.Data.OData.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\fr\Microsoft.Data.OData.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\it\Microsoft.Data.OData.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\ja\Microsoft.Data.OData.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\ko\Microsoft.Data.OData.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\ru\Microsoft.Data.OData.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\de\Microsoft.Data.Services.Client.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\es\Microsoft.Data.Services.Client.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\fr\Microsoft.Data.Services.Client.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\it\Microsoft.Data.Services.Client.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\ja\Microsoft.Data.Services.Client.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\ko\Microsoft.Data.Services.Client.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\ru\Microsoft.Data.Services.Client.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\de\System.Spatial.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\es\System.Spatial.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\fr\System.Spatial.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\it\System.Spatial.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\ja\System.Spatial.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\ko\System.Spatial.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\ru\System.Spatial.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\zh-Hans\System.Spatial.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\zh-Hant\System.Spatial.resources.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.dll.licenses
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.csproj.CoreCompileInputs.cache
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.csproj.CopyComplete
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.pdb
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.XmlSerializers.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.csprojAssemblyReference.cache
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.dll.licenses
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.csproj.CoreCompileInputs.cache
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\MyDetailsWeb.dll.config
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\MyDetailsWeb.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\MyDetailsWeb.XmlSerializers.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\MyDetailsWeb.pdb
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\csc.exe
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\csc.exe.config
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\csc.rsp
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\csi.exe
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\csi.exe.config
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\csi.rsp
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.AppContext.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Collections.Immutable.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Console.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.Compression.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.FileSystem.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.Pipes.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Reflection.Metadata.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.AccessControl.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Claims.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.ValueTuple.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Xml.XPath.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\vbc.exe
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\vbc.exe.config
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\vbc.rsp
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\VBCSCompiler.exe
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\roslyn\VBCSCompiler.exe.config
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\DocumentFormat.OpenXml.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.Azure.KeyVault.Core.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.Data.Edm.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.Data.OData.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.Data.Services.Client.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.IdentityModel.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.IdentityModel.Extensions.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.Office.Client.Policy.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.Office.Client.TranslationServices.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.Office.SharePoint.Tools.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.Online.SharePoint.Client.Tenant.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.ProjectServer.Client.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.DocumentManagement.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Publishing.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Runtime.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Runtime.Windows.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Search.Applications.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Search.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Taxonomy.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.UserProfiles.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.WorkflowServices.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.DataMovement.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Newtonsoft.Json.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\System.Net.Http.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\System.Security.Cryptography.Algorithms.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\System.Security.Cryptography.Encoding.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\System.Security.Cryptography.Primitives.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\System.Security.Cryptography.X509Certificates.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\System.Spatial.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\WindowsBase.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\DocumentFormat.OpenXml.xml
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.Azure.KeyVault.Core.xml
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.Data.Edm.xml
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.Data.OData.xml
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.Data.Services.Client.xml
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.pdb
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.xml
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.DataMovement.pdb
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.DataMovement.xml
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Newtonsoft.Json.xml
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\System.Spatial.xml
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\de\Microsoft.Data.OData.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\es\Microsoft.Data.OData.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\it\Microsoft.Data.OData.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\de\Microsoft.Data.Services.Client.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\es\Microsoft.Data.Services.Client.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\fr\Microsoft.Data.Services.Client.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\it\Microsoft.Data.Services.Client.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\ja\Microsoft.Data.Services.Client.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\ko\Microsoft.Data.Services.Client.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\ru\Microsoft.Data.Services.Client.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\de\System.Spatial.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\es\System.Spatial.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\fr\System.Spatial.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\it\System.Spatial.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\ja\System.Spatial.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\ko\System.Spatial.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\ru\System.Spatial.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\zh-Hans\System.Spatial.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\bin\zh-Hant\System.Spatial.resources.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.csproj.CopyComplete
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.pdb
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.XmlSerializers.dll
+D:\Deployment\Live Source\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.csprojAssemblyReference.cache
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.csprojAssemblyReference.cache
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.dll.licenses
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.csproj.CoreCompileInputs.cache
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.pdb
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.XmlSerializers.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\MyDetailsWeb.dll.config
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\MyDetailsWeb.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\MyDetailsWeb.XmlSerializers.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\MyDetailsWeb.pdb
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\csc.exe
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\csc.exe.config
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\csc.rsp
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\csi.exe
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\csi.exe.config
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\csi.rsp
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.Managed.Core.targets
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\System.AppContext.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\System.Collections.Immutable.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\System.Console.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.Compression.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.FileSystem.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.Pipes.AccessControl.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\System.IO.Pipes.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\System.Reflection.Metadata.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.AccessControl.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Claims.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\System.Security.Principal.Windows.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\System.ValueTuple.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\System.Xml.XmlDocument.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\System.Xml.XPath.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\vbc.exe
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\vbc.exe.config
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\vbc.rsp
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\VBCSCompiler.exe
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\roslyn\VBCSCompiler.exe.config
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\DocumentFormat.OpenXml.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.Azure.KeyVault.Core.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.Data.Edm.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.Data.OData.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.Data.Services.Client.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.IdentityModel.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.IdentityModel.Extensions.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.Office.Client.Policy.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.Office.Client.TranslationServices.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.Office.SharePoint.Tools.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.Online.SharePoint.Client.Tenant.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.ProjectServer.Client.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.DocumentManagement.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Publishing.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Runtime.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Runtime.Windows.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Search.Applications.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Search.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.Taxonomy.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.UserProfiles.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.SharePoint.Client.WorkflowServices.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Configuration.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.DataMovement.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Newtonsoft.Json.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\System.Net.Http.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\System.Security.Cryptography.Algorithms.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\System.Security.Cryptography.Encoding.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\System.Security.Cryptography.Primitives.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\System.Security.Cryptography.X509Certificates.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\System.Spatial.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\WindowsBase.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.AnalysisServices.AdomdClient.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\DocumentFormat.OpenXml.xml
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.Azure.KeyVault.Core.xml
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.Data.Edm.xml
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.Data.OData.xml
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.Data.Services.Client.xml
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.pdb
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.xml
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.DataMovement.pdb
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.WindowsAzure.Storage.DataMovement.xml
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Newtonsoft.Json.xml
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\System.Spatial.xml
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\de\Microsoft.Data.Edm.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\es\Microsoft.Data.Edm.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\fr\Microsoft.Data.Edm.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\it\Microsoft.Data.Edm.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\ja\Microsoft.Data.Edm.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\ko\Microsoft.Data.Edm.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\ru\Microsoft.Data.Edm.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\de\Microsoft.Data.OData.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\es\Microsoft.Data.OData.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\fr\Microsoft.Data.OData.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\it\Microsoft.Data.OData.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\ja\Microsoft.Data.OData.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\ko\Microsoft.Data.OData.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\ru\Microsoft.Data.OData.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\de\Microsoft.Data.Services.Client.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\es\Microsoft.Data.Services.Client.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\fr\Microsoft.Data.Services.Client.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\it\Microsoft.Data.Services.Client.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\ja\Microsoft.Data.Services.Client.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\ko\Microsoft.Data.Services.Client.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\ru\Microsoft.Data.Services.Client.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\de\System.Spatial.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\es\System.Spatial.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\fr\System.Spatial.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\it\System.Spatial.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\ja\System.Spatial.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\ko\System.Spatial.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\ru\System.Spatial.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\zh-Hans\System.Spatial.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\bin\zh-Hant\System.Spatial.resources.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetailsWeb\obj\Release\MyDetailsWeb.csproj.CopyComplete

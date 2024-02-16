@@ -1,0 +1,59 @@
+    ======  ======
+    Time:09/07/2020 10:56:17
+    Title: Initiate log
+    Message: 
+    Time:09/07/2020 10:56:17
+    Title: Initiate InternalManager
+    Message: Trying to Validate License
+    Time:09/07/2020 10:56:17
+    Title: Requesting EVT
+    Message: EVTP
+    Time:09/07/2020 10:56:17
+    Title: Requesting Validation
+    Message: ILMValidate
+    Time:09/07/2020 10:56:18
+    Title: LICENSER
+    Message: TRL MODE
+    Time:09/07/2020 10:56:18
+    Title: LICENSER
+    Message: DS LEFT-1043
+    Time:09/07/2020 10:56:19
+    Title: LICENSER
+    Message: DT MARK PASSED-1043.00:00:00
+    Time:09/07/2020 10:56:19
+    Title: ILMValidate action
+    Message: LIC
+    Time:09/07/2020 10:56:35
+    Title: Access to the path 'C:\ProgramData\Telerik\Hash.lic' is denied.
+    Message:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at Telerik.Licensing.Licenser.ReadHashPass()
+    Time:09/07/2020 10:56:35
+    Title: LICENSER - TGO
+    Message: Start
+    Entering constructor for: Telerik.CommonPackage.Telerik_CommonPackagePackage
+    Entering Initialize() of: Telerik.CommonPackage.Telerik_CommonPackagePackage
+    Time:09/07/2020 10:56:53
+    Title: LICENSER - TGO
+    Message: Could not establish secure channel for SSL/TLS with authority 'www.telerik.com'.
+    Time:09/07/2020 10:56:54
+    Title: Could not establish secure channel for SSL/TLS with authority 'www.telerik.com'.
+    Message: 
+Server stack trace: 
+   at System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Telerik.Licensing.TestStudioLicensing.ILicenseWebUIService.LogError(String subject, String body)
+   at Telerik.Licensing.TestStudioLicensing.LicenseWebUIServiceClient.LogError(String subject, String body)
+   at Telerik.Licensing.Licenser.SendErrorMail()
+    devenv.exe Information: 0 : IndentGuideService.CURRENT_VERSION == F0000
+    Loaded caret handler IndentGuide.CaretNearestLeft, IndentGuide, Version=15.0.0.0, Culture=neutral, PublicKeyToken=1712510496030210

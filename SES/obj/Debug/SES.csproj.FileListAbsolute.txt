@@ -1,0 +1,12 @@
+D:\New SES\SES\bin\Debug\SES.dll.config
+D:\New SES\SES\bin\Debug\SES.pdb
+D:\New SES\SES\obj\Debug\SES.csproj.CoreCompileInputs.cache
+D:\New SES\SES\obj\Debug\SES.dll
+D:\New SES\SES\obj\Debug\SES.pdb
+D:\New SES\SES\obj\Debug\SES.csproj.AssemblyReference.cache
+D:\Brakes-test\SES\bin\Debug\SES.dll.config
+D:\Brakes-test\SES\bin\Debug\SES.pdb
+D:\Brakes-test\SES\obj\Debug\SES.csproj.CoreCompileInputs.cache
+D:\Brakes-test\SES\obj\Debug\SES.dll
+D:\Brakes-test\SES\obj\Debug\SES.pdb
+D:\Brakes-test\SES\obj\Debug\SES.csproj.AssemblyReference.cache

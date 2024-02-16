@@ -1,0 +1,15 @@
+E:\Development\Devl2018\LiveWebApps\MyDetails\MyDetails\bin\Debug\MyDetails.pdb
+E:\Development\Devl2018\LiveWebApps\MyDetails\MyDetails\obj\Debug\MyDetails.csprojAssemblyReference.cache
+E:\Development\Devl2018\LiveWebApps\MyDetails\MyDetails\obj\Debug\MyDetails.csproj.CoreCompileInputs.cache
+E:\Development\Devl2018\LiveWebApps\MyDetails\MyDetails\obj\Debug\MyDetails.dll
+E:\Development\Devl2018\LiveWebApps\MyDetails\MyDetails\obj\Debug\MyDetails.pdb
+E:\.net devlopement\Sharepoint\MyDetails\MyDetails\bin\Debug\MyDetails.pdb
+E:\.net devlopement\Sharepoint\MyDetails\MyDetails\obj\Debug\MyDetails.csproj.CoreCompileInputs.cache
+E:\.net devlopement\Sharepoint\MyDetails\MyDetails\obj\Debug\MyDetails.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetails\obj\Debug\MyDetails.pdb
+E:\Development\Devl2018\Azure\MyDetails\MyDetails\bin\Debug\MyDetails.pdb
+E:\Development\Devl2018\Azure\MyDetails\MyDetails\obj\Debug\MyDetails.csprojAssemblyReference.cache
+E:\Development\Devl2018\Azure\MyDetails\MyDetails\obj\Debug\MyDetails.csproj.CoreCompileInputs.cache
+E:\Development\Devl2018\Azure\MyDetails\MyDetails\obj\Debug\MyDetails.dll
+E:\Development\Devl2018\Azure\MyDetails\MyDetails\obj\Debug\MyDetails.pdb
+E:\.net devlopement\Sharepoint\MyDetails\MyDetails\obj\Debug\MyDetails.csprojAssemblyReference.cache

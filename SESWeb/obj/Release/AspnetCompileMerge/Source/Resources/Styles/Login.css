@@ -1,0 +1,44 @@
+﻿html, body, form {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font: normal 16px/1.8 "Segoe UI", Arial, sans-serif;
+    color:#555555;
+}
+form {
+    cursor: default;
+}
+
+.login {
+margin:auto;
+margin-top:10px;
+background:#fff url('../Images/banner.png') no-repeat;/*#3D6CEE */
+width:450px;
+padding-top:60px;
+}
+
+
+.rfv {
+display:none;
+}
+.element {
+padding:2px;
+background:#fff;
+}
+.message-error
+{
+    border: solid 1px red;
+    background-color: #FFE6EB;
+    -webkit-box-shadow: 0 6px 6px -7px red;
+    -moz-box-shadow: 0 6px 6px -7px red;
+    box-shadow: 0 6px 6px -7px red;
+    color: #34404f;
+}
+
+.RadButton .RadButton_MetroTouch .rbSkinnedButton :hover,.btn:hover {
+    border:solid 1px #b0b0b0 !important;
+    -webkit-box-shadow: 0 0px 15px 1px #b0b0b0;
+    -moz-box-shadow: 0 0px 15px 1px #b0b0b0;
+    box-shadow: 0 0px 15px 1px #b0b0b0;
+}

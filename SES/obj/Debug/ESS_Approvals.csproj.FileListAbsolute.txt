@@ -1,0 +1,12 @@
+F:\Mohanraj\Workings\2020\New Portal\ESS\ESS_Approvals\MyDetails\bin\Debug\ESS_Approvals.dll.config
+F:\Mohanraj\Workings\2020\New Portal\ESS\ESS_Approvals\MyDetails\bin\Debug\ESS_Approvals.pdb
+F:\Mohanraj\Workings\2020\New Portal\ESS\ESS_Approvals\MyDetails\obj\Debug\ESS_Approvals.csproj.CoreCompileInputs.cache
+F:\Mohanraj\Workings\2020\New Portal\ESS\ESS_Approvals\MyDetails\obj\Debug\ESS_Approvals.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\ESS_Approvals\MyDetails\obj\Debug\ESS_Approvals.pdb
+F:\Mohanraj\Workings\2020\New Portal\ESS\ESS_Approvals\MyDetails\obj\Debug\ESS_Approvals.csprojAssemblyReference.cache
+E:\Live source\20210301\ESS_Approvals\ESS_Approvals\bin\Debug\ESS_Approvals.dll.config
+E:\Live source\20210301\ESS_Approvals\ESS_Approvals\bin\Debug\ESS_Approvals.pdb
+E:\Live source\20210301\ESS_Approvals\ESS_Approvals\obj\Debug\ESS_Approvals.csprojAssemblyReference.cache
+E:\Live source\20210301\ESS_Approvals\ESS_Approvals\obj\Debug\ESS_Approvals.csproj.CoreCompileInputs.cache
+E:\Live source\20210301\ESS_Approvals\ESS_Approvals\obj\Debug\ESS_Approvals.dll
+E:\Live source\20210301\ESS_Approvals\ESS_Approvals\obj\Debug\ESS_Approvals.pdb

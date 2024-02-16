@@ -1,0 +1,77 @@
+﻿.RadTreeList_Simple, .rtlCEdit div.RadTreeList_Simple {
+border:none !important;
+}
+.RadTreeList tr.rtlHeader {
+    display: none !important;
+}
+.RadTreeList_Simple .rtlR td, .RadTreeList_Simple .rtlA td, .RadTreeList_Simple .rtlREdit td, .RadTreeList_Simple .rtlRFooter td, .RadTreeList_Simple .rtlEditForm {
+    border: none !important;
+    font-family: 'lato' !important;
+    color:#79797a !important;
+    font-size:15px !important;
+    font-weight:500 !important;
+}
+.RadTreeList_Simple .rtlA {
+background-color:transparent !important;
+}
+.RadTreeList .rtlR > td, .RadTreeList .rtlA > td, .RadTreeList .rtlREdit > td, .RadTreeList .rtlRFooter > td {
+padding-left:0px !important;
+}
+
+.RadTreeList_Simple .rtlExpand, .RadTreeList_Simple .rtlCollapse {
+   background-color: #e5e6f1 !important;
+   border:none !important;
+}
+
+.RadTreeList .t-font-icon:before {
+    font-size: 18px !important;
+    color: #8d8d90 !important;
+}
+
+.RadGrid .t-font-icon, .RadTreeList .t-font-icon, .RadCalendar .t-font-icon, .RadDropDownList .t-font-icon {
+    width:10px !important;
+    height:10px !important;
+}
+/*Pixel studio customized*/
+.post-comments .media {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    padding-left: 90px;
+}
+.post-comments .media-heading, .media-body p {
+    top: 45px;
+    z-index:99;
+    position: relative;
+}
+    .post-comments .media-heading::after {
+    background-color:#fff;
+    width:0px;
+    }
+    .post-comments .media-heading img
+    {left:-80px;
+     top:-8px;
+     width:60px;
+     height:58px;
+     border:solid 1px #e5e6f1;
+     border-radius:50%;
+    }
+
+
+.unreadmessagecountlabel  {
+    position: absolute;
+    content: "";
+    right: -12px;
+    top: -5px;
+    background-color: #faa71d;
+    border-radius: 100%;
+    height: 16px;
+    width: 16px;
+    font-family: 'Lato';
+    font-weight: 600;
+    font-style: normal;
+    color: #010101;
+    font-size: 9px;
+    padding-top:2px;
+    text-align:center;
+}

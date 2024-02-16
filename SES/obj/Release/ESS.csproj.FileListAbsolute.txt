@@ -1,0 +1,6 @@
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetails\bin\Release\ESS.dll.config
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetails\bin\Release\ESS.pdb
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetails\obj\Release\ESS.csproj.CoreCompileInputs.cache
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetails\obj\Release\ESS.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetails\obj\Release\ESS.pdb
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetails\obj\Release\ESS.csprojAssemblyReference.cache

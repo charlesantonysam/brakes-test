@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="D:\Deployment\Live Source\ESS_Approvals\ESS_ApprovalsWeb\obj\Release\Package\PackageTmp" />
+  <setAcl path="D:\Deployment\Live Source\ESS_Approvals\ESS_ApprovalsWeb\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="D:\Deployment\Live Source\ESS_Approvals\ESS_ApprovalsWeb\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

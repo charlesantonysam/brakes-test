@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="portalprodn/ESS" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\Deployment\\Live\ Source\\MyDetails\\MyDetailsWeb\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\Deployment\\Live\ Source\\MyDetails\\MyDetailsWeb\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="ClientId" description="Value for ClientId here." value="d8177a85-fc67-4fc7-ace6-77692b8be481" tags="applicationSettings">
+    <parameterEntry kind="XmlFile" scope="web.config$" match="/configuration/appSettings/add[@key='ClientId']/@value" />
+  </parameter>
+  <parameter name="ClientSecret" description="Value for ClientSecret here." value="K8IcqU9ADpdJ7xbCIkRtiAfb4QJSCssJm2w7fvmMr/0=" tags="applicationSettings">
+    <parameterEntry kind="XmlFile" scope="web.config$" match="/configuration/appSettings/add[@key='ClientSecret']/@value" />
+  </parameter>
+  <parameter name="ARMS-Web.config Connection String" description="" value="Data Source=epd.brakesindia.com;UID=sa;PWD=Br@ke$db;Initial Catalog=ARMS" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Deployment\\Live\ Source\\MyDetails\\MyDetailsWeb\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ARMS']/@connectionString" />
+  </parameter>
+  <parameter name="BI-Web.config Connection String" description="" value="Server=epd.brakesindia.com;Initial Catalog=lportal;Persist Security Info=False;User ID=sa;Password=Br@ke$db;" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Deployment\\Live\ Source\\MyDetails\\MyDetailsWeb\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='BI']/@connectionString" />
+  </parameter>
+  <parameter name="CAIRS-Web.config Connection String" description="" value="Data Source=epd.brakesindia.com;UID=sa;PWD=Br@ke$db;Initial Catalog=EIS" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Deployment\\Live\ Source\\MyDetails\\MyDetailsWeb\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='CAIRS']/@connectionString" />
+  </parameter>
+  <parameter name="CRM-Web.config Connection String" description="" value="Server=epd.brakesindia.com;Initial Catalog=PORTALDEV3;Persist Security Info=False;User ID=sa;Password=Br@ke$db;" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Deployment\\Live\ Source\\MyDetails\\MyDetailsWeb\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='CRM']/@connectionString" />
+  </parameter>
+  <parameter name="DLG-Web.config Connection String" description="" value="Data Source=epd.brakesindia.com;UID=sa;PWD=Br@ke$db;Initial Catalog=EIS" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Deployment\\Live\ Source\\MyDetails\\MyDetailsWeb\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DLG']/@connectionString" />
+  </parameter>
+  <parameter name="EIS-Web.config Connection String" description="" value="Data Source=epd.brakesindia.com;UID=sa;PWD=Br@ke$db;Initial Catalog=EIS" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Deployment\\Live\ Source\\MyDetails\\MyDetailsWeb\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='EIS']/@connectionString" />
+  </parameter>
+  <parameter name="NPDI-Web.config Connection String" description="" value="Data Source=epd.brakesindia.com;UID=sa;PWD=Br@ke$db;Initial Catalog=NPDI" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Deployment\\Live\ Source\\MyDetails\\MyDetailsWeb\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='NPDI']/@connectionString" />
+  </parameter>
+  <parameter name="ORACLE-Web.config Connection String" description="" value="Data Source=//192.168.10.42:1521/ORCL;User Id=TRUSTE2_BRAKESINDIA;Password=TRUSTE2_BRAKESINDIA;" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Deployment\\Live\ Source\\MyDetails\\MyDetailsWeb\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ORACLE']/@connectionString" />
+  </parameter>
+  <parameter name="PBOM-Web.config Connection String" description="" value="Data Source=epd.brakesindia.com;UID=sa;PWD=Br@ke$db;Initial Catalog=EIS" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Deployment\\Live\ Source\\MyDetails\\MyDetailsWeb\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='PBOM']/@connectionString" />
+  </parameter>
+  <parameter name="VHP-Web.config Connection String" description="" value="Data Source=epd.brakesindia.com;UID=sa;PWD=Br@ke$db;Initial Catalog=mktg" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Deployment\\Live\ Source\\MyDetails\\MyDetailsWeb\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='VHP']/@connectionString" />
+  </parameter>
+</parameters>

@@ -1,0 +1,11 @@
+﻿
+.pdf {
+    background: url('../images/icons/pdf.png') no-repeat transparent;
+    background-position:50%;
+}
+
+
+.file, .pbom, .rgHoveredRow .pbom, .avi, .bmp, .dat, .dmg, .doc, .docx, .dfx, .flv, .gif, .jpg, .png, .ppt, .pps, .pptx, ppsx, .psd, .rar, .zip, .tgz, .tiff, .txt, .xls, .xlsx {
+    background: url('../images/icons/excel.png') no-repeat transparent;
+    background-position: 50%;
+}

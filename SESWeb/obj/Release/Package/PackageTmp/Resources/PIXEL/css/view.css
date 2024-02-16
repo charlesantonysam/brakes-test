@@ -1,0 +1,197 @@
+.cbp-vm-options {
+    margin-left: 25px;
+    margin-right: 25px;
+	text-align:right;
+}
+
+.cbp-vm-options a {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	white-space: nowrap;
+	color: #d0d0d0;
+	margin: 2px;
+}
+
+.cbp-vm-options a:hover,
+.cbp-vm-options a.cbp-vm-selected {
+	color: #1269c3;
+}
+
+.cbp-vm-options a:before {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 30px;
+	text-align: center;
+	display: inline-block;
+}
+
+/* General style of switch items' list */
+
+.cbp-vm-switcher ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* Clear eventual floats */
+.cbp-vm-switcher ul:before, 
+.cbp-vm-switcher ul:after { 
+	content: " "; 
+	display: table; 
+}
+
+.cbp-vm-switcher ul:after { 
+	clear: both; 
+}
+
+.cbp-vm-switcher ul li {
+	width:48.5%;
+	    margin: 0px 11px;
+}
+.cbp-vm-switcher .first-row-li li {margin-bottom:18px;}
+
+.cbp-vm-switcher ul li ul li{width:auto;}
+.cbp-vm-switcher ul li ul.announcement-drag li{margin-bottom:20px !important;}
+.cbp-vm-switcher ul li ul.news-drag li{margin-bottom:20px !important;}
+
+.cbp-vm-image {
+	display: block;
+	margin: 0 auto;
+}
+
+.cbp-vm-image img {
+	display: inline-block;
+	max-width: 100%;
+	border: none;
+}
+
+.cbp-vm-title {
+	margin: 0;
+	padding: 0;
+}
+
+.cbp-vm-price {
+	color: #c0c0c0;
+}
+
+.cbp-vm-add {
+	color: #fff;
+	background: #47a3da;
+	padding: 10px 20px;
+	border-radius: 2px;
+	margin: 20px 0 0;
+	display: inline-block;
+	transition: background 0.2s;
+}
+
+.cbp-vm-add:hover {
+	color: #fff;
+	background: #02639d;
+}
+
+.cbp-vm-add:before {
+	margin-right: 5px;
+}
+
+/* Common icon styles */
+.cbp-vm-icon:before {
+	font-family: 'fontawesome';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.cbp-vm-grid:before {
+	content: "\f00a";
+}
+
+.cbp-vm-list:before {
+	content: "\f009";
+}
+
+.cbp-vm-add:before {
+	content: "\f055";
+}
+
+/* Individual view mode styles */
+
+/* Large grid view */
+
+.cbp-vm-view-grid ul li {
+	width: 32.1%;
+    display: inline-block;
+    margin: 0px 9px;
+    vertical-align: top;
+}
+.cbp-vm-view-grid ul li ul li{
+	width:auto;
+}
+.cbp-vm-view-grid .cbp-vm-title {
+	font-size: 2em;
+}
+
+.cbp-vm-view-grid .cbp-vm-details {
+	max-width: 300px;
+	min-height: 70px;
+	margin: 0 auto;
+} 
+
+.cbp-vm-view-grid .cbp-vm-price {
+	margin: 10px 0;
+	font-size: 1.5em;
+}
+
+
+.cbp-vm-switcher .activites-drag .time-min {left: -24%;}
+     .cbp-vm-view-grid .activites-drag .time-min{left: -32%;}
+
+
+
+
+
+
+
+/*@media screen and (max-width: 66.7em) {
+	.cbp-vm-view-list .cbp-vm-details  {
+		width: 30%;
+	}
+} 
+
+@media screen and (max-width: 57em) {
+	.cbp-vm-view-grid ul li {
+		width: 49%;
+	}
+}
+
+@media screen and (max-width: 47.375em) {
+	.cbp-vm-view-list .cbp-vm-image {
+		width: 20%;
+	}
+
+	.cbp-vm-view-list .cbp-vm-title {
+		width: auto;
+	}
+
+	.cbp-vm-view-list .cbp-vm-details  {
+		display: block;
+		width: 100%;
+		margin: 10px 0;
+	}
+
+	.cbp-vm-view-list .cbp-vm-add  {
+		margin: 10px;
+	}
+}
+
+@media screen and (max-width: 40.125em) {
+	.cbp-vm-view-grid ul li {
+		width: 100%;
+	}
+}*/

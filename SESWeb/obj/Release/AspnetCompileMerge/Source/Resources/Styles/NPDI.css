@@ -1,0 +1,582 @@
+﻿html, body, form {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font: normal 14px/1.5 "Segoe UI", Arial, sans-serif;
+}
+
+form {
+    cursor: default;
+}
+
+.RadForm_Windows7 body {
+    color: black;
+    background-color: white;
+}
+
+.RadForm_Windows7 a {
+    color: #0066cc;
+}
+
+    .RadForm_Windows7 a:hover {
+        color: #0066cc;
+    }
+
+.panel-header {
+    background-color: #EEF0F2;
+    background-image: url('../Images/company_logo.png');
+    background-repeat: no-repeat;
+    height: 50px;
+    zoom: 1;
+    background-size: 225px;
+    border-bottom: solid 1px #aabfd6;
+    overflow: hidden;
+}
+
+.RadTabStrip .rtsLink img {
+    border: 0;
+    position: relative;
+    right: -2px;
+    margin-top: 3px;
+}
+
+.logoff {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: 1px solid #5a6779;
+    -webkit-border-radius: 0px 0px 0px 20px;
+    -moz-border-radius: 0px 0px 0px 20px;
+    border-radius: 0px 0px 0px 20px;
+    padding-bottom: 3px;
+    padding-top: 2px;
+    padding-left: 30px;
+    padding-right: 10px;
+    background: url("../images/logoff.png") no-repeat #3b3b5c;
+    color: #fff;
+    cursor:pointer;
+}
+
+.loginInfo {
+    float: right;
+    margin-right: 0px;
+    margin-top: 24px;
+    line-height: 25px;
+    border: solid 1px #b8cbde;
+    -webkit-border-radius: 3px 3px 0px 0px;
+    -moz-border-radius: 3px 3px 0px 0px;
+    border-radius: 3px 3px 0px 0px;
+    background-color: whitesmoke;
+    color: #0066cc;
+    padding: 0px 5px 0px 5px;
+    border-bottom: none;
+    min-width: 300px;
+    max-width: 700px;
+}
+
+.Message-Error, .Message-Warning, .Message-Information, .Message-Success {
+    padding: 3px 5px 3px 5px;
+    text-align: left;
+    vertical-align: middle;
+    color: #34404f;
+    font-size: 12px;
+    border-collapse: collapse;
+    margin-top: 1px !important;
+    max-width: 99%;
+    margin: auto;
+    margin-bottom:5px !important;
+    font-weight: bold;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+    .Message-Error span, .Message-Warning span, .Message-Information span, .Message-Success span {
+        text-align: left;
+        padding: 0px 20px 2px 20px;
+        height: 20px;
+        vertical-align: top;
+    }
+
+.Message-Error {
+    border: solid 1px red;
+    background-color: #FFE6EB;
+    -webkit-box-shadow: 0 6px 6px -7px red;
+    -moz-box-shadow: 0 6px 6px -7px red;
+    box-shadow: 0 6px 6px -7px red;
+}
+
+    .Message-Error span {
+        background: url(../images/Message-Error.png) no-repeat;
+    }
+
+.Message-Information {
+    border: solid 1px #1f60a7;
+    background-color: #E6EBFF;
+    -webkit-box-shadow: 0 6px 6px -7px #1f60a7;
+    -moz-box-shadow: 0 6px 6px -7px #1f60a7;
+    box-shadow: 0 6px 6px -7px #1f60a7;
+}
+
+    .Message-Information span {
+        background: url(../images/Message-Information.png) no-repeat;
+    }
+
+.Message-Success {
+    border: solid 1px green;
+    background-color: #EBFFE6;
+    -webkit-box-shadow: 0 6px 6px -7px green;
+    -moz-box-shadow: 0 6px 6px -7px green;
+    box-shadow: 0 6px 6px -7px green;
+}
+
+    .Message-Success span {
+        background: url(../images/Message-Success.png) no-repeat;
+    }
+
+.Message-Warning {
+    border: solid 1px orange;
+    background-color: lightyellow;
+    -webkit-box-shadow: 0 6px 6px -7px orange;
+    -moz-box-shadow: 0 6px 6px -7px orange;
+    box-shadow: 0 6px 6px -7px orange;
+}
+
+    .Message-Warning span {
+        background: url(../images/Message-Warning.png) no-repeat;
+    }
+
+.rfv {
+    color: Red;
+}
+
+.gridSelectLink {
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0px 1px 1px 1px #75787C;
+    border-radius: 3px;
+    background-color: #4485f5;
+    padding-left:2px;
+    padding-right:2px;
+    color:white !important;
+}
+
+    .gridSelectLink:hover {
+        -webkit-box-shadow: 0px 1px 10px 1px #007acc;
+        -moz-box-shadow: 0px 1px 10px 1px #007acc;
+        box-shadow: 0px 1px 10px 1px #089afc;
+        text-align: center;
+        text-decoration: none;
+        background-color: white;
+        border-radius: 3px;
+        cursor: pointer;
+        color: #16487A !important;
+    }
+
+.DetailsCard {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.Summary {
+    font-size: 11px;
+    font-style: italic;
+    color: #5a6779;
+}
+
+    .Summary .SingleLine {
+        text-wrap: avoid;
+        color: #5a6779;
+    }
+
+.DetailsCard .Information {
+    font-size: 12px;
+    font-weight: bold;
+    color: #1e395b;
+}
+
+.rgInfoPart {
+    font-style: italic;
+}
+
+.FormIcon {
+    min-width: 10px;
+    width: 16px;
+    overflow: hidden;
+    max-height: 20px;
+    /*height: 20px;*/
+    margin-left: 5px !important;
+    /*margin-right: 5px !important;*/
+    margin-top: 0;
+    /*margin-bottom:2px;*/
+    display: inline-block;
+    float:left !important;
+}
+
+    .FormIcon img {
+        -webkit-box-shadow: 0 8px 6px -3px #9cb9c1;
+        -moz-box-shadow: 0 8px 6px -3px #9cb9c1;
+        box-shadow: 0 8px 6px -3px #9cb9c1;
+    }
+
+.FormTitle {
+    font-family: Verdana;
+    /*font-size: 16px !important;
+    min-width: 250px;*/
+    padding-right:15px;
+    max-width: 700px;
+    overflow: hidden;
+    /*line-height: 30px;*/
+    padding-left: 5px;
+    display: inline-block;
+    padding-right:15px;
+    float:left !important;
+    /*text-shadow: 1px 1px 1px silver;*/
+}
+
+.FormButtons {
+    display: inline-block;
+    margin-left: 1%;
+    overflow: hidden;
+    float:left !important;
+    /*padding-top: 3px;
+    padding-bottom: 3px;*/
+}
+
+.FormElement {
+    min-height: 25px;
+    height: auto;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 2px;
+    margin-left: 10px;
+}
+
+.FormElement {
+    /*display: inline-table;*/
+}
+
+.FormGrid,.FormPanel {
+    display: block;
+}
+.FormPanel {
+    border: solid 1px #a4abb2;
+    padding:0px;
+    border-collapse:collapse;
+        margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.FormElement .Title, .FormGrid .Title {
+        font-size: 12px !important;
+        vertical-align: middle;
+        margin-left: 5px;
+        margin-right: 5px;
+        min-width: 50px;
+    }
+
+.FormElement .Title {
+    display: inline-block;
+    font-size: 12px !important;
+    float:left !important;
+}
+
+.FormPanel .FormElement {
+margin-top:2px;
+margin-bottom:2px;
+}
+.FormPanel .FormElement .Title {
+min-width:150px;
+background:#f0f0f0;
+line-height:25px;
+}
+.FormGrid .Title,.CustomTitle,.FormPanel .Header{
+    display: block;
+    font-size: 14px !important;
+    background-color: gainsboro;
+    padding: 3px;
+    border: solid 1px #a4abb2;
+    border-collapse:collapse;
+}
+
+
+
+.CustomTitle {
+display: inline-block;
+margin-top:5px;
+margin-right:35px;
+width:240px;
+padding-left:5px;
+float:left !important;
+}
+.FormElement .Element, .FormGrid .Element {
+    display: inline-block;
+    height: auto;
+    font-size: 12px !important;
+    vertical-align: middle;
+    margin-left: 5px;
+   
+}
+.FormElement .Element {
+     float:left !important;
+}
+
+
+
+
+
+.FormElement .Element, .FormGrid .Element {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.FormGrid .Element {
+    display: block;
+    min-height: 100px;
+    min-width: 300px;
+    margin-right: 5px;
+    padding-right:2px;
+}
+
+.FormPanel .FormElement .Element, .FormElement .Element{
+min-width:300px;
+font-weight:bold;
+}
+
+.RadToolBar .rtbOuter {
+    padding-top:5px !important;
+border-left-style:none !important;
+border-top-style:none !important;
+}
+
+.rbtnBorder {
+    border-bottom: solid 1px #a4abb2 !important;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+    -webkit-box-shadow: 0 7px 6px -6px #a4abb2;
+    -moz-box-shadow: 0 7px 6px -6px #a4abb2;
+    box-shadow: 0 7px 6px -6px #a4abb2;
+}
+
+
+#lPanel {
+    z-index:9999;
+    padding-top:7px;
+    padding-left:35px;
+    padding-bottom:7px; 
+    padding-right:20px;
+    border:solid 1px #afafb7;
+    color:#004f9a;
+    display:none;
+    position:fixed;
+    left:600px;
+    top:300px;
+    background: #fff url(../images/hourglass.gif) no-repeat;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+    -webkit-box-shadow: 0 7px 6px -6px #a4abb2;
+    -moz-box-shadow: 0 7px 6px -6px #a4abb2;
+    box-shadow: 0 7px 6px -6px #a4abb2;
+}
+
+.RadToolBar .rtbUL,
+.RadToolBar .rtbUL li {
+    width: 100% !important;
+}
+
+/*.rtPlus .rtvParent {
+    background: #fff url(../images/hourglass.gif) no-repeat;
+}
+.rtMinus .rtvParent {
+    background: #fff url(../images/hourglass.gif) no-repeat;
+}*/
+
+
+.FormContent {
+    overflow: auto;
+    padding:5px;
+    min-height: 400px;
+    /*color:rgba(30, 57, 91, 1);*/
+    color: #3b3b5c;
+}
+
+.rbVerticalButton .rbPrimary {
+    padding-left: 25px !important;
+}
+
+* {
+    /*scrollbar-3dlight-color: #ccdaea !important;
+    scrollbar-arrow-color: #526680 !important;
+    scrollbar-base-color: #ff6347 !important;
+    scrollbar-darkshadow-color: #a9bfd6 !important;
+    scrollbar-face-color: #dce6f4 !important;
+    scrollbar-highlight-color: #f0f0f0 !important;
+    scrollbar-shadow-color: #dce6f4 !important;
+    scrollbar-track-color: #f6f9fe !important;*/
+}
+
+input[type=text], textarea * {
+    border: solid 1px silver ;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.rbText {
+    /*color:rgba(30, 57, 91, 1);*/
+    color: #3b3b5c;
+    font-style: italic;
+}
+
+.rfv {
+    color: red;
+    font-size: 11px;
+}
+.rtsIn img:hover {
+    -webkit-box-shadow: 0px 1px 5px 1px #ff0000;
+    -moz-box-shadow: 0px 1px 5px 1px #ff0000;
+    box-shadow: 0px 1px 5px 1px #ff0000;
+}
+
+/* GDPIM */
+.tilespan {
+display:inline-block;
+border:solid 1px #2985f5;
+margin:0px;
+text-decoration:none;
+background-color:#fff;
+}
+.tilespan:hover {
+border:solid 1px #fff;
+}
+
+.rtileSquare.RadTile {
+height:auto !important;
+width:auto !important;
+margin:10px !important;
+
+}
+
+.tilespan img{
+padding:10px;
+padding-left:13px;
+height:64px;
+width:64px;
+
+}
+.tilespan span {
+display:block;
+padding:5px;
+padding-left:10px;
+padding-right:10px;
+color:white;    
+background:#2985f5; 
+-webkit-box-shadow: 0px 0px 0px 2px #2985f5;
+    -moz-box-shadow: 0px 0px 0px 2px #2985f5;
+    box-shadow: 0px 0px 0px 2px #2985f5;   
+    }
+
+.rtileSquare.RadTile:hover {
+    border:solid 2px #2985f5;
+cursor:pointer;
+-webkit-box-shadow: 0px 1px 5px 0px #2985f5;
+    -moz-box-shadow: 0px 1px 5px 0px #2985f5;
+    box-shadow: 0px 1px 5px 0px #2985f5;
+}
+
+.pnlStatusDescription {
+    display: inline-block;
+    padding-left: 5%;
+    padding-right:5px;
+}
+    .pnlStatusDescription span {
+        margin-right:5px;
+    padding-right:10px;
+    }
+.pnlStatusDescription span img{
+    margin-right:5px;
+    -webkit-box-shadow: 0 8px 6px -3px #9cb9c1;
+        -moz-box-shadow: 0 8px 6px -3px #9cb9c1;
+        box-shadow: 0 8px 6px -3px #9cb9c1;
+}
+
+
+.status0,.status1,.status2 {
+    height:10px;
+    width:11px;
+    display:inline-block;
+    -webkit-box-shadow: 0 8px 6px -3px #9cb9c1;
+        -moz-box-shadow: 0 8px 6px -3px #9cb9c1;
+        box-shadow: 0 8px 6px -3px #9cb9c1;
+}
+.status0 {
+   background: url('../Images/cross.png') no-repeat transparent;
+}
+.status1 {
+     background: url('../Images/tick.png') no-repeat transparent;
+}
+.status2 {
+     background: url('../Images/steps.png') no-repeat transparent;
+}
+.status3 {
+   background: url('../Images/cross.png') no-repeat transparent;
+}
+.status5 {
+   background: url('../Images/return.png') no-repeat transparent;
+    height:20px;
+    width:20px;
+    display:inline-block;
+    -webkit-box-shadow: 0 8px 6px -3px #9cb9c1;
+        -moz-box-shadow: 0 8px 6px -3px #9cb9c1;
+        box-shadow: 0 8px 6px -3px #9cb9c1;
+}
+.changecolor
+{
+color:blue;
+}
+.changecolor1
+{
+color:maroon;
+}
+.statusP {
+     background: url('../Images/pdf.png') no-repeat transparent;
+}
+
+.fh_img1,.fh_img2,.fh_img3 {
+    height:20px;
+    width:21px;
+    display:inline-block;
+    -webkit-box-shadow: 0 8px 6px -3px #9cb9c1;
+        -moz-box-shadow: 0 8px 6px -3px #9cb9c1;
+        box-shadow: 0 8px 6px -3px #9cb9c1;
+}
+.fh_img1 {
+     background: url('../Images/Approved.png') no-repeat transparent;
+}
+.fh_img2 {
+     background: url('../Images/Cond Approved.png') no-repeat transparent;
+}
+.fh_img3 {
+     background: url('../Images/Not Approved.png') no-repeat transparent;
+}
+.openfile
+        {
+         margin-top:5px;
+         padding-left:20px;
+        }
+.fileattachment
+        {            
+         margin-top:5px;
+         padding-left:20px;
+        }
+
+.radmultipage .rmpview > iframe,.pageview > iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}

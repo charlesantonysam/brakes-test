@@ -1,0 +1,17 @@
+D:\New SES\SES\bin\Release\SES.dll.config
+D:\New SES\SES\bin\Release\SES.pdb
+D:\New SES\SES\obj\Release\SES.csproj.CoreCompileInputs.cache
+D:\New SES\SES\obj\Release\SES.dll
+D:\New SES\SES\obj\Release\SES.pdb
+D:\New SES\SES\obj\Release\SES.csproj.AssemblyReference.cache
+E:\Backup\Live Source\SES\SES\bin\Release\SES.dll.config
+E:\Backup\Live Source\SES\SES\bin\Release\SES.pdb
+E:\Backup\Live Source\SES\SES\obj\Release\SES.csproj.CoreCompileInputs.cache
+E:\Backup\Live Source\SES\SES\obj\Release\SES.dll
+E:\Backup\Live Source\SES\SES\obj\Release\SES.pdb
+D:\Brakes-test\SES\bin\Release\SES.dll.config
+D:\Brakes-test\SES\bin\Release\SES.dll
+D:\Brakes-test\SES\bin\Release\SES.pdb
+D:\Brakes-test\SES\obj\Release\SES.csproj.CoreCompileInputs.cache
+D:\Brakes-test\SES\obj\Release\SES.dll
+D:\Brakes-test\SES\obj\Release\SES.pdb

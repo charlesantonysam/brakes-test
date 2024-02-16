@@ -1,0 +1,1 @@
+D:\Deployment\Live Source\MyDetails\MyDetails\bin\Release\app.publish\1.0.0.0\MyDetails.app

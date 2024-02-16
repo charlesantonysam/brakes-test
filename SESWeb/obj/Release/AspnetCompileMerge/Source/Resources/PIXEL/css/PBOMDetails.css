@@ -1,0 +1,20 @@
+﻿.main-btns {
+top:0px;
+z-index:5;
+}
+.projcts-functions,.pbm-con {
+margin-top:55px;
+}
+.projcts-functions, .pbm-con {
+    z-index: 0 !important;
+}
+.pbom-lay table input, .pbom-lay table select {
+    padding: 0px 5px;
+    background-image:none;
+}
+.RadInput_Bootstrap.riSingle .riTextBox, .RadForm_Bootstrap.RadForm.rfdTextbox input.riTextBox.rfdDecorated {
+    height: 28px !important;
+}
+.pbom-lay table input, .pbom-lay table select {
+    height:27px;
+}

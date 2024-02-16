@@ -1,0 +1,1362 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Transactions/BI.Master" AutoEventWireup="true" CodeBehind="BIApplication.master.cs" Inherits="SESWeb.BIApplication" %>
+
+<%@ MasterType VirtualPath="~/Transactions/BI.Master" %>
+<asp:Content ID="phSearch" ContentPlaceHolderID="cphSearchBox" runat="server">
+    <ul class="mint-lis">
+        <telerik:RadSearchBox runat="server" EmptyMessage="Search Items" Width="100%" BackColor="#e5e6f1" OnClientSearch="ShowCustomLoading" OnClientLoad="txtSearchBox_onClientLoad"
+            BorderStyle="None" Skin="Bootstrap" ID="txtSearchBox" MinFilterLength="3" HighlightFirstMatch="true" EnableAutoComplete="true" Filter="Contains"
+            OnSearch="txtSearchBox_Search" DataTextField="Text" DataKeyNames="Type,Value">
+            <DropDownSettings Width="800px" Height="500px">
+                <ItemTemplate>
+                    <div>
+                        <p style="margin: 0px; margin-bottom: 5px; font-family: 'Lato'; font-weight: 500; font-style: normal; color: #7d7d7d; font-size: 12px; line-height: 15px;"><%# DataBinder.Eval(Container.DataItem, "Text") %></p>
+                    </div>
+                </ItemTemplate>
+            </DropDownSettings>
+        </telerik:RadSearchBox>
+    </ul>
+</asp:Content>
+<asp:Content ID="phMobileSearch" ContentPlaceHolderID="cphMobileSearchBox" runat="server">
+    <ul class="mint-lis">
+        <telerik:RadSearchBox runat="server" EmptyMessage="Search Items" Width="400px" BackColor="#e5e6f1" OnClientSearch="ShowCustomLoading" OnClientLoad="txtSearchBox_onClientLoad"
+            BorderStyle="None" Skin="Bootstrap" ID="txtMobileSearchBox" MinFilterLength="3" HighlightFirstMatch="true" EnableAutoComplete="true" Filter="Contains"
+            OnSearch="txtSearchBox_Search" DataTextField="ApplicationFullDescription" DataKeyNames="SharepointApplicationUrl">
+            <DropDownSettings Width="600px" Height="400px">
+                <ItemTemplate>
+                    <div>
+                        <h5 style="margin: 0px; margin-bottom: 5px; font-family: 'Lato'; font-weight: 500; font-style: normal; color: #7d7d7d; font-size: 14px;"><%# DataBinder.Eval(Container.DataItem, "ApplicationDescription") %></h5>
+                        <p style="margin: 0px; margin-bottom: 5px; font-family: 'Lato'; font-weight: 500; font-style: normal; color: #7d7d7d; font-size: 12px; line-height: 15px;"><%# DataBinder.Eval(Container.DataItem, "ApplicationFullDescription") %></p>
+                    </div>
+                </ItemTemplate>
+            </DropDownSettings>
+        </telerik:RadSearchBox>
+    </ul>
+
+</asp:Content>
+<asp:Content ID="phNotification" ContentPlaceHolderID="cphNotification" runat="server">
+    <a href="" runat="server" id="lnkNotification">
+        <img src="../Resources/pixel/images/icons/notification.png">
+        <span runat="server" id="lblNotificationBadge"></span></a>
+    <asp:Label runat="server" ID="lblNotificationCount"></asp:Label>
+
+    <ul class="notify-menu divse-menu section-left" id="ulNotification" style="overflow: auto; vertical-align: top;">
+        <ul class="mint-lis">
+            <telerik:RadListView runat="server" ID="rlvNotification" AllowPaging="false" OnItemCommand="rlvNotification_ItemCommand"
+                DataKeyNames="ApplicationName,NotificationId,RedirectionPage,Querystring,CreatedDate,PortalURL,ApplicationClientId,VirtualDirectory,PageName" AllowMultiItemSelection="false">
+                <ItemTemplate>
+                    <li>
+                        <asp:LinkButton runat="server" ID="btnNotification" CommandName="OpenTask" OnClientClick="ShowCustomLoading();">
+                                            <h5><%#Eval("MessageTitle") %></h5>
+                            <p><%#Eval("MessageDetail") %></p>
+                        </asp:LinkButton>
+                    </li>
+                </ItemTemplate>
+            </telerik:RadListView>
+
+        </ul>
+    </ul>
+    <telerik:RadScriptBlock runat="server" ID="rcbNotification">
+        <script type="text/javascript">
+            function UpdateNotificationViewStatus() {
+                try {
+                    var lblNotification = '#<%=lblNotificationCount.ClientID%>';
+                    var lblNotificationBadge = '#<%=lblNotificationBadge.ClientID%>';
+                    var TimeStamp = '<%=NotificationTimeStamp.ToString("dd/MMM/yyyy HH:mm:ss")%>';
+                    $telerik.$.ajax({
+                        url: 'Notifications.aspx/UpdateNotificationViewStatus',
+                        type: "POST",
+                        dataType: "json",
+                        data: "{'TimeStamp':'" + TimeStamp + "'}",
+                        contentType: "application/json; charset=utf-8",
+                        success: function (data) {
+                            $(lblNotification).css('display', 'none');
+                            $(lblNotificationBadge).css('display', 'none');
+                        }
+                    });
+                } catch (e) {
+
+                }
+            }
+            $telerik.$(document).ready(function () {
+                try {
+                    if ($($('#ulNotification')).find('a').length > 0) {
+                        $telerik.$('#ulNotification').height($telerik.$(window).height() - 30);
+                    }
+                } catch (e) {
+                    $telerik.$('#ulNotification').height($telerik.$(window).height() - 30);
+                }
+
+            });
+        </script>
+    </telerik:RadScriptBlock>
+</asp:Content>
+<asp:Content ID="phMainContent" ContentPlaceHolderID="cphMainContent" runat="server">
+    <section class="breadcrumbs-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopad">
+                    <div class="ess-menu-layer">
+                        <ul>
+                            <li class="">
+                                <a href="javascript:void(0)" class="hamburger-click" runat="server" id="lnkAppMenu">
+                                    <img src="../Resources/PIXEL/images/icons/hamburger.png" runat="server">
+                                    <span>
+                                        <h4>Service Entry Sheet</h4>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#" runat="server" id="lnkPortalLandingPage">
+                                    <img src="../Resources/PIXEL/images/icons/Home.png">
+                                    <span>
+                                        <h5>Home</h5>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <asp:HyperLink NavigateUrl="./SESProcess.aspx" runat="server" ID="lnkHome">
+                                        <img src="../Resources/PIXEL/images/icons/dashboard.png">
+                                        <span>
+                                            <h5>SES</h5>
+                                        </span>
+                                </asp:HyperLink>
+                            </li>
+                            <asp:ContentPlaceHolder ID="cphBreadCrumb" runat="server"></asp:ContentPlaceHolder>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-ico scnd-ess BIMenuList" id="menu-icos">
+            <asp:Label ID="lblMenuList" runat="server"></asp:Label>
+        </div>
+    </section>
+
+    <div>
+        <telerik:RadAjaxLoadingPanel runat="server" ID="ralpDashboard" Skin="Bootstrap" IsSticky="true" Style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 99999;" Width="256px" Height="64px">
+            <span class="lPanel" runat="server"></span>
+        </telerik:RadAjaxLoadingPanel>
+        <div id="CustomLoadingPanel" class="RadAjax RadAjax_Bootstrap" style="z-index: 99999999999; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute;">
+            <div class="raDiv"><span class="lPanel" runat="server">&nbsp;</span></div>
+            <div class="raColor raTransp"></div>
+        </div>
+        <link href="../Resources/Pixel/css/RadButton.css" rel="stylesheet" />
+        <link href="../Resources/Pixel/css/RadGrid.css" rel="stylesheet" />
+        <link href="../Resources/Pixel/css/RadTreeList.css" rel="stylesheet" />
+        <link href="../Resources/Pixel/css/DocumentIcons.css" rel="stylesheet" />
+        <link href="../Resources/Pixel/css/RadWindow.css" rel="stylesheet" />
+        <link href="../Resources/Pixel/css/RadInput.css" rel="stylesheet" />
+        <link href="../Resources/Pixel/css/TimeLine.css" rel="stylesheet" />
+        <link href="../Resources/Pixel/css/ProjectMembers.css" rel="stylesheet" />
+        <style type="text/css">
+            .rddlItem .rddlItemSelected, .rddlItem .rddlItemHovered, .rddlList .rddlItem:hover {
+                background-color: #96c3e8 !important;
+                color: #000 !important;
+            }
+
+            .k-toolbar > *, .RadPdfViewer_Metro .k-textbox, .RadPdfViewer_Metro .k-textarea, .RadPdfViewer_Metro .k-input.k-textbox,
+            .RadPdfViewer_Metro .k-combobox > :hover .k-select, .RadPdfViewer_Metro .k-combobox .k-state-hover .k-select,
+            .RadPdfViewer_Metro .k-combobox .k-select {
+                font-size: 13px;
+                color: #545454 !important;
+            }
+
+            .tabs-projects {
+                margin-top: 160px;
+            }
+
+            .main-btns {
+                top: 105px;
+            }
+
+            th {
+                background-color: #105caa;
+                text-align: left;
+                vertical-align: middle;
+                color: #fff;
+                font-family: 'Lato';
+                font-weight: 500;
+                font-style: normal;
+                font-size: 15px;
+                margin: 0px;
+            }
+
+            td {
+                text-align: left;
+                vertical-align: middle;
+            }
+
+            .ITWorking {
+                padding-top: 0px !important;
+            }
+
+                .ITWorking .form-group {
+                    padding: 5px !important;
+                    clear: both;
+                    width: 100%;
+                    min-width: 400px;
+                }
+
+                    .ITWorking .form-group label {
+                        min-width: 170px !important;
+                    }
+
+                    .ITWorking .form-group span {
+                        font-size: 16px !important;
+                    }
+
+            .PBOMWindow {
+                padding: 0px !important;
+            }
+
+            .TextLikeLabel {
+                border: solid 1px #afafaf;
+                padding: 5px 15px;
+                min-width: 50px;
+                text-align: right;
+                display: inline-block;
+                background-color: #fff;
+                height: 34px;
+            }
+
+                .TextLikeLabel Right {
+                    text-align: right;
+                }
+
+            .table-bordered.proj-tab td {
+                font-size: 16px;
+            }
+
+            .customInformation {
+                background-image: url(../resources/images/Message-Warning.png);
+                background-repeat: no-repeat;
+                background-color: #fff3cd;
+                border: solid 1px #ffeeba;
+                color: #856404;
+                padding: 5px 10px;
+                font-size: 14px;
+                padding-left: 35px;
+                border-radius: 5px;
+                background-size: 20px;
+                background-position-y: 8px;
+                background-position-x: 8px;
+                display: block;
+                margin: 5px 10px;
+            }
+
+            .rgRow td span.columntext, .breakword, .rgAltRow td span.columntext {
+                white-space: break-spaces;
+            }
+
+            .numbercolumn {
+                text-align: right;
+            }
+
+            .pop-up-form {
+                float: left;
+                width: 50%;
+                font-family: 'Lato';
+                font-weight: normal;
+                font-style: normal;
+                font-size: 15px;
+                color: #545454;
+                margin: 0px;
+                padding-top: 10px;
+            }
+
+            .RadTabStrip .rtsLevel1 {
+                border-bottom-width: 2px;
+                border-bottom-color: #e9ecef #e9ecef #dee2e6;
+            }
+
+            .RadTabStrip .tab.DefaultBGSetting {
+                /*background-color: #f8f8f8;
+        border-color: #e9ecef #e9ecef #dee2e6;
+        color: #545454;
+        font-size: 13px;
+        font-weight: bold;*/
+                background-color: #25a0da;
+                border-color: #e9ecef #e9ecef #dee2e6;
+                border-top: 3px solid transparent;
+                color: #545454;
+                font-size: 13px;
+            }
+
+                .RadTabStrip .tab.DefaultBGSetting .rtsLink {
+                    /*background-color: #f8f8f8;
+        border-color: #e9ecef #e9ecef #dee2e6;
+        color: #545454;
+        font-size: 13px;
+        font-weight: bold;*/
+                    background-color: #25a0da;
+                    border-color: #e9ecef #e9ecef #dee2e6;
+                    border-top: 3px solid transparent;
+                    color: #fff;
+                    font-size: 13px;
+                }
+
+            .RadTabStrip .tab.MyActionBGSetting {
+                /*background-color: yellowgreen !important;
+        font-size: 13px;
+        font-weight: bold;*/
+                background-color: #25a0da;
+                border-top: 3px solid green;
+                color: #495057;
+                font-size: 13px;
+            }
+
+                .RadTabStrip .tab.MyActionBGSetting .rtsLink {
+                    /*background-color: yellowgreen !important;
+        font-size: 13px;
+        font-weight: bold;*/
+                    background-color: #25a0da;
+                    border-top: 3px solid green;
+                    color: #fff;
+                    font-size: 13px;
+                }
+
+                .RadTabStrip .tab.MyActionBGSetting .selectedTab .rtsLink {
+                    /*background-color: yellowgreen !important;
+        font-size: 13px;
+        font-weight: bold;*/
+                    background-color: #fff;
+                    border-top: 3px solid green;
+                    color: #495057;
+                    font-size: 13px;
+                }
+
+            .RadTabStrip .tab.selectedTab {
+                /*background-color: #b3c6ff;
+        border-bottom-color: gainsboro;*/
+                background-color: #fff;
+                border-top: 3px solid #376BA1;
+                color: #495057;
+                font-size: 13px;
+            }
+
+                .RadTabStrip .tab.selectedTab .rtsLink {
+                    /*background-color: #b3c6ff;
+        border-bottom-color: gainsboro;*/
+                    background-color: #fff;
+                    border-top: 3px solid #376BA1;
+                    color: black;
+                    font-size: 13px;
+                }
+
+            .RadTabStrip .tab.hoveredTab {
+                /*background-color: #e6ecff;*/
+            }
+
+                .RadTabStrip .tab.hoveredTab.selectedTab {
+                    /*background-color: #b3c6ff;*/
+                }
+
+            /*.pbom-config {
+            width: auto;
+        }*/
+
+            .RadSlider_MetroTouch .rslSelectedregion {
+                background-color: #ecaa0a !important;
+            }
+
+            .RadSlider_MetroTouch .rslTrack a.rslDraghandle {
+                border-color: #0e5094 !important;
+                background-color: #105caa !important
+            }
+
+            .RadSlider_MetroTouch .rslHandle, .RadSlider_MetroTouch .rslDraghandle {
+                border-color: #CCC !important;
+                color: #717171 !important;
+                height: 50px;
+            }
+
+                .RadSlider_MetroTouch .rslHandle:active, .RadSlider_MetroTouch .rslHandle:focus, .RadSlider_MetroTouch .rslDraghandle:active, .RadSlider_MetroTouch .rslDraghandle:focus,
+                .RadSlider_MetroTouch .rslTrack a.rslDraghandle:hover, .RadSlider_MetroTouch .rslHandle:hover, .RadSlider_MetroTouch .rslDraghandle:hover {
+                    border-color: #0e5094 !important;
+                    background-color: #fff !important;
+                    color: #0e5094 !important;
+                }
+
+            .RadSlider .rslHorizontal.rslTop .rslLargeTick span, .RadSlider .rslHorizontal.rslTop .rslSmallTick span {
+                color: #717171 !important;
+            }
+
+            .RadSlider .rslHorizontal a.rslDecrease {
+                border-radius: 50px;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+
+            .RadSlider .rslHorizontal a.rslIncrease {
+                border-radius: 50px;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+            }
+
+            .NoImage input[type=button], .NoImage input[type=submit] {
+                padding-left: 5px !important;
+            }
+
+            .NoImage {
+                height: 35px !important;
+            }
+
+                span.RadButton_Bootstrap.rbSkinnedButton.NoImage:hover, span.RadButton_Bootstrap.rbLinkButton.NoImage:hover, span.RadButton_Bootstrap.rbVerticalButton.NoImage:hover, span.RadButton_Bootstrap.rbSkinnedButton.NoImage:focus, span.RadButton_Bootstrap.rbLinkButton.NoImage:focus, span.RadButton_Bootstrap.rbVerticalButton.NoImage:focus, .NoImage, .NoImage:hover, .NoImage:focus, .NoImage.rbHovered, .RadButton .NoImage:hover, .RadButton .NoImage:focus, .rbSkinnedButton.NoImage.rbHovered {
+                    border-radius: 0px !important;
+                    height: 35px !important;
+                }
+
+            .RadUpload .ruInputs li {
+                margin: 0px !important;
+                padding: 5px !important;
+            }
+
+            .RadUpload_Bootstrap .ruButton {
+                padding: 5px 10px !important;
+                border-radius: 0px !important;
+                width: auto !important;
+            }
+
+            .RadAsyncUpload {
+                border: 1px solid #afafaf !important;
+            }
+
+            .ess-profile-tab .nav-tabs li {
+                margin-bottom: 15px;
+            }
+
+            .profile-avatar, .profile-user-img {
+                box-sizing: border-box;
+                width: 170px;
+                height: 170px;
+                border: 2px solid #dddada;
+                border-radius: 50%;
+                overflow: hidden;
+                display: inline-block !important;
+                background: #eee url('../Resources/Images/loading_16_T.gif') 2px 2px no-repeat;
+                background-position: center;
+            }
+
+                .profile-avatar img, .profile-user-img img {
+                    vertical-align: middle;
+                    width: 170px;
+                    border-radius: 0px;
+                    border: none;
+                }
+
+            .profileBreadcrumb .profile-avatar-16 {
+                box-sizing: border-box;
+                width: 18px;
+                height: 18px;
+                border: 2px solid #dddada;
+                border-radius: 50%;
+                overflow: hidden;
+                display: inline-block !important;
+                background: #eee url('../Resources/Images/loading_16_T.gif') 2px 2px no-repeat;
+                background-size: 50%;
+                background-position: center;
+            }
+
+            .profileBreadcrumb .profile-avatar-30 img {
+                vertical-align: middle;
+                width: 16px;
+                border-radius: 0px;
+                border: none;
+            }
+
+            .RadGrid_Metro .rgHeader a {
+                color: #fff !important;
+            }
+
+            .RadGrid .rgFilterBox {
+                background-color: #fff !important;
+                border: 1px solid #afafaf !important;
+                border-radius: 0px !important;
+                color: #545454 !important;
+                font-family: 'lato' !important;
+                font-size: 13px !important;
+                padding: 1px 5px 2px 5px !important;
+                height: 20px;
+                width: 90%;
+            }
+
+            .RadGrid_Metro .rgFilter {
+                margin-left: -1px !important;
+                height: 23px !important;
+                border: 1px solid #afafaf !important;
+                background-color: #fff !important;
+            }
+
+                .RadGrid_Metro .rgFilter:hover, .RadGrid_Metro .rgFilter:focus {
+                    background-color: #e6e6e6 !important;
+                }
+
+            .RadSearchBox_Bootstrap .rsbInput {
+                margin-top: 0px !important;
+            }
+
+            .breadcrumbbutton.active span h5 {
+                color: #105CAA;
+                cursor: default;
+            }
+
+            .fileProperties .fileName {
+                font-size: 15px;
+            }
+
+            .RadWindow_MetroTouch .rwTable a.rwIcon {
+                background-image: url('../../Resources/PIXEL/images/window-title-Alert.png');
+            }
+
+            .RadWindow .rwDialogPopup .rwPopupButton, .RadWindow .rwDialogPopup .rwPopupButton span {
+                display: inline-block !important;
+                float: right !important;
+                color: #fff !important;
+                font-family: 'lato' !important;
+            }
+
+            .RadWindow_MetroTouch a.rwPopupButton, .RadWindow_MetroTouch td.rwWindowContent a.rwPopupButton:hover {
+                background-color: #0070c0 !important;
+                color: #fff !important;
+                border: solid 1px #0070c0 !important;
+                border-radius: 0px !important;
+                height: 35px !important;
+            }
+
+
+            .entry-form .form-group {
+                font-size: 15px;
+                font-weight: 500;
+                padding: 3px 8px;
+                margin-bottom: 0px;
+            }
+
+                .entry-form .form-group .bgn {
+                    padding: 3px 8px;
+                }
+
+                .entry-form .form-group label {
+                    font-weight: 400;
+                }
+
+                .entry-form .form-group .to, .to {
+                    padding: 0px 10px;
+                }
+
+            .RadPicker_Bootstrap .rcCalPopup {
+                border-radius: 0px !important;
+            }
+
+            .RadPicker_Bootstrap .RadInput_Bootstrap.riSingle .riTextBox, .RadForm_Bootstrap.RadForm.rfdTextbox input.riTextBox.rfdDecorated {
+                height: 34px !important;
+            }
+
+            .RadCalendarMonthView_Bootstrap, .RadCalendarMonthView_Bootstrap a, .RadCalendar_Bootstrap .rcMain .rcRow a, .RadCalendar_Bootstrap .rcMain .rcRow span {
+                font-family: 'lato' !important;
+                font-size: 15px !important;
+                color: #545454 !important;
+            }
+
+                .RadCalendarMonthView_Bootstrap .rcSelected a, .RadCalendar_Bootstrap .rcMain .rcRow .rcSelected a {
+                    /*background-color:#0070c0 !important;*/
+                    color: #fff !important;
+                    border-radius: 0px !important;
+                }
+
+                .RadCalendarMonthView_Bootstrap .rcButtons input {
+                    border-radius: 0px !important;
+                    color: #545454 !important;
+                    width: 55px !important;
+                }
+
+                .RadCalendarMonthView_Bootstrap #rcMView_OK {
+                    background-color: #0070c0 !important;
+                    color: #fff !important;
+                    float: right;
+                    width: 45px !important;
+                }
+
+            .MainbuttonPresent {
+                padding-top: 160px;
+            }
+
+            .RadCalendar_Bootstrap .rcWeek th {
+                background-color: #e6e6e6 !important;
+            }
+
+            .RadCalendar_Bootstrap .rcWeek {
+                border: solid 1px #adadad !important;
+            }
+
+            .rcTitlebar table caption:first-child {
+                display: none
+            }
+
+            .RadCalendarPopupShadows > .rcShadBL, .RadCalendarPopupShadows > .rcShadBR, .RadCalendarPopupShadows > .rcShadTR {
+                background-image: none !important;
+            }
+
+            .RadCalendarMonthView_Bootstrap a {
+                border: solid 1px #fff !important;
+            }
+
+                .RadCalendar_Bootstrap .rcRow .rcHover a, .RadCalendarMonthView_Bootstrap a:hover {
+                    background-color: #fff !important;
+                    color: #337ab7 !important;
+                    border: solid 1px #357ebd !important;
+                    border-radius: 0px !important;
+                }
+
+            span.RadButton_Bootstrap.rbSkinnedButton.SecondaryWindowButton:hover, span.RadButton_Bootstrap.rbLinkButton.SecondaryWindowButton:hover, span.RadButton_Bootstrap.rbVerticalButton.SecondaryWindowButton:hover, span.RadButton_Bootstrap.rbSkinnedButton.SecondaryWindowButton:focus, span.RadButton_Bootstrap.rbLinkButton.SecondaryWindowButton:focus, span.RadButton_Bootstrap.rbVerticalButton.SecondaryWindowButton:focus, .SecondaryWindowButton, .SecondaryWindowButton:hover, .SecondaryWindowButton:focus, .SecondaryWindowButton.rbHovered, .RadButton .SecondaryWindowButton:hover, .RadButton .SecondaryWindowButton:focus, .rbSkinnedButton.SecondaryWindowButton.rbHovered {
+                background-color: #fff !important;
+            }
+
+                .SecondaryWindowButton input[type=button], .SecondaryWindowButton input[type=submit] {
+                    color: #0070c0 !important;
+                }
+
+            span.RadButton_Bootstrap.rbSkinnedButton.OptionalWindowButton:hover, span.RadButton_Bootstrap.rbLinkButton.OptionalWindowButton:hover, span.RadButton_Bootstrap.rbVerticalButton.OptionalWindowButton:hover, span.RadButton_Bootstrap.rbSkinnedButton.OptionalWindowButton:focus, span.RadButton_Bootstrap.rbLinkButton.OptionalWindowButton:focus, span.RadButton_Bootstrap.rbVerticalButton.OptionalWindowButton:focus, .OptionalWindowButton, .OptionalWindowButton:hover, .OptionalWindowButton:focus, .OptionalWindowButton.rbHovered, .RadButton .OptionalWindowButton:hover, .RadButton .OptionalWindowButton:focus, .rbSkinnedButton.OptionalWindowButton.rbHovered {
+                background-color: #e0e0e0 !important;
+            }
+
+                .OptionalWindowButton input[type=button], .OptionalWindowButton input[type=submit] {
+                    color: #545454 !important;
+                }
+
+            .ButtonSpace {
+                display: inline-block;
+                width: 10px;
+            }
+
+            .pnbs {
+                width: auto;
+                padding-right: 10px;
+            }
+
+            .RadWindow .rwWindowContent .radconfirm {
+                background-position-y: top !important;
+            }
+
+            .CustomToggle input[type=radio], .CustomToggle input[type=checkbox] {
+                width: 20px;
+                height: 20px;
+            }
+
+            .CustomToggle > tbody > tr > td {
+                white-space: nowrap;
+            }
+
+            .CustomToggle label {
+                position: relative;
+                top: -4px;
+                padding-left: 5px;
+                margin-right: 10px;
+                clear: both;
+            }
+
+            .CustomToggle > tbody > tr > td > label, .CustomToggle > tbody > tr > td > span > label, .CustomToggle label {
+                position: relative;
+                top: -4px;
+                padding-left: 5px;
+                margin-right: 10px;
+                float: none;
+            }
+
+            .customInformation .title {
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .customInformation ul {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .customInformation li {
+                list-style: url('../Resources/PIXEL/images/help-arrow1.png');
+                line-height: 30px;
+                margin-left: 25px;
+                /*padding:5px;*/
+            }
+
+                .customInformation li span {
+                    position: relative;
+                    top: -7px;
+                }
+
+            .RadLabel_Bootstrap {
+                font-family: 'lato' !important;
+                color: #717171 !important;
+            }
+
+            .customInformation .RadLabel_Bootstrap {
+                color: #856404 !important;
+            }
+
+
+            [class^="RadMultiPage"] div, [class^="RadAjaxPanel"] div {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            .RadRadioButton .rbIcon::before, .RadCheckBox .rbIcon::before {
+                font-size: 33px !important;
+                color: #337ab7 !important;
+            }
+
+            .RadRadioButton .rbText, .RadCheckBox .rbText {
+                padding-top: 5px !important;
+                color: #545454 !important;
+            }
+
+            span.RadButton_Bootstrap .rbToggleCheckbox,
+            span.RadButton_Bootstrap .rbToggleCheckboxChecked,
+            span.RadButton_Bootstrap .rbToggleCheckboxFilled {
+                /*background-color:transparent !important;*/
+                background-image: url('../Resources/Pixel/images/icons/customcheckbox.png');
+            }
+
+            .rbToggleButton .rbToggleCheckbox {
+                height: 27px;
+                width: 27px;
+                background-position: 0px -19px;
+                margin-top: -2px;
+                /*margin-right:20px;*/
+            }
+
+            .rbToggleCheckbox:hover, .rbToggleButton:hover .rbToggleCheckbox,
+            .rbToggleCheckboxChecked:hover, .rbToggleButton:hover .rbToggleCheckboxChecked {
+                background-position: -28px -19px;
+                margin-top: -2px;
+            }
+
+            .rbToggleCheckboxChecked {
+                height: 27px;
+                width: 27px;
+                background-position: -57px -19px;
+                margin-top: -2px;
+            }
+
+            .rbToggleCheckbox:hover, .rbDisabled:hover .rbToggleCheckbox {
+                background-position: -88px -19px;
+                margin-top: 3px;
+            }
+
+            .rbDisabled .rbToggleCheckbox, .rbDisabled .rbToggleCheckbox, .rbDisabled .rbToggleCheckbox:hover, .rbDisabled:hover .rbToggleCheckbox {
+                background-position: -85px -19px;
+                margin-top: 3px;
+            }
+
+            .rbDisabled .rbToggleCheckboxChecked, .rbDisabled .rbToggleCheckboxChecked, .rbDisabled .rbToggleCheckboxChecked:hover, .rbDisabled:hover .rbToggleCheckboxChecked {
+                background-position: -112px -19px;
+                margin-top: 3px;
+            }
+
+            .rbToggleButton {
+                background-color: transparent !important;
+            }
+
+            span.RadButton_Bootstrap .rbToggleRadio,
+            span.RadButton_Bootstrap .rbToggleRadioChecked {
+                background-image: url('../Resources/Pixel/images/icons/customradiobuttons.png');
+            }
+
+            .rbToggleButton .rbToggleRadio {
+                height: 27px;
+                width: 27px;
+                background-position: 0px 0px;
+                margin-top: -2px;
+                /*margin-right:20px;*/
+            }
+
+            .rbToggleButton .rbText, .rbToggleButton .rbPrimary {
+                padding-left: 40px !important;
+                color: #545454 !important;
+                /*padding-top:2px !important;*/
+            }
+
+            .rbToggleRadio:hover, .rbToggleButton:hover .rbToggleRadio,
+            .rbToggleRadioChecked:hover, .rbToggleButton:hover .rbToggleRadioChecked {
+                background-position: -27px 0px;
+                margin-top: -2px;
+            }
+
+            .rbToggleRadioChecked {
+                height: 27px;
+                width: 27px;
+                background-position: -54px 0px;
+                margin-top: -2px;
+            }
+
+            .rbToggleRadio:hover, .rbDisabled:hover .rbToggleRadio {
+                background-position: -80px 0px;
+                margin-top: 3px;
+            }
+
+            .rbDisabled .rbToggleRadio, .rbDisabled .rbToggleRadio, .rbDisabled .rbToggleRadio:hover, .rbDisabled:hover .rbToggleRadio {
+                background-position: -80px 0px;
+                margin-top: 3px;
+            }
+
+            .rbDisabled .rbToggleRadioChecked, .rbDisabled .rbToggleRadioChecked, .rbDisabled .rbToggleRadioChecked:hover, .rbDisabled:hover .rbToggleRadioChecked {
+                background-position: -106px 0px;
+                margin-top: 3px;
+            }
+
+            .RadComboBox_Bootstrap {
+                font-family: 'lato' !important;
+                color: #545454 !important;
+            }
+
+                .RadComboBox_Bootstrap .rcbInputCell {
+                    border-radius: 0px !important;
+                    border: 1px solid #afafaf !important;
+                    background-color: #fff !important;
+                    border-right: none !important;
+                }
+
+                .RadComboBox_Bootstrap .rcbArrowCell {
+                    border-radius: 0px !important;
+                    border: 1px solid #afafaf !important;
+                    background-color: #fff !important;
+                    border-left: none !important;
+                }
+
+                    .RadComboBox_Bootstrap .rcbArrowCell a {
+                        background-color: #fff !important;
+                    }
+
+            .RadComboBoxDropDown_Bootstrap .rcbItem {
+                padding: 2px 12px !important;
+            }
+
+            .RadComboBoxDropDown_Bootstrap .rcbHovered {
+                background-color: #96c3e8 !important;
+            }
+
+            .pop-up-window {
+                background-color: #e5e6f1 !important;
+                padding: 10px;
+            }
+
+            .entry-form .form-group label, .entry-form .form-group span {
+                color: #717171;
+                font-family: 'lato';
+                font-size: 15px;
+            }
+
+            .entry-form .form-group span {
+                font-weight: 600;
+            }
+
+            .file {
+                background: none;
+            }
+
+            .RadDropDownList .rddlFakeInput {
+                font-size: 13px !important;
+            }
+
+            .moretext {
+                color: #1269c3;
+                border: 1px solid #1269c3;
+                border-radius: 3px;
+                font-size: 12px;
+                cursor: pointer;
+                padding: 2px 5px;
+            }
+
+                .moretext:hover, .moretext:focus {
+                    background: #1269c3;
+                    color: #fff;
+                }
+
+            .characterLength {
+                display: inline-block;
+                font-size: 13px;
+            }
+
+            .noHeader {
+                display: none !important;
+            }
+
+            .pnbs {
+                color: #fff;
+                font-size: 12px;
+            }
+
+            input[type=checkbox], input[type=radio] {
+                height: 22px;
+                width: 22px;
+            }
+
+            .RejectDocument {
+                background-image: url('../Resources/PIXEL/images/rej.png');
+            }
+
+            .IconButton, span.IconButton:hover, span.IconButton:active, span.IconButton:focus, .IconButton.rbHovered,
+            .rgAltRow {
+                background-color: transparent !important;
+                border-radius: 50%;
+            }
+
+            .WindowCancelButton, .rbSkinnedButton.WindowCancelButton, span.rbSkinnedButton.WindowCancelButton, span.RadButton_Bootstrap.rbSkinnedButton.WindowCancelButton {
+                transition: none !important;
+                border: solid 1px #545454 !important;
+                color: silver !important;
+                background-color: #fff !important;
+            }
+
+                .WindowCancelButton rbText {
+                    color: #545454 !important;
+                }
+
+            .border-box, .border-box div {
+                box-sizing: border-box !important;
+            }
+
+            /*.menu-ico .sub-menu li a,.child-sub-menu li a {
+            background-color:#fff !important;
+            border: 1px solid #1269c3;
+            border-radius: 3px;
+            color:#1269c3 !important;
+        }*/
+            /*.menu-ico .sub-menu li a:hover,.menu-ico .sub-menu li a:focus {
+            background-color:#dee2e6 !important;
+        }*/
+            .align-left {
+                text-align: left;
+            }
+
+            .align-center {
+                text-align: center;
+            }
+
+            .align-right {
+                text-align: right;
+            }
+
+            strong.dfr-blue, strong.dfr-red {
+                border-radius: 50%;
+                padding: 4px 8px;
+            }
+
+            .RadSearchBox_Bootstrap .rsbButton {
+                width: 28px !important;
+                /*top:0px !important;*/
+            }
+
+            .RadGrid_Metro .rgMasterTable, .RadGrid_Metro .rgDetailTable, .RadGrid_Metro .rgGroupPanel table, .RadGrid_Metro .rgCommandRow table, .RadGrid_Metro .rgEditForm table, .RadGrid_Metro .rgPager table {
+                font-family: 'lato' !important;
+            }
+
+            .RadGrid_Metro .rgGroupHeader {
+                background: #e0e0e0 !important;
+                height: 40px !important;
+                color: #545454 !important;
+                font-weight: bold !important;
+            }
+
+            .RadGrid_Metro td.rgGroupCol, .RadGrid_Metro td.rgExpandCol {
+                background: #e0e0e0 !important;
+            }
+
+            .RadGrid .rgGroupHeader td div div {
+                padding: 0px !important;
+            }
+
+            .breadcrumbbutton input[type=button], .breadcrumbbutton input[type=submit], .breadcrumbbutton.active input[type=button], .breadcrumbbutton.active input[type=submit] {
+                display: inline-block !important;
+            }
+
+            .hiddensidenav {
+                transform: translateX(-310px);
+            }
+
+            .leftsidenav {
+                height: 100%;
+                width: 300px;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #fff;
+                overflow: hidden;
+                transition: all 600ms ease-in;
+                box-shadow: 0 3px 10px 0 rgba(38,59,94,.1);
+                padding-top: 105px;
+            }
+
+            .menucontainer {
+                height: 86%;
+                width: 300px;
+                position: fixed;
+                overflow-x: hidden;
+                /*transition: all 1000ms ease-in;*/
+                background-color: #fff;
+            }
+
+            #pnlMainContent {
+                transition: margin-left .5s;
+                margin-left: 0;
+                /*overflow-x:hidden;*/
+            }
+
+            @media screen and (max-height: 450px) {
+                .leftsidenav {
+                    padding-top: 15px;
+                }
+
+                    .leftsidenav a {
+                        font-size: 15px;
+                    }
+            }
+
+            .RadPanelBar_Bootstrap {
+                font-family: 'lato' !important;
+            }
+
+            .RadPanelBar .rpLink {
+                padding: 6px 10px 3px 10px !important;
+            }
+
+            .RadPanelBar_Bootstrap .rpLink .rpText {
+                font-size: 13px !important;
+                padding-left: 8px !important;
+            }
+
+            .RadPanelBar_Bootstrap .rpRootLink .rpText, .RadPanelBar_Bootstrap .rpHeaderTemplate {
+                font-size: 14px !important;
+                padding-left: 0px !important;
+                padding-bottom: 5px !important;
+            }
+
+            .RadPanelBar_Bootstrap .rpRootLink .rpExpanded .rpText {
+                font-weight: 600 !important;
+            }
+
+            .RadPanelBar_Bootstrap .rpLink .rpText:hover {
+                color: #105caa !important;
+            }
+
+            .RadPanelBar_Bootstrap .rpLink.rpSelected {
+                color: #105caa !important;
+                background-color: #E3E9EF !important;
+                border-color: transparent !important;
+            }
+
+            .RadPanelBar_Bootstrap .rpExpandHandle {
+                top: 0px !important;
+            }
+
+            .PinMenuContainer {
+                display: block;
+                height: 40px;
+                width: 100%;
+                border-bottom: solid 1px #cacaca;
+            }
+
+            .PinMenu {
+                display: block;
+                float: right;
+                width: 40px;
+                height: 40px;
+                background-image: url('../Resources/Images/menupin.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                cursor: pointer;
+            }
+
+                .PinMenu:hover, .PinMenu:focus {
+                    background-image: url('../Resources/Images/menupin_H.png');
+                }
+
+            .MenuPinned {
+                background-image: url('../Resources/Images/menuunpinned.png');
+            }
+
+            .conveyance-pdf-block {
+                margin-right: 5px;
+            }
+
+            .conveyance-pdf-blocks, .conveyance-pdf-title {
+                padding: 0px 0px;
+            }
+
+            .conveyance-pdf-block .conveyance-pdf-title {
+                padding: 5px 15px;
+            }
+
+            .conveyance-pdf-block .general-first-row {
+                padding-top: 0px;
+            }
+
+            .general-detail-cont h4, .general-detail-cont h3, .conveyance-pdf-block .general-detail-cont h3, .conveyance-pdf-block .general-detail-cont h4 {
+                display: inline-block;
+                margin-bottom: 0px;
+            }
+
+            general-first-row {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            .conveyance-pdf-block .general-first-row.bt-none.dlb .general-detail-cont {
+                vertical-align: top;
+                padding-top: 2px;
+            }
+
+            .approve-form-field {
+                padding-top: 5px;
+                margin-bottom: -5px;
+            }
+
+            .conveyance-pdf-block .general-first-row.bt-none.dlb .approve-form-field {
+                padding-left: 5px;
+            }
+
+            html {
+                padding-bottom: 0px;
+            }
+            /* Extra small devices (phones, 600px and down) */
+            @media only screen and (max-width: 600px) {
+                .serch-tag {
+                    width: 35%;
+                }
+            }
+
+            /* Small devices (portrait tablets and large phones, 600px and up) */
+            @media only screen and (min-width: 600px) {
+                .serch-tag {
+                    width: 40%;
+                }
+            }
+
+            /* Medium devices (landscape tablets, 768px and up) */
+            @media only screen and (min-width: 768px) {
+                .serch-tag {
+                    width: 45%;
+                }
+            }
+
+            /* Large devices (laptops/desktops, 992px and up) */
+            @media only screen and (min-width: 992px) {
+                .serch-tag {
+                    width: 50%;
+                }
+            }
+
+            /* Extra large devices (large laptops and desktops, 1200px and up) */
+            @media only screen and (min-width: 1200px) {
+                .serch-tag {
+                    width: 55%;
+                }
+            }
+        </style>
+        <telerik:RadCodeBlock runat="server" ID="rcbGeneral">
+            <script type="text/javascript">
+                $ = $telerik.$;
+                function HideCustomLoading() {
+                    try {
+                        setTimeout(function () { $("#CustomLoadingPanel").css('display', 'none'); }, 500);
+                    } catch (e) {
+
+                    }
+                }
+
+                function ShowCustomLoading() {
+                    try {
+                        centerElementOnScreen();
+                        $("#CustomLoadingPanel").css('display', 'block');
+                    } catch (e) {
+
+                    }
+                }
+
+                ShowCustomLoading();
+
+                function centerElementOnScreen() {
+                    try {
+                        var elements = $('.lPanel');
+                        var scrollTop = document.body.scrollTop;
+                        var scrollLeft = document.body.scrollLeft;
+                        var viewPortHeight = document.body.clientHeight;
+                        var viewPortWidth = document.body.clientWidth;
+                        if (document.compatMode == "CSS1Compat") {
+                            viewPortHeight = document.documentElement.clientHeight;
+                            viewPortWidth = document.documentElement.clientWidth;
+                            if (!$telerik.isSafari) {
+                                scrollTop = document.documentElement.scrollTop;
+                                scrollLeft = document.documentElement.scrollLeft;
+                            }
+                        }
+                        var topOffset = Math.ceil(viewPortHeight / 2 - $(elements[0]).prop('clientHeight') / 2);
+                        var leftOffset = Math.ceil(viewPortWidth / 2 - $(elements[0]).prop('clientWidth') / 2);
+                        var top = scrollTop + topOffset - 70;
+                        var left = scrollLeft + leftOffset - 100;
+                        $(elements).css('position', 'absolute');
+                        $(elements).css('top', top);
+                        $(elements).css('left', left);
+                    }
+                    catch (err) { }
+                }
+
+                function txtSearchBox_onClientLoad(sender, args) {
+                    sender._requestDelay = 1000;
+                }
+
+                function counter(field, countfield, maxlimit) {
+                    if ('#' + countfield == null) { return; }
+                    $telerik.$('#' + countfield).show();
+                    $telerik.$('#' + countfield).html(maxlimit - field.value.length + " Characters Remaining");
+                    if (maxlimit === field.value.length) {
+                        $telerik.$('#' + countfield).css('color', 'red');
+                        setTimeout(function () { $telerik.$('#' + countfield).hide(); }, 1000);
+                    }
+                    else {
+                        $telerik.$('#' + countfield).css('color', 'green');
+                    }
+                }
+
+                function ShowSideMenu(show) {
+                    var ua = window.navigator.userAgent;
+                    var msie = ua.indexOf("MSIE ");
+                    if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, return version number
+                    {
+                        if (show == true)
+                            $(".SideMenuList").show();
+                        else
+                            $(".SideMenuList").hide();
+                    }
+                }
+
+                var BISideNavOpen = false;
+                $(document).ready(function () {
+                    if (cookies.test()) {
+                        if (cookies.get("BISideNavOpen") != null) {
+                            BISideNavOpen = cookies.get("BISideNavOpen");
+                            if (BISideNavOpen == true || BISideNavOpen == "true") {
+                                $(".SideMenuList").removeClass("hiddensidenav");
+                                $(".main-btns").css("padding-right", "300px");
+                                $("#pnlMainContent").css("marginLeft", "310px");
+                                $(".PinMenu").addClass("MenuPinned");
+                                $(".PinMenu").prop('title', "Unpin menus");
+                                ShowSideMenu(true);
+                            }
+                            else {
+                                $(".SideMenuList").addClass("hiddensidenav");
+                                $(".main-btns").css("padding-right", "0px");
+                                $("#pnlMainContent").css("marginLeft", "0px");
+                                $(".PinMenu").removeClass("MenuPinned");
+                                $(".PinMenu").prop('title', "Pin menus");
+                                ShowSideMenu(false);
+                            }
+                        }
+                        else {
+                            $(".SideMenuList").addClass("hiddensidenav");
+                            $(".main-btns").css("padding-right", "0px");
+                            $("#pnlMainContent").css("marginLeft", "0px");
+                            $(".PinMenu").removeClass("MenuPinned");
+                            $(".PinMenu").prop('title', "Pin menus");
+                            ShowSideMenu(false);
+                        }
+                    }
+                    else {
+                        $(".SideMenuList").addClass("hiddensidenav");
+                        $(".main-btns").css("padding-right", "0px");
+                        $("#pnlMainContent").css("marginLeft", "0px");
+                        $(".PinMenu").removeClass("MenuPinned");
+                        $(".PinMenu").prop('title', "Pin menus");
+                        ShowSideMenu(false);
+                    }
+
+                });
+                $('.hamburger-click').click(function () {
+                    if ($(".SideMenuList").hasClass("hiddensidenav")) {
+                        $(".SideMenuList").removeClass("hiddensidenav");
+                        $("#pnlMainContent").css("marginLeft", "310px");
+                        $(".main-btns").css("padding-right", "300px");
+                        ShowSideMenu(true);
+                    }
+                    else {
+                        $(".SideMenuList").addClass("hiddensidenav");
+                        $(".main-btns").css("padding-right", "0px");
+                        $("#pnlMainContent").css("marginLeft", "0px");
+                        ShowSideMenu(false);
+                    }
+                });
+
+                function PinMenu() {
+                    BISideNavOpen = cookies.get("BISideNavOpen");
+                    if (BISideNavOpen == false || BISideNavOpen == "false") {
+                        $(".PinMenu").addClass("MenuPinned");
+                        $(".PinMenu").prop('title', "Unpin menus");
+                        ShowSideMenu(true);
+                        UpdateSideNavCookie(true);
+                        BISideNavOpen = true;
+                    }
+                    else {
+                        $(".PinMenu").removeClass("MenuPinned");
+                        $(".PinMenu").prop('title', "Pin menus");
+                        $(".SideMenuList").addClass("hiddensidenav");
+                        $(".main-btns").css("padding-right", "0px");
+                        $("#pnlMainContent").css("marginLeft", "0px");
+                        ShowSideMenu(false);
+                        UpdateSideNavCookie(false);
+                        BISideNavOpen = false;
+                    }
+                }
+
+                function UpdateSideNavCookie(newValue) {
+                    cookies.set('BISideNavOpen', newValue, { expires: 10000 });
+                }
+
+                $(document).ready(function () {
+                    try {
+                        HideCustomLoading();
+                    } catch (e) { }
+                });
+            </script>
+        </telerik:RadCodeBlock>
+    </div>
+    <div>
+        <div class="leftsidenav SideMenuList hiddensidenav">
+            <div class="menucontainer">
+                <div class="PinMenuContainer"><span class="PinMenu" title="Pin / Unpin Menus" onclick="PinMenu()"></span></div>
+                <telerik:RadPanelBar BorderColor="Transparent" RenderMode="Lightweight" runat="server" ID="rpMenus" Width="100%" Skin="Bootstrap">
+                    <Items>
+                    </Items>
+                </telerik:RadPanelBar>
+            </div>
+        </div>
+
+        <div id="pnlMainContent">
+            <asp:ContentPlaceHolder ID="cphPagecontent" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <section>
+        <div class="getinTouch wow animated slideInRight animated">
+            <!--<div id="getform1" class="heading getform1" style=""><span><img src="images/set.png">Widget</span></div>
+					<span class="new"><img src="images/new.png"></span>-->
+            <div class="fillDetail scrlcnt">
+
+                <asp:Panel runat="server" ID="pnlAdmin" Visible="false" Style="margin-bottom: 10px; border-bottom: 1px solid #d2d2d2; padding-bottom: 10px; padding-top: 5px;">
+                    <p>Impersonate as :</p>
+                    <div style="padding-left: 10px;">
+                        <asp:TextBox runat="server" ID="txtUserId" Style="border: solid 1px #d2d2d2;"></asp:TextBox>
+                        <asp:Button runat="server" ID="btnChange" OnClick="btnChange_Click" Style="background-color: #fba81c; color: #fff; border: none" Text="Go" /><br />
+                    </div>
+
+                </asp:Panel>
+
+                <div style="margin-bottom: 10px; border-bottom: 1px solid #d2d2d2; padding-bottom: 10px; padding-top: 5px;">
+                    <p>Zoom in / out content.</p>
+                    <div style="padding-left: 10px;" class="font-size-increase" data-step="4" data-intro="<b>Zoom</b><br>Zoom in / out content">
+                        <a href="javascript:void(0)" id="btn-increase" class="inc">A<sup>+</sup></a> / <a href="javascript:void(0)" id="btn-decrease" class="dec">A<sup>-</sup></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</asp:Content>

@@ -1,0 +1,35 @@
+E:\.net devlopement\Sharepoint\MyDetails\MyDetails\bin\Release\MyDetails.pdb
+E:\.net devlopement\Sharepoint\MyDetails\MyDetails\obj\Release\MyDetails.csproj.CoreCompileInputs.cache
+E:\.net devlopement\Sharepoint\MyDetails\MyDetails\obj\Release\MyDetails.dll
+E:\.net devlopement\Sharepoint\MyDetails\MyDetails\obj\Release\MyDetails.pdb
+E:\.net devlopement\Sharepoint\MyDetails\MyDetails\obj\Release\MyDetails.csprojAssemblyReference.cache
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetails\bin\Release\MyDetails.dll.config
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetails\bin\Release\MyDetails.pdb
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetails\obj\Release\MyDetails.csproj.CoreCompileInputs.cache
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetails\obj\Release\MyDetails.dll
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetails\obj\Release\MyDetails.pdb
+E:\Development\Devl2018\Azure\Devl\MyDetails\MyDetails\obj\Release\MyDetails.csprojAssemblyReference.cache
+E:\.net devlopement\Sharepoint\MyDetails\MyDetails\bin\Release\MyDetails.dll.config
+E:\.net devlopement\MyDetails\MyDetails\bin\Release\MyDetails.dll.config
+E:\.net devlopement\MyDetails\MyDetails\bin\Release\MyDetails.pdb
+E:\.net devlopement\MyDetails\MyDetails\obj\Release\MyDetails.csprojAssemblyReference.cache
+E:\.net devlopement\MyDetails\MyDetails\obj\Release\MyDetails.csproj.CoreCompileInputs.cache
+E:\.net devlopement\MyDetails\MyDetails\obj\Release\MyDetails.dll
+E:\.net devlopement\MyDetails\MyDetails\obj\Release\MyDetails.pdb
+D:\flora\Deployment\Live Source\MyDetails\MyDetails\bin\Release\MyDetails.dll.config
+D:\flora\Deployment\Live Source\MyDetails\MyDetails\bin\Release\MyDetails.pdb
+D:\flora\Deployment\Live Source\MyDetails\MyDetails\obj\Release\MyDetails.csproj.CoreCompileInputs.cache
+D:\flora\Deployment\Live Source\MyDetails\MyDetails\obj\Release\MyDetails.dll
+D:\flora\Deployment\Live Source\MyDetails\MyDetails\obj\Release\MyDetails.pdb
+D:\flora\Deployment\Live Source\MyDetails\MyDetails\obj\Release\MyDetails.csprojAssemblyReference.cache
+D:\Deployment\Live Source\MyDetails\MyDetails\bin\Release\MyDetails.dll.config
+D:\Deployment\Live Source\MyDetails\MyDetails\bin\Release\MyDetails.pdb
+D:\Deployment\Live Source\MyDetails\MyDetails\obj\Release\MyDetails.csprojAssemblyReference.cache
+D:\Deployment\Live Source\MyDetails\MyDetails\obj\Release\MyDetails.csproj.CoreCompileInputs.cache
+D:\Deployment\Live Source\MyDetails\MyDetails\obj\Release\MyDetails.dll
+D:\Deployment\Live Source\MyDetails\MyDetails\obj\Release\MyDetails.pdb
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetails\bin\Release\MyDetails.dll.config
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetails\bin\Release\MyDetails.pdb
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetails\obj\Release\MyDetails.csproj.CoreCompileInputs.cache
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetails\obj\Release\MyDetails.dll
+F:\Mohanraj\Workings\2020\New Portal\ESS\MyDetails\MyDetails\obj\Release\MyDetails.pdb

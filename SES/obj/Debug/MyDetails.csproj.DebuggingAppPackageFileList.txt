@@ -1,0 +1,1 @@
+E:\.net devlopement\Sharepoint\MyDetails\MyDetails\bin\Debug\MyDetails.debugapp

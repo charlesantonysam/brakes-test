@@ -1,0 +1,18 @@
+﻿/*Conversation*/
+.post-comments {
+overflow:hidden;
+height:auto;
+padding:5px 10px 30px 10px;
+
+}
+
+#timeline .timeline-movement .timeline-item .timeline-panel.credits .timeline-panel-ul {
+    text-align: right;
+}
+#timeline .timeline-movement .nxt .timeline-item .timeline-panel.credits .timeline-panel-ul {
+  text-align:center;
+}
+
+.notify-bx {
+    width:30px;
+}

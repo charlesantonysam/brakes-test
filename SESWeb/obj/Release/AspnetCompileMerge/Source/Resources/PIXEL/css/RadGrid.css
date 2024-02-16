@@ -1,0 +1,84 @@
+﻿.RadGrid_Metro .rgMultiHeaderRow th.rgHeader, .RadGrid_Metro .rgMultiHeaderRow th.rgResizeCol, .RadGrid_Metro .rgHeader {
+    border-color: #0e5094 !important;
+    color: #fff !important;
+    background-color: #105caa;
+    font-weight: 500 !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    height: 30px !important;
+}
+.RadGrid_Metro .rgAltRow {
+    background-color: #e3e9ef !important;
+}
+.RadGrid_Metro .rgRow, .RadGrid_Metro .rgAltRow {
+    border-bottom: 1px solid #d9dbe3 !important;
+}
+    .RadGrid_Metro .rgAltRow > td, .RadGrid_Metro .rgRow > td, .FileGrid td, .rgNoRecords > td, .RadGrid_Metro .rgFooterWrapper .rgFooter > td {
+        border-color: transparent !important;
+        border-bottom: 1px solid #d9dbe3 !important;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+        font-family: 'lato' !important;
+        font-size: 13px !important;
+        color: #717171 !important;
+        height: 30px !important;
+    }
+
+.RadGrid_Metro .rgHoveredRow {
+    cursor: pointer;
+    background-color: #f5f5f5 !important;
+    color: #007bff !important;
+}
+    .RadGrid_Metro .rgHoveredRow > td:first-child,.FileHovered /*.FileGrid:hover, .FileGrid:focus, .FileGrid:active*/ {
+        border-left: 3px solid #2abbac !important;
+    }
+
+#ctl00_cphContent_grdQPSFiles {
+    border-radius:5px !important;
+}
+#ctl00_cphContent_grdQPSFiles div.rgHeaderWrapper {
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+}
+
+.RadGrid_Metro .rgMasterTable .rgSelectedCell, .RadGrid_Metro .rgSelectedRow {
+    color: #717171 !important;
+    background-color: #fff !important;
+    font-family: 'lato' !important;
+    font-size: 13px !important;
+}
+
+RadGrid_Metro .rgMasterTable, .RadGrid_Metro .rgDetailTable, .RadGrid_Metro .rgGroupPanel table, .RadGrid_Metro .rgCommandRow table, .RadGrid_Metro .rgEditForm table, .RadGrid_Metro .rgPager table {
+    font-family: 'lato' !important;
+    font-size: 13px !important;
+}
+
+td a.yellow-bgd, td a.green-bgd, td a.grey-bgd, td a.red-bgd, td a.blue-bgd, td a.dblue-bgd {
+    font-family: 'lato' !important;
+    box-sizing: content-box;
+    background-color: #faad2c;
+    color: #fff !important;
+    padding: 4px 6px;
+    border-radius: 3px;
+    font-size: 10px;
+}
+td a.green-bgd {
+    background-color: #00cc00;
+}
+
+
+td a.grey-bgd {
+    background-color: #a1a3a5;
+}
+
+td a.red-bgd {
+    background-color: #ff0000;
+}
+
+td a.blue-bgd {
+    background-color: #3f50f6;
+}
+
+td a.dblue-bgd {
+    background-color: #5740d0;
+}
