@@ -33,12 +33,12 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: build-artifacts
-          path: SESWeb\bin\app.publish\BrakesDev/wwwroot/SES/
+          path: SESWeb\bin\app.publish\
           if-no-files-found: warn
 
       - name: Verify Build Output
         shell: cmd
-        run: dir "SESWeb\bin\app.publish\BrakesDev/wwwroot/SES/"
+        run: dir "SESWeb\bin\app.publish\"
 
       - name: Deploy to Azure App Service
         uses: Azure/webapps-deploy@v2
@@ -49,7 +49,7 @@ jobs:
                 <databases />
               </publishProfile>
             </publishData>
-          package: SESWeb\bin\app.publish\BrakesDev/wwwroot/SES/
+          package: SESWeb\bin\app.publish\
         env:
           MSBUILD_PATH: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe'
           CLIENT_ID: ${{ secrets.SP_CLIENT_ID }}
