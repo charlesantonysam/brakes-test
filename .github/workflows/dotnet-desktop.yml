@@ -8,7 +8,6 @@ on:
 jobs:
   build-and-deploy:
     runs-on: self-hosted
-
     env:
       CLIENT_ID: ${{ secrets.SP_CLIENT_ID }}
       CLIENT_SECRET: ${{ secrets.SP_CLIENT_SECRET }}
@@ -19,6 +18,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          ref: main
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '16'
 
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v1.0.3
@@ -51,7 +57,7 @@ jobs:
               <publishProfile profileName="BrakesDev - FTP" publishMethod="FTP" publishUrl="ftps://waws-prod-ma1-017.ftp.azurewebsites.windows.net/site/wwwroot/SES" ftpPassiveMode="True" userName="BrakesDev\$BrakesDev" userPWD="j6bkBcMPAxpZcLpp6rvBo4lhJd0RjdkMv4EaGsamppJmdAe4BHCwrKstHoPd" destinationAppUrl="https://brakesdev.azurewebsites.net/SES" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="http://windows.azure.com" webSystem="WebSites">
                 <databases />
               </publishProfile>
-              <publishProfile profileName="BrakesDev - Zip Deploy" publishMethod="ZipDeploy" publishUrl="brakesdev.scm.azurewebsites.net:443/SES" userName="$BrakesDev" userPWD="j6bkBcMPAxpZcLpp6rvBo4lhJd0RjdkMv4EaGsamppJmdAe4BHCwrKstHoPd" destinationAppUrl="https://brakesdev.azurewebsites.net/SES" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="http://windows.azure.com" webSystem="WebSites">
+              <publishProfile profileName="BrakesDev - Zip Deploy" publishMethod="ZipDeploy" publishUrl="brakesdev.scm.azurewebsites.net:443/SES " userName="$BrakesDev" userPWD="j6bkBcMPAxpZcLpp6rvBo4lhJd0RjdkMv4EaGsamppJmdAe4BHCwrKstHoPd" destinationAppUrl="https://brakesdev.azurewebsites.net/SES" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="http://windows.azure.com" webSystem="WebSites">
                 <databases />
               </publishProfile>
             </publishData>
