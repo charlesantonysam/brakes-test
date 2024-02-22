@@ -45,6 +45,10 @@ jobs:
       - name: Verify Build Output
         shell: cmd
         run: |
+          if not exist "SESWeb\bin\Release" (
+            echo "SESWeb\bin\Release directory does not exist"
+            exit 1
+          )
           cd SESWeb\bin\Release
           dir app.publish
 
