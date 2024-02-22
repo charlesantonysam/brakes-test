@@ -33,41 +33,35 @@ jobs:
         run: nuget restore SES.sln
 
       - name: Build
-        run: msbuild /p:Configuration=Release /p:DeployOnBuild=true /p:DeployIisAppPath="SES" /v:diag
+        run: msbuild /p:Configuration=Release /p:DeployOnBuild=true /p:PublishDir=SESWeb\bin\app.publish /v:diag
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
         with:
           name: build-artifacts
-          path: SESWeb\bin\Release\app.publish
+          path: SESWeb\bin\app.publish
           if-no-files-found: warn
 
       - name: Verify Build Output
         shell: cmd
-        run: |
-          if not exist "SESWeb\bin\Release" (
-            echo "SESWeb\bin\Release directory does not exist"
-            exit 1
-          )
-          cd SESWeb\bin\Release
-          dir app.publish
+        run: dir "SESWeb\bin\app.publish"
 
       - name: Deploy to Azure App Service
         uses: Azure/webapps-deploy@v2
         with:
           publish-profile: |
             <publishData>
-              <publishProfile profileName="BrakesDev - Web Deploy" publishMethod="MSDeploy" publishUrl="https://brakesdev.scm.azurewebsites.net/msdeploy.axd?site=BrakesDev" msdeploySite="BrakesDev" userName="$BrakesDev" userPWD="j6bkBcMPAxpZcLpp6rvBo4lhJd0RjdkMv4EaGsamppJmdAe4BHCwrKstHoPd" destinationAppUrl="https://brakesdev.azurewebsites.net/SES" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="http://windows.azure.com" webSystem="WebSites">
+              <publishProfile profileName="BrakesDev - Web Deploy" publishMethod="MSDeploy" publishUrl="brakesdev.scm.azurewebsites.net:443" msdeploySite="BrakesDev/SES " userName="$BrakesDev" userPWD="j6bkBcMPAxpZcLpp6rvBo4lhJd0RjdkMv4EaGsamppJmdAe4BHCwrKstHoPd" destinationAppUrl="https://brakesdev.azurewebsites.net/SES" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="http://windows.azure.com" webSystem="WebSites">
                 <databases />
               </publishProfile>
               <publishProfile profileName="BrakesDev - FTP" publishMethod="FTP" publishUrl="ftps://waws-prod-ma1-017.ftp.azurewebsites.windows.net/site/wwwroot/SES" ftpPassiveMode="True" userName="BrakesDev\$BrakesDev" userPWD="j6bkBcMPAxpZcLpp6rvBo4lhJd0RjdkMv4EaGsamppJmdAe4BHCwrKstHoPd" destinationAppUrl="https://brakesdev.azurewebsites.net/SES" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="http://windows.azure.com" webSystem="WebSites">
                 <databases />
               </publishProfile>
-              <publishProfile profileName="BrakesDev - Zip Deploy" publishMethod="ZipDeploy" publishUrl="brakesdev.scm.azurewebsites.net:443/msdeploy.axd?site=BrakesDev" userName="$BrakesDev" userPWD="j6bkBcMPAxpZcLpp6rvBo4lhJd0RjdkMv4EaGsamppJmdAe4BHCwrKstHoPd" destinationAppUrl="https://brakesdev.azurewebsites.net/SES" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="http://windows.azure.com" webSystem="WebSites">
+              <publishProfile profileName="BrakesDev - Zip Deploy" publishMethod="ZipDeploy" publishUrl="brakesdev.scm.azurewebsites.net:443/SES " userName="$BrakesDev" userPWD="j6bkBcMPAxpZcLpp6rvBo4lhJd0RjdkMv4EaGsamppJmdAe4BHCwrKstHoPd" destinationAppUrl="https://brakesdev.azurewebsites.net/SES" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="http://windows.azure.com" webSystem="WebSites">
                 <databases />
               </publishProfile>
             </publishData>
-          package: SESWeb\bin\Release\app.publish
+          package: SESWeb\bin\app.publish
         env:
           MSBUILD_PATH: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe'
           CLIENT_ID: ${{ secrets.SP_CLIENT_ID }}
