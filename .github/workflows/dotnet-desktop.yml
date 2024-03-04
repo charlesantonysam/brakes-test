@@ -16,6 +16,9 @@ jobs:
       ACTIONS_AZURE_REST_IGNORE_SSL_ERRORS: true  # Ignore SSL certificate errors
 
     steps:
+      - name: Set PowerShell Execution Policy
+        run: Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
       - name: Checkout
         uses: actions/checkout@v2
         with:
