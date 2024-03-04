@@ -16,10 +16,6 @@ jobs:
       ACTIONS_AZURE_REST_IGNORE_SSL_ERRORS: true  # Ignore SSL certificate errors
 
     steps:
-      - name: Set PowerShell Execution Policy
-        run: |
-          powershell -command "Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force"
-
       - name: Checkout
         uses: actions/checkout@v2
         with:
@@ -66,45 +62,6 @@ jobs:
               </publishProfile>
             </publishData>
           package: SESWeb\bin\app.publish
-        env:
-          MSBUILD_PATH: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe'
-          CLIENT_ID: ${{ secrets.SP_CLIENT_ID }}
-          CLIENT_SECRET: ${{ secrets.SP_CLIENT_SECRET }}
-          TENANT_ID: ${{ secrets.SP_TENANT_ID }}
-          SUBSCRIPTION_ID: ${{ secrets.SP_SUBSCRIPTION_ID }}
-          ACTIONS_AZURE_REST_IGNORE_SSL_ERRORS: true  # Ignore SSL certificate errors
-
-  copy-and-deploy:
-    runs-on: self-hosted
-    needs: build-and-deploy
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          ref: main
-
-      - name: Copy Files
-        run: |
-          mkdir brakesdev
-          mkdir brakesdev/SES
-          cp -r build-artifacts/* brakesdev/SES/
-
-      - name: Deploy to Azure App Service
-        uses: Azure/webapps-deploy@v2
-        with:
-          publish-profile: |
-            <publishData>
-              <publishProfile profileName="BrakesDev - Web Deploy" publishMethod="MSDeploy" publishUrl="brakesdev.scm.azurewebsites.net:443" msdeploySite="BrakesDev/SES " userName="$BrakesDev" userPWD="j6bkBcMPAxpZcLpp6rvBo4lhJd0RjdkMv4EaGsamppJmdAe4BHCwrKstHoPd" destinationAppUrl="https://brakesdev.azurewebsites.net/SES" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="http://windows.azure.com" webSystem="WebSites">
-                <databases />
-              </publishProfile>
-              <publishProfile profileName="BrakesDev - FTP" publishMethod="FTP" publishUrl="ftps://waws-prod-ma1-017.ftp.azurewebsites.windows.net/site/wwwroot/SES" ftpPassiveMode="True" userName="BrakesDev\$BrakesDev" userPWD="j6bkBcMPAxpZcLpp6rvBo4lhJd0RjdkMv4EaGsamppJmdAe4BHCwrKstHoPd" destinationAppUrl="https://brakesdev.azurewebsites.net/SES" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="http://windows.azure.com" webSystem="WebSites">
-                <databases />
-              </publishProfile>
-              <publishProfile profileName="BrakesDev - Zip Deploy" publishMethod="ZipDeploy" publishUrl="brakesdev.scm.azurewebsites.net:443/SES " userName="$BrakesDev" userPWD="j6bkBcMPAxpZcLpp6rvBo4lhJd0RjdkMv4EaGsamppJmdAe4BHCwrKstHoPd" destinationAppUrl="https://brakesdev.azurewebsites.net/SES" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="http://windows.azure.com" webSystem="WebSites">
-                <databases />
-              </publishProfile>
-            </publishData>
-          package: brakesdev/SES
         env:
           MSBUILD_PATH: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe'
           CLIENT_ID: ${{ secrets.SP_CLIENT_ID }}
