@@ -1,3 +1,49 @@
+Run mkdir -p brakesdev/SES
+  mkdir -p brakesdev/SES
+  az login --service-principal -u $env:CLIENT_ID -p $env:CLIENT_SECRET --tenant $env:TENANT_ID
+  az storage blob download-batch -s $env:DEPLOYMENT_PATH -d brakesdev/SES --pattern "*" --account-name brakesdev
+  shell: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE -command ". '{0}'"
+  env:
+    DEPLOYMENT_PATH: 
+
+
+    Directory: D:\actions-runner\_work\brakes-test\brakes-test\brakesdev
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d-----          3/5/2024  12:49 PM                SES                                                                  
+ERROR: argument --username/-u: expected one argument
+
+Examples from AI knowledge base:
+az login --service-principal -u http://azure-cli-2016-08-05-14-31-15 -p VerySecret --tenant contoso.onmicrosoft.com
+Log in with a service principal using client secret. Use -p=secret if the first character of the password is '-'.
+
+az login --service-principal -u http://azure-cli-2016-08-05-14-31-15 -p ~/mycertfile.pem --tenant contoso.onmicrosoft.com
+Log in with a service principal using client certificate.
+
+az login -u johndoe@contoso.com -p VerySecret
+Log in with user name and password. This doesn't work with Microsoft accounts or accounts that have two-factor authentication enabled. Use -p=secret if the first character of the password is '-'.
+
+https://aka.ms/cli_ref
+Read more about the command in reference docs
+ERROR: argument --source/-s: expected one argument
+
+Examples from AI knowledge base:
+az storage blob download-batch --destination . --pattern *.py --source mycontainer --account-name mystorageaccount --account-key 00000000
+Download all blobs that end with .py
+
+az storage blob download-batch --destination . --source mycontainer --pattern cli-201[89]-??-??.txt
+Download all blobs with the format 'cli-2018-xx-xx.txt' or 'cli-2019-xx-xx.txt' in container to current path.
+
+https://docs.microsoft.com/en-US/cli/azure/storage/blob#az_storage_blob_download_batch
+Read more about the command in reference docs
+
+
+Error: Process completed with exit code 1.
+
+above arror occured while running the below github actions workflow
+
 name: Build and Deploy .NET Framework 4.6.1 Application
 
 on:
@@ -69,13 +115,11 @@ jobs:
         run: |
           $DEPLOYMENT_PATH = Select-String -Pattern '(?<=destinationAppUrl=")[^"]*' -InputObject "${{ steps.azure-deploy.outputs.publish-profile }}" | ForEach-Object { $_.Matches[0].Value }
           echo "DEPLOYMENT_PATH=$DEPLOYMENT_PATH" >> $env:GITHUB_ENV
-
       - name: Copy Files from Azure Deployment
         run: |
           mkdir -p brakesdev/SES
           az login --service-principal -u $env:CLIENT_ID -p $env:CLIENT_SECRET --tenant $env:TENANT_ID
           az storage blob download-batch -s $env:DEPLOYMENT_PATH -d brakesdev/SES --pattern "*" --account-name brakesdev
-
       - name: Deploy to Azure App Service - SES Folder
         uses: Azure/webapps-deploy@v2
         with:
