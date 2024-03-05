@@ -54,10 +54,10 @@ jobs:
           package: SESWeb\bin\app.publish
         env:
           MSBUILD_PATH: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe'
-          CLIENT_ID: ${{ secrets.SP_CLIENT_ID }}
-          CLIENT_SECRET: ${{ secrets.SP_CLIENT_SECRET }}
-          TENANT_ID: ${{ secrets.SP_TENANT_ID }}
-          SUBSCRIPTION_ID: ${{ secrets.SP_SUBSCRIPTION_ID }}
+          CLIENT_ID: "${{ secrets.SP_CLIENT_ID }}"
+          CLIENT_SECRET: "${{ secrets.SP_CLIENT_SECRET }}"
+          TENANT_ID: "${{ secrets.SP_TENANT_ID }}"
+          SUBSCRIPTION_ID: "${{ secrets.SP_SUBSCRIPTION_ID }}"
           ACTIONS_AZURE_REST_IGNORE_SSL_ERRORS: true  # Ignore SSL certificate errors
 
   copy-and-deploy:
@@ -72,7 +72,7 @@ jobs:
       - name: Copy Files from Azure Deployment
         run: |
           mkdir -p brakesdev/SES
-          az login --service-principal -u ${{ secrets.SP_CLIENT_ID }} -p ${{ secrets.SP_CLIENT_SECRET }} --tenant ${{ secrets.SP_TENANT_ID }}
+          az login --service-principal -u "${{ secrets.SP_CLIENT_ID }}" -p "${{ secrets.SP_CLIENT_SECRET }}" --tenant "${{ secrets.SP_TENANT_ID }}"
           az storage blob download-batch --source "$DEPLOYMENT_PATH" -d brakesdev/SES --pattern "*" --account-name brakesdev
       - name: Deploy to Azure App Service - SES Folder
         uses: Azure/webapps-deploy@v2
@@ -81,8 +81,8 @@ jobs:
           package: brakesdev/SES
         env:
           MSBUILD_PATH: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe'
-          CLIENT_ID: ${{ secrets.SP_CLIENT_ID }}
-          CLIENT_SECRET: ${{ secrets.SP_CLIENT_SECRET }}
-          TENANT_ID: ${{ secrets.SP_TENANT_ID }}
-          SUBSCRIPTION_ID: ${{ secrets.SP_SUBSCRIPTION_ID }}
+          CLIENT_ID: "${{ secrets.SP_CLIENT_ID }}"
+          CLIENT_SECRET: "${{ secrets.SP_CLIENT_SECRET }}"
+          TENANT_ID: "${{ secrets.SP_TENANT_ID }}"
+          SUBSCRIPTION_ID: "${{ secrets.SP_SUBSCRIPTION_ID }}"
           ACTIONS_AZURE_REST_IGNORE_SSL_ERRORS: true  # Ignore SSL certificate errors
