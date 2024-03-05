@@ -65,15 +65,16 @@ jobs:
     needs: build-and-deploy
     steps:
       - name: Get Azure Deployment Path
+        shell: powershell
         run: |
-          DEPLOYMENT_PATH=$(grep -oP '(?<=destinationAppUrl=")[^"]*' <<< "${{ steps.azure-deploy.outputs.publish-profile }}")
-          echo "DEPLOYMENT_PATH=$DEPLOYMENT_PATH" >> $GITHUB_ENV
+          $DEPLOYMENT_PATH = Select-String -Pattern '(?<=destinationAppUrl=")[^"]*' -InputObject "${{ steps.azure-deploy.outputs.publish-profile }}" | ForEach-Object { $_.Matches[0].Value }
+          echo "DEPLOYMENT_PATH=$DEPLOYMENT_PATH" >> $env:GITHUB_ENV
 
       - name: Copy Files from Azure Deployment
         run: |
           mkdir -p brakesdev/SES
           az login --service-principal -u ${{ secrets.SP_CLIENT_ID }} -p ${{ secrets.SP_CLIENT_SECRET }} --tenant ${{ secrets.SP_TENANT_ID }}
-          az storage blob download-batch -s $DEPLOYMENT_PATH -d brakesdev/SES --pattern "*" --account-name brakesdev
+          az storage blob download-batch -s $env:DEPLOYMENT_PATH -d brakesdev/SES --pattern "*" --account-name brakesdev
 
       - name: Deploy to Azure App Service - SES Folder
         uses: Azure/webapps-deploy@v2
