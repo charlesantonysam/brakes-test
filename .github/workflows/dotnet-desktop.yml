@@ -60,10 +60,28 @@ jobs:
           SUBSCRIPTION_ID: "${{ secrets.SP_SUBSCRIPTION_ID }}"
           ACTIONS_AZURE_REST_IGNORE_SSL_ERRORS: true  # Ignore SSL certificate errors
 
-  copy-and-deploy:
+  install-azcopy-and-copy:
     runs-on: self-hosted
     needs: build-and-deploy
     steps:
+      - name: Install azCopy
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            # Download AzCopy
+            wget https://aka.ms/downloadazcopy-v10-windows -OutFile azcopy.zip
+            
+            # Expand Archive
+            Expand-Archive -Path azcopy.zip -DestinationPath . -Force
+            
+            # Move AzCopy to the destination you want to store it
+            Move-Item -Path "./azcopy_windows_amd64_*/azcopy.exe" -Destination "C:\azcopy\azcopy.exe" -Force
+            
+            # Add AzCopy directory to PATH
+            $env:Path += ";C:\azcopy"
+            
+            azcopy --version
+          
       - name: Get Azure Deployment Path
         shell: powershell
         run: |
@@ -71,14 +89,14 @@ jobs:
           echo "DEPLOYMENT_PATH=$DEPLOYMENT_PATH" >> $env:GITHUB_ENV
       - name: Copy Files from Azure Deployment
         run: |
-          mkdir -p brakesdev/SES
+          mkdir -p brakesdev\SES
           az login --service-principal -u "${{ secrets.SP_CLIENT_ID }}" -p "${{ secrets.SP_CLIENT_SECRET }}" --tenant "${{ secrets.SP_TENANT_ID }}"
-          az storage blob download-batch --source "$DEPLOYMENT_PATH" -d brakesdev/SES --pattern "*" --account-name brakesdev
+          az storage blob download-batch --source "$DEPLOYMENT_PATH" -d brakesdev\SES --pattern "*" --account-name brakesdev
       - name: Deploy to Azure App Service - SES Folder
         uses: Azure/webapps-deploy@v2
         with:
           publish-profile: ${{ secrets.PUBLISH_PROFILE }}
-          package: brakesdev/SES
+          package: brakesdev\SES
         env:
           MSBUILD_PATH: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe'
           CLIENT_ID: "${{ secrets.SP_CLIENT_ID }}"
