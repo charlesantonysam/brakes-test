@@ -73,7 +73,7 @@ jobs:
       - name: Copy Files from Azure Deployment
         run: |
           mkdir -p brakesdev/SES
-          az login --service-principal -u ${{ secrets.SP_CLIENT_ID }} -p ${{ secrets.SP_CLIENT_SECRET }} --tenant ${{ secrets.SP_TENANT_ID }}
+          az login --service-principal -u $env:CLIENT_ID -p $env:CLIENT_SECRET --tenant $env:TENANT_ID
           az storage blob download-batch -s $env:DEPLOYMENT_PATH -d brakesdev/SES --pattern "*" --account-name brakesdev
 
       - name: Deploy to Azure App Service - SES Folder
