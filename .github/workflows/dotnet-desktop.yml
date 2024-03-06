@@ -83,7 +83,6 @@ jobs:
           $env:Path += ";C:\azcopy"
           
           azcopy --version
-
       - name: Get Azure Deployment Path
         shell: powershell
         run: |
