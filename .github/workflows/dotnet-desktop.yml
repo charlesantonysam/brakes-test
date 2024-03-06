@@ -65,6 +65,7 @@ jobs:
     needs: build-and-deploy
     steps:
       - name: Install AzCopy
+        shell: powershell
         run: |
           # Download AzCopy
           wget https://aka.ms/downloadazcopy-v10-windows -OutFile azcopy.zip
@@ -72,7 +73,10 @@ jobs:
           # Expand Archive
           Expand-Archive -Path azcopy.zip -DestinationPath . -Force
           
-          # Move AzCopy to the destination you want to store it
+          # Create destination directory
+          New-Item -ItemType Directory -Force -Path C:\azcopy
+          
+          # Move AzCopy to the destination directory
           Move-Item -Path "./azcopy_windows_amd64_*/azcopy.exe" -Destination "C:\azcopy\azcopy.exe" -Force
           
           # Add AzCopy directory to PATH
