@@ -8,6 +8,7 @@ on:
 jobs:
   build-and-deploy:
     runs-on: self-hosted
+
     env:
       CLIENT_ID: ${{ secrets.SP_CLIENT_ID }}
       CLIENT_SECRET: ${{ secrets.SP_CLIENT_SECRET }}
@@ -18,13 +19,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        with:
-          ref: main
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
 
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v1.0.3
@@ -33,78 +27,39 @@ jobs:
         run: nuget restore SES.sln
 
       - name: Build
-        run: msbuild /p:Configuration=Release /p:DeployOnBuild=true /p:PublishDir=SESWeb\bin\app.publish /v:diag
+        run: msbuild /p:Configuration=Release SES.sln /v:diag
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
         with:
           name: build-artifacts
-          path: SESWeb\bin\app.publish
+          path: SESWeb\bin\app.publish\
           if-no-files-found: warn
 
       - name: Verify Build Output
         shell: cmd
-        run: dir "SESWeb\bin\app.publish"
+        run: dir "SESWeb\bin\app.publish\"  
 
       - name: Deploy to Azure App Service
-        id: azure-deploy
         uses: Azure/webapps-deploy@v2
         with:
-          publish-profile: ${{ secrets.PUBLISH_PROFILE }}
-          package: SESWeb\bin\app.publish
+          publish-profile: |
+            <publishData>
+              <publishProfile profileName="BrakesDev - Web Deploy" publishMethod="MSDeploy" publishUrl="brakesdev.scm.azurewebsites.net:443/BrakesDev/wwwroot/SES/" msdeploySite="/BrakesDev/wwwroot/SES/" userName="$BrakesDev" userPWD="j6bkBcMPAxpZcLpp6rvBo4lhJd0RjdkMv4EaGsamppJmdAe4BHCwrKstHoPd" destinationAppUrl="https://brakesdev.azurewebsites.net" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="http://windows.azure.com" webSystem="WebSites">
+                <databases />
+              </publishProfile>
+              <publishProfile profileName="BrakesDev - FTP" publishMethod="FTP" publishUrl="ftps://waws-prod-ma1-017.ftp.azurewebsites.windows.net/site/wwwroot/SES/" ftpPassiveMode="True" userName="BrakesDev\$BrakesDev" userPWD="j6bkBcMPAxpZcLpp6rvBo4lhJd0RjdkMv4EaGsamppJmdAe4BHCwrKstHoPd" destinationAppUrl="https://brakesdev.azurewebsites.net" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="http://windows.azure.com" webSystem="WebSites">
+                <databases />
+              </publishProfile>
+              <publishProfile profileName="BrakesDev - Zip Deploy" publishMethod="ZipDeploy" publishUrl="brakesdev.scm.azurewebsites.net:443/BrakesDev/wwwroot/SES/" userName="$BrakesDev" userPWD="j6bkBcMPAxpZcLpp6rvBo4lhJd0RjdkMv4EaGsamppJmdAe4BHCwrKstHoPd" destinationAppUrl="https://brakesdev.azurewebsites.net" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="http://windows.azure.com" webSystem="WebSites">
+                <databases />
+              </publishProfile>
+            </publishData>
+          package: SESWeb\bin\app.publish\
         env:
           MSBUILD_PATH: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe'
-          CLIENT_ID: "${{ secrets.SP_CLIENT_ID }}"
-          CLIENT_SECRET: "${{ secrets.SP_CLIENT_SECRET }}"
-          TENANT_ID: "${{ secrets.SP_TENANT_ID }}"
-          SUBSCRIPTION_ID: "${{ secrets.SP_SUBSCRIPTION_ID }}"
-          ACTIONS_AZURE_REST_IGNORE_SSL_ERRORS: true  # Ignore SSL certificate errors
-
-  install-azcopy-and-copy:
-    runs-on: self-hosted
-    needs: build-and-deploy
-    steps:
-      - name: Install AzCopy
-        shell: powershell
-        run: |
-          # Download AzCopy
-          wget https://aka.ms/downloadazcopy-v10-windows -OutFile azcopy.zip
-          
-          # Expand Archive
-          Expand-Archive -Path azcopy.zip -DestinationPath . -Force
-          
-          # Create destination directory
-          New-Item -ItemType Directory -Force -Path C:\azcopy
-          
-          # Move AzCopy to the destination directory
-          Move-Item -Path "./azcopy_windows_amd64_*/azcopy.exe" -Destination "C:\azcopy\azcopy.exe" -Force
-          
-          # Add AzCopy directory to PATH
-          $env:Path += ";C:\azcopy"
-          
-          azcopy --version
-
-      - name: Get Azure Deployment Path
-        shell: powershell
-        run: |
-          $DEPLOYMENT_PATH = Select-String -Pattern '(?<=destinationAppUrl=")[^"]*' -InputObject "${{ steps.azure-deploy.outputs.publish-profile }}" | ForEach-Object { $_.Matches[0].Value }
-          echo "DEPLOYMENT_PATH=$DEPLOYMENT_PATH" >> $env:GITHUB_ENV
-
-      - name: Copy Files from Azure Deployment
-        run: |
-          mkdir -p brakesdev\SES
-          az login --service-principal -u ${{ secrets.SP_CLIENT_ID }} -p ${{ secrets.SP_CLIENT_SECRET }} --tenant ${{ secrets.SP_TENANT_ID }}
-          az storage blob download-batch --source $env:DEPLOYMENT_PATH -d brakesdev\SES --pattern "*" --account-name brakesdev
-
-      - name: Deploy to Azure App Service - SES Folder
-        uses: Azure/webapps-deploy@v2
-        with:
-          publish-profile: ${{ secrets.PUBLISH_PROFILE }}
-          package: brakesdev\SES
-        env:
-          MSBUILD_PATH: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe'
-          CLIENT_ID: "${{ secrets.SP_CLIENT_ID }}"
-          CLIENT_SECRET: "${{ secrets.SP_CLIENT_SECRET }}"
-          TENANT_ID: "${{ secrets.SP_TENANT_ID }}"
-          SUBSCRIPTION_ID: "${{ secrets.SP_SUBSCRIPTION_ID }}"
+          CLIENT_ID: ${{ secrets.SP_CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.SP_CLIENT_SECRET }}
+          TENANT_ID: ${{ secrets.SP_TENANT_ID }}
+          SUBSCRIPTION_ID: ${{ secrets.SP_SUBSCRIPTION_ID }}
           ACTIONS_AZURE_REST_IGNORE_SSL_ERRORS: true  # Ignore SSL certificate errors
